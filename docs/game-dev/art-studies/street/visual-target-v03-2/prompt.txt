@@ -1,0 +1,15 @@
+EDIT TARGET: the attached v0.3 street/courier visual study. Preserve the established Jiangnan university 2026 palette and distinguishable bun shop, parcel shop, shopkeeper, courier and student silhouettes. Make a new camera-and-layout correction, not a final runtime background.
+
+CAMERA CONTRACT — mandatory:
+Use one coherent top-down orthographic camera with shallow front faces. Ground, main street, sidewalk, shop roofs, entrances, arcade, props and characters share the same axes. Buildings should read primarily through roof/top plane, footprint, shallow eave and a low wall/door band; do NOT use near-front-facing facades with tall walls and a separate top-down ground. Keep visible front fascia below about 16 world units in the study. No strong 3/4 facade perspective, no cinematic horizon, no isometric diamonds, no viewpoint changes between the two shops.
+
+STREET FUNCTION — mandatory:
+This is a campus pedestrian street with low-speed bicycles, not a motor-vehicle road. Use a medium-light warm-grey stone street surface, no wide dark asphalt strip and no implied car lane. The main path runs continuously x=0..960 at y about 348..412 and remains clear at both edge mouths toward the canteen and garden. The sidewalk/frontage band occupies about y=280..348. It must read as a continuous network, not two isolated paths.
+
+ARCHITECTURE AND ACCESS:
+- Align both shop footprints to one shared street frontage and sidewalk line, but give them different spatial function. The left bun/everyday-goods shop has a serving threshold and a compact planned bicycle bay within its forecourt. The right parcel shop has locker/scanner frontage and a small courier waiting pocket. Each door/apron connects directly to the common sidewalk.
+- Replace the former large glass canopy with a shallow tile-and-walnut campus arcade or open covered forecourt set ABOVE the main lane. Its roof uses the same shallow top-plane convention as the shops; it is not a tall front-facing glass building. Keep columns at the rear/edge of the forecourt, outside the main sidewalk and NPC route; if a roof would require occlusion the layout stays open instead.
+- Give the center a clear function: a compact shared student forecourt with a bench and notice board set back from the route, two short door approaches, and a readable pedestrian junction. No blank paved void, no solid new building, no new collider implied.
+- Use side returns, shallow setbacks and roof planes to establish depth, not a large frontal wall. Keep NPC pockets near their relevant entrance so they look like users of the street, not figures stranded on the road.
+
+Use grayscale/value hierarchy before decoration: main pedestrian/bicycle path, continuous sidewalk, door aprons, shared forecourt, shop footprints, low-contrast shoulders. No text, labels, pseudo-Chinese, HUD, watermark or collage. Road-edge/auto-tiling polish remains a later pass after all areas exist.

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "provider": "openai",
+  "kind": "image",
+  "route": "codex-cli",
+  "requestedModel": "codex-image_gen",
+  "options": {
+    "tool": "image_gen"
+  },
+  "promptSha256": "4ffb45579472d3ca18f63b63b94d72f2aab2ea74d4604e6926623badd1798c63",
+  "references": [
+    {
+      "sha256": "94d5263d8de7572dd6efb8eb43d24458051741adf646a91c26edad86d5cb6a9a",
+      "bytes": 2355935
+    }
+  ],
+  "fingerprint": "d15aeba4e567f3cbbea0e7df2425ea3c9b9674b3cfab4e08a1ff33291b6f5bf3",
+  "estimate": {
+    "usd": 0.0,
+    "currency": "USD",
+    "pricesVersion": "2026-10-06",
+    "items": [],
+    "basis": "subscription quota call: no per-call USD price; counted by call caps"
+  },
+  "consent": {
+    "provider": "openai",
+    "model": "codex-image_gen",
+    "calls": 1,
+    "estimateUsd": 0.0,
+    "route": "codex-cli",
+    "quota": true,
+    "account": "the user's own Codex sign-in (ChatGPT)",
+    "note": "uses the subscription quota of that sign-in, never API credit"
+  },
+  "artSource": "host_image",
+  "execution": "execute",
+  "status": "done",
+  "outputDir": "../../../street/visual-target-v03-2",
+  "receipt": {
+    "startedAt": "2026-11-14T15:39:16.784Z",
+    "submittedAt": "2026-11-14T15:39:16.793Z",
+    "completedAt": "2026-11-14T15:40:18.133Z",
+    "wallMs": 61349,
+    "providerMs": 61312,
+    "attempt": 1,
+    "purpose": "v0.3-2 camera correction: shallow top-down shops, pedestrian street and functional forecourt",
+    "toolVersion": "cli_media/0.6.0",
+    "outcomeCode": "ok"
+  },
+  "ledger": {
+    "projectDir": "../..",
+    "reservationId": "b32d882c5c89454cb47a6747f07f9e8b",
+    "status": "done"
+  },
+  "cliRun": {
+    "tool": "codex",
+    "runId": "dc7153d00ca9484f92a9caad1bd29ba5",
+    "cwd": "<tmp>/forge-cli-dc7153d00ca9-54275f9e",
+    "startedAt": "2026-11-14T15:39:16.784Z",
+    "version": "0.167.2",
+    "versionText": "codex-cli 0.167.2",
+    "recipe": "codex-exec-imagegen/1",
+    "home": "CODEX_HOME",
+    "verifiedBefore": true,
+    "threadId": "01a1dab6-853c-70e2-8023-5591b2caf013"
+  },
+  "adoption": {
+    "method": "native-run-folder",
+    "source": "CODEX_HOME/generated_images/01a1dab6-853c-70e2-8023-5591b2caf013/exec-b4ddf70e-039e-409d-951e-570a8694c31b.png",
+    "sourceSha256": "56df3643386eace529e9dab8a6e2e9cd2725e57abad1d19823a0bd0bb2021cc8",
+    "sourceMtime": "2026-11-14T15:40:14Z",
+    "freshAfter": "2026-11-14T15:39:16.796Z",
+    "checks": [
+      "inside the CLI's own folder for this run",
+      "no symlink or junction",
+      "regular file of a sane size",
+      "newer than the run",
+      "magic bytes",
+      "decodes",
+      "exactly one output",
+      "exclusive copy with matching sha256"
+    ],
+    "finalAnswerNamesFile": true
+  },
+  "artifact": {
+    "path": "../../../street/visual-target-v03-2/generated.png",
+    "sha256": "56df3643386eace529e9dab8a6e2e9cd2725e57abad1d19823a0bd0bb2021cc8",
+    "bytes": 2509622,
+    "format": "PNG",
+    "size": [
+      1672,
+      941
+    ]
+  }
+}

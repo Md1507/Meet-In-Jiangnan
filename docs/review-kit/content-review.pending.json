@@ -1,0 +1,1235 @@
+{
+  "status": "pending-human",
+  "content": {
+    "path": "src/content/mvp.json",
+    "sha256": "1c7725684d5136a6d6ae360fd772d596e0699f82aa5bf514213bb690c95b02ea"
+  },
+  "reviewer": {
+    "name": "",
+    "qualification": "",
+    "kind": "human"
+  },
+  "instructions": "Review every text/pinyin/Vietnamese meaning/context and listen to every linked audio. Fill verdict and notes; blank fields are not approval.",
+  "utterances": [
+    {
+      "id": "greeting-0",
+      "text": "老师好。",
+      "pinyin": "Lǎoshī hǎo.",
+      "meaningVi": "Em chào thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-0.wav",
+        "sha256": "9af814d84ea70cf6c05ef862e071ab56b8b3daa090ab4c52e4d3b66d884d010b"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "greeting-1",
+      "text": "老师，您好。",
+      "pinyin": "Lǎoshī, nín hǎo.",
+      "meaningVi": "Em kính chào thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-1.wav",
+        "sha256": "929af9173c619491baf5d1522fbf4ad717060984887f6479b430a78cb4c616e4"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "greeting-2",
+      "text": "您好，老师。",
+      "pinyin": "Nín hǎo, lǎoshī.",
+      "meaningVi": "Em chào thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-2.wav",
+        "sha256": "79f636c82429f06ce1134b9641ea3552ef30e15b950611e211d89e41cf97a06a"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "greeting-3",
+      "text": "老师再见。",
+      "pinyin": "Lǎoshī zàijiàn.",
+      "meaningVi": "Em tạm biệt thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-3.wav",
+        "sha256": "c528ce14bf3ebaeda90c10fc7926e758b2670bf0532d3a52957af0f23d190e96"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "greeting-prompt",
+      "text": "你好，欢迎来到学校。",
+      "pinyin": "Nǐ hǎo, huānyíng láidào xuéxiào.",
+      "meaningVi": "Xin chào, chào mừng em đến trường.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-prompt.wav",
+        "sha256": "c81c1480483b040959379591af1bdf44504d4aece9e53d8b4d5339c86ab7c71e"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "greeting-reply",
+      "text": "欢迎你。",
+      "pinyin": "Huānyíng nǐ.",
+      "meaningVi": "Chào mừng em.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-reply.wav",
+        "sha256": "caa779c1694e8e6615ac0471157368f0eb453af46cf7c2963cddacac27736963"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-0",
+      "text": "我叫小雨。",
+      "pinyin": "Wǒ jiào Xiǎoyǔ.",
+      "meaningVi": "Tôi tên là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-0.wav",
+        "sha256": "e19a5774ae97dfde5d663950b23b73976178645e70625638477c61ba73cf19ba"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-1",
+      "text": "我的名字是小雨。",
+      "pinyin": "Wǒ de míngzi shì Xiǎoyǔ.",
+      "meaningVi": "Tên của tôi là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-1.wav",
+        "sha256": "906b75c77a483b18e42491fc8eebf45584164f50695af63711c166769f3fd864"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-2",
+      "text": "你好，我是小雨。",
+      "pinyin": "Nǐ hǎo, wǒ shì Xiǎoyǔ.",
+      "meaningVi": "Xin chào, tôi là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-2.wav",
+        "sha256": "3718a5ff1cca0a1c24d7246b4df9bbfcd6ca47c2d3d8ee223ae10c63b44d8c54"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-3",
+      "text": "我不叫小雨。",
+      "pinyin": "Wǒ bù jiào Xiǎoyǔ.",
+      "meaningVi": "Tôi không tên là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-3.wav",
+        "sha256": "e6b0b9d6f3a86d59a06dd2a2ca124a78e5708814b2c251baaf1f3e983f51faf6"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-prompt",
+      "text": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "meaningVi": "Bạn tên là gì?",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-prompt.wav",
+        "sha256": "52df2ec13c135713a86108c5296c753792c8f945525ede727e07f5466817836e"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "introduction-reply",
+      "text": "很高兴认识你。",
+      "pinyin": "Hěn gāoxìng rènshi nǐ.",
+      "meaningVi": "Rất vui được quen bạn.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-reply.wav",
+        "sha256": "061880fd157502ba5a92a3701c4a8f4be515b0ea7781194eb0aba386dadea76b"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-0",
+      "text": "请再说一遍。",
+      "pinyin": "Qǐng zài shuō yí biàn.",
+      "meaningVi": "Xin hãy nói lại một lần.",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-0.wav",
+        "sha256": "8a8e04d3da799e2f093d4140dcb2858175901f1df86b88ea7f175e3d5e8ae6b5"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-1",
+      "text": "可以再说一遍吗？",
+      "pinyin": "Kěyǐ zài shuō yí biàn ma?",
+      "meaningVi": "Có thể nói lại một lần không?",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-1.wav",
+        "sha256": "6dbfc585cdacc43b402f398874675cea69b83bee737ed551dcccd1adf7a3b41a"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-2",
+      "text": "麻烦您再说一次。",
+      "pinyin": "Máfan nín zài shuō yí cì.",
+      "meaningVi": "Phiền thầy/cô nói lại một lần.",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-2.wav",
+        "sha256": "24456cbe5044e28c7ff2f265035a52c681deb2fddce0c631ffa5283d68735938"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-3",
+      "text": "请不要说了。",
+      "pinyin": "Qǐng bú yào shuō le.",
+      "meaningVi": "Xin đừng nói nữa.",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-3.wav",
+        "sha256": "5a8c17adb2aa5157c333865dcced2a39bfbc53874df629a657e76cd50dcf1862"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-prompt",
+      "text": "你听懂了吗？",
+      "pinyin": "Nǐ tīng dǒng le ma?",
+      "meaningVi": "Em đã nghe hiểu chưa?",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-prompt.wav",
+        "sha256": "bfefd8bcfe5003f48671abc0aacd8237f34adb7b336cacb4147535637d0fdaf2"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "repeat-reply",
+      "text": "好的，我再说一遍。",
+      "pinyin": "Hǎo de, wǒ zài shuō yí biàn.",
+      "meaningVi": "Được, thầy/cô nói lại một lần.",
+      "context": "Nhờ người đối diện nói lại",
+      "audio": {
+        "path": "public/audio/repeat-reply.wav",
+        "sha256": "ea66b805fcec60c6abd30424b7be755805454275988dccdadb4af69e93b8dc75"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-0",
+      "text": "我来办理入住。",
+      "pinyin": "Wǒ lái bànlǐ rùzhù.",
+      "meaningVi": "Tôi đến làm thủ tục nhận phòng.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-0.wav",
+        "sha256": "8cc32787d93bf13f43b4c9560eb41ba1cd2276dd77ba1e74fcd4e49a9c8162f1"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-1",
+      "text": "我要办理入住手续。",
+      "pinyin": "Wǒ yào bànlǐ rùzhù shǒuxù.",
+      "meaningVi": "Tôi muốn làm thủ tục nhận phòng.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-1.wav",
+        "sha256": "500cf3da6597006dc45678c64caf83dfd1d4dd3ff9b1df6b4fddcc80f03d69e8"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-2",
+      "text": "你好，我来办入住手续。",
+      "pinyin": "Nǐ hǎo, wǒ lái bàn rùzhù shǒuxù.",
+      "meaningVi": "Xin chào, tôi đến làm thủ tục nhận phòng.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-2.wav",
+        "sha256": "23be00a08c53003244ff735823ec9ae3879b6a225ff681afa371dc5806090c1e"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-3",
+      "text": "我不办理入住。",
+      "pinyin": "Wǒ bù bànlǐ rùzhù.",
+      "meaningVi": "Tôi không làm thủ tục nhận phòng.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-3.wav",
+        "sha256": "ae6dcfe7fdba1f7f102656274b4a29e3a7d5332231c4349ff1cb61b6142c91c7"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-prompt",
+      "text": "你来办理什么手续？",
+      "pinyin": "Nǐ lái bànlǐ shénme shǒuxù?",
+      "meaningVi": "Em đến làm thủ tục gì?",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-prompt.wav",
+        "sha256": "39d2010856aa46cc632382eb11e4f96d61ac959e550ee28c3ac1e18200000fa9"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "checkin-reply",
+      "text": "请给我看一下你的护照。",
+      "pinyin": "Qǐng gěi wǒ kàn yíxià nǐ de hùzhào.",
+      "meaningVi": "Xin cho tôi xem hộ chiếu của em.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-reply.wav",
+        "sha256": "8eae0541c6544a088a49290050632ceedbfdae8538eca94513860a82059c6a09"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-0",
+      "text": "房间的灯坏了。",
+      "pinyin": "Fángjiān de dēng huài le.",
+      "meaningVi": "Đèn trong phòng bị hỏng rồi.",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-0.wav",
+        "sha256": "6b1201222a8646654e8968019b6c27aebcc24a759cb2df6e0405fcaedb67013f"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-1",
+      "text": "我的房间灯坏了。",
+      "pinyin": "Wǒ de fángjiān dēng huài le.",
+      "meaningVi": "Đèn phòng tôi bị hỏng rồi.",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-1.wav",
+        "sha256": "d88c6b528272533c42dedc49359a8a3a0be2019509d3e0e662a49ca1ac8f1a9a"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-2",
+      "text": "房间里的灯不亮了。",
+      "pinyin": "Fángjiān lǐ de dēng bú liàng le.",
+      "meaningVi": "Đèn trong phòng không sáng nữa.",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-2.wav",
+        "sha256": "3e1ceff0ef97fea6b01ab279570c9bc0fda6dfad721f18bf18421bed5961deb4"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-3",
+      "text": "房间的灯很好。",
+      "pinyin": "Fángjiān de dēng hěn hǎo.",
+      "meaningVi": "Đèn trong phòng rất tốt.",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-3.wav",
+        "sha256": "3d3498d9806e3179b22fada8874447729cbcbd4f12411be6321f55d9646bf050"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-prompt",
+      "text": "你的房间有什么问题？",
+      "pinyin": "Nǐ de fángjiān yǒu shénme wèntí?",
+      "meaningVi": "Phòng của bạn có vấn đề gì?",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-prompt.wav",
+        "sha256": "34dbd6f6745147ed1400407757a9706884f6a9cc3bb1d82f60a5c4f7c0a1d6ba"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "room_problem-reply",
+      "text": "我帮你联系维修人员。",
+      "pinyin": "Wǒ bāng nǐ liánxì wéixiū rényuán.",
+      "meaningVi": "Tôi giúp bạn liên hệ người sửa chữa.",
+      "context": "Báo đèn trong phòng bị hỏng",
+      "audio": {
+        "path": "public/audio/room_problem-reply.wav",
+        "sha256": "c3e3099916e1e4ffd471ec034f12109482a23f1787cd423d044dc44c77239325"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-0",
+      "text": "我要一杯热水。",
+      "pinyin": "Wǒ yào yì bēi rèshuǐ.",
+      "meaningVi": "Tôi muốn một cốc nước nóng.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-0.wav",
+        "sha256": "617fc251447fbe4af95f6cb55db34821a1ae22a5a460fb81e47503cc5f6bf4d0"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-1",
+      "text": "给我一杯热水，谢谢。",
+      "pinyin": "Gěi wǒ yì bēi rèshuǐ, xièxie.",
+      "meaningVi": "Cho tôi một cốc nước nóng, cảm ơn.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-1.wav",
+        "sha256": "eb56da785d6f490be708e545579ba0fbd4f40ebc28737f8bd0fd2249ce395af1"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-2",
+      "text": "来杯热水吧。",
+      "pinyin": "Lái bēi rèshuǐ ba.",
+      "meaningVi": "Cho một cốc nước nóng nhé.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-2.wav",
+        "sha256": "8e6df4cb7cbe02ea9473fec39fc1f6343de4aa282c614f31a3d1df521ffda19f"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-3",
+      "text": "我不要热水。",
+      "pinyin": "Wǒ bú yào rèshuǐ.",
+      "meaningVi": "Tôi không muốn nước nóng.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-3.wav",
+        "sha256": "9892351c46c3b5be6925100397a2f42dc13e14aa5f8ef25d339bea96de752c37"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-prompt",
+      "text": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "meaningVi": "Bạn muốn uống gì?",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-prompt.wav",
+        "sha256": "30552995221b06b134a1fa97931f27935ae7a54f4f1b8f9634a6355f473ebcf7"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "order_water-reply",
+      "text": "好的，一杯热水。",
+      "pinyin": "Hǎo de, yì bēi rèshuǐ.",
+      "meaningVi": "Được, một cốc nước nóng.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-reply.wav",
+        "sha256": "82aac591ff4c1a4db56e944d0d37bbc95c5abcddffe945116fc8cdc9b96c8d26"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-0",
+      "text": "我要两个包子。",
+      "pinyin": "Wǒ yào liǎng ge bāozi.",
+      "meaningVi": "Tôi muốn hai cái bánh bao.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-0.wav",
+        "sha256": "bd094596708a99aeeb639cc76805250770c99f487ce69c7547a59960668c8e72"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-1",
+      "text": "请给我两个包子。",
+      "pinyin": "Qǐng gěi wǒ liǎng ge bāozi.",
+      "meaningVi": "Xin cho tôi hai cái bánh bao.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-1.wav",
+        "sha256": "9af48ef141ffb65819a9bf078b172a946d846b412f1c2057a8854a5eb4b10566"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-2",
+      "text": "来两个包子，谢谢。",
+      "pinyin": "Lái liǎng ge bāozi, xièxie.",
+      "meaningVi": "Cho hai cái bánh bao, cảm ơn.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-2.wav",
+        "sha256": "934a7671a2ddf0c58ade968320a48e7afebfb13ba7e5ba188a66f23f10a38a4e"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-3",
+      "text": "我要一个包子。",
+      "pinyin": "Wǒ yào yí ge bāozi.",
+      "meaningVi": "Tôi muốn một cái bánh bao.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-3.wav",
+        "sha256": "74f857159a46d2bc59c4e2284d9797ffba9390e6b6c1c57fb7f2b160bf4c6e42"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-prompt",
+      "text": "你要几个包子？",
+      "pinyin": "Nǐ yào jǐ ge bāozi?",
+      "meaningVi": "Bạn muốn mấy cái bánh bao?",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-prompt.wav",
+        "sha256": "d309054aa71e3a10c4c56e2df61cbaa8d2ae751ed90847aee6c9487014d609ce"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "quantity-reply",
+      "text": "好的，两个包子。",
+      "pinyin": "Hǎo de, liǎng ge bāozi.",
+      "meaningVi": "Được, hai cái bánh bao.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-reply.wav",
+        "sha256": "cee0ef6599916e15606bdb74e8e750363b03790fcaddb0c851ab4ea86be0941f"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-0",
+      "text": "这个多少钱？",
+      "pinyin": "Zhège duōshao qián?",
+      "meaningVi": "Cái này bao nhiêu tiền?",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-0.wav",
+        "sha256": "6a58d1dbff6302bec1b964a80ae2147ed4e459a8e4d292aef99825ad4d49e233"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-1",
+      "text": "请问，这个多少钱？",
+      "pinyin": "Qǐngwèn, zhège duōshao qián?",
+      "meaningVi": "Xin hỏi, cái này bao nhiêu tiền?",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-1.wav",
+        "sha256": "71e6b5048cc5b7ca85abaf90ea31d2d85a16d1bdf8266141d788d633fcfee54f"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-2",
+      "text": "这个的价格是多少？",
+      "pinyin": "Zhège de jiàgé shì duōshao?",
+      "meaningVi": "Giá của cái này là bao nhiêu?",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-2.wav",
+        "sha256": "5a923ab9328342316e4a21f6f89cc36ff0bce10d802e05f6f6d124579378b1ce"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-3",
+      "text": "这个不要钱。",
+      "pinyin": "Zhège bú yào qián.",
+      "meaningVi": "Cái này không mất tiền.",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-3.wav",
+        "sha256": "dd59898778ce90b35c2979bfdcf3de5ff7d2b9c759626f10b979bdb88c94f654"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-prompt",
+      "text": "你想问什么？",
+      "pinyin": "Nǐ xiǎng wèn shénme?",
+      "meaningVi": "Bạn muốn hỏi gì?",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-prompt.wav",
+        "sha256": "a6fe81af75fab54900d24170e3abbfa8ae55aa9ee30160eee48f95d623308660"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "price-reply",
+      "text": "这个十元。",
+      "pinyin": "Zhège shí yuán.",
+      "meaningVi": "Cái này mười tệ.",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-reply.wav",
+        "sha256": "994f488d598caa0bf813e3d4716835edf02f63db90ab08f35a9ea4cf3e51b1ac"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-0",
+      "text": "图书馆在哪里？",
+      "pinyin": "Túshūguǎn zài nǎlǐ?",
+      "meaningVi": "Thư viện ở đâu?",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-0.wav",
+        "sha256": "4cc83549e03ed417ffa3e22aa002c429bfc06cc3655cbfea0d7d6c3f6e92fc9a"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-1",
+      "text": "请问，图书馆在哪儿？",
+      "pinyin": "Qǐngwèn, túshūguǎn zài nǎr?",
+      "meaningVi": "Xin hỏi, thư viện ở đâu?",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-1.wav",
+        "sha256": "e3bdc72596807825f4aca7950a8941fae7057d92d6d8e58f59e6ef99963c48b3"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-2",
+      "text": "请问，怎么去图书馆？",
+      "pinyin": "Qǐngwèn, zěnme qù túshūguǎn?",
+      "meaningVi": "Xin hỏi, đi tới thư viện thế nào?",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-2.wav",
+        "sha256": "e288193140aac55600fdb0c6ac99e2eb852cb1b0792a2e818c7ad9ed7633db4b"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-3",
+      "text": "我不去图书馆。",
+      "pinyin": "Wǒ bú qù túshūguǎn.",
+      "meaningVi": "Tôi không đi thư viện.",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-3.wav",
+        "sha256": "6cbec0489bc42727997289fc25305578211a1522be6ff455d027c870588b4dfc"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-prompt",
+      "text": "你要去哪里？",
+      "pinyin": "Nǐ yào qù nǎlǐ?",
+      "meaningVi": "Em muốn đi đâu?",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-prompt.wav",
+        "sha256": "0e8a36aa2ee6c3e6f6e9380e2da631ea29348604baba99fea5f97d77cce4fa87"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "directions-reply",
+      "text": "图书馆在教学楼旁边。",
+      "pinyin": "Túshūguǎn zài jiàoxuélóu pángbiān.",
+      "meaningVi": "Thư viện ở cạnh tòa nhà giảng dạy.",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-reply.wav",
+        "sha256": "e195aea5365b19305b76bf98ade0b12032b8e6cdec5f705852b512c05aeb45ac"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-0",
+      "text": "几点开始上课？",
+      "pinyin": "Jǐ diǎn kāishǐ shàngkè?",
+      "meaningVi": "Mấy giờ bắt đầu học?",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-0.wav",
+        "sha256": "21a67177da25008bf0b1c6ccc68a0f854acf0f7ef0c58577af5d4bbc64eba405"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-1",
+      "text": "请问，几点上课？",
+      "pinyin": "Qǐngwèn, jǐ diǎn shàngkè?",
+      "meaningVi": "Xin hỏi, mấy giờ vào học?",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-1.wav",
+        "sha256": "9a7f5744e94de794e56e2b17c30c625c8cf65afced440727f44d5a8bc3de7633"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-2",
+      "text": "上课时间是几点？",
+      "pinyin": "Shàngkè shíjiān shì jǐ diǎn?",
+      "meaningVi": "Giờ vào học là mấy giờ?",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-2.wav",
+        "sha256": "dae228e248983a5e52ef0360c8d2102a53a8d322dd6d51bd36d3bb67f1653cf7"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-3",
+      "text": "今天不上课。",
+      "pinyin": "Jīntiān bú shàngkè.",
+      "meaningVi": "Hôm nay không học.",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-3.wav",
+        "sha256": "db39167d6ee00508c4c2021cb2194c7fdb8dae2486c73a3fe7d08915359458c2"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-prompt",
+      "text": "你想了解上课时间吗？",
+      "pinyin": "Nǐ xiǎng liǎojiě shàngkè shíjiān ma?",
+      "meaningVi": "Em muốn biết giờ vào học phải không?",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-prompt.wav",
+        "sha256": "ffe8c4974df377f96445df54df59b2c2c571ecd5671fa4a8775022b4d21bf7f7"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "schedule-reply",
+      "text": "早上八点开始上课。",
+      "pinyin": "Zǎoshang bā diǎn kāishǐ shàngkè.",
+      "meaningVi": "Bắt đầu học lúc tám giờ sáng.",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-reply.wav",
+        "sha256": "86f8ab1cef3f08d0c04a01abf7e78eeac7928286d0f6cc801aa847a9a7046cbf"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-0",
+      "text": "我来取快递。",
+      "pinyin": "Wǒ lái qǔ kuàidì.",
+      "meaningVi": "Tôi đến lấy bưu kiện.",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-0.wav",
+        "sha256": "2686486440aac77b8d2f30f9e4d65c7f1bb347bdd8ded37b0b3caac3488f6400"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-1",
+      "text": "你好，我来拿快递。",
+      "pinyin": "Nǐ hǎo, wǒ lái ná kuàidì.",
+      "meaningVi": "Xin chào, tôi đến nhận bưu kiện.",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-1.wav",
+        "sha256": "d0afffb363150f10c24682a489e41ff3839f460ea7adaa4ba034737d3769adc5"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-2",
+      "text": "我要取我的快递。",
+      "pinyin": "Wǒ yào qǔ wǒ de kuàidì.",
+      "meaningVi": "Tôi muốn lấy bưu kiện của mình.",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-2.wav",
+        "sha256": "ecff468659709ca24d9224bcb089c8c499b783378a34809b2ec2d0a3792301de"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-3",
+      "text": "我不要这个快递。",
+      "pinyin": "Wǒ bú yào zhège kuàidì.",
+      "meaningVi": "Tôi không muốn bưu kiện này.",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-3.wav",
+        "sha256": "33b2f5af4a33714e550e9271d7bf5e9aa100097e45abbfe76f0649b6f07d402b"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-prompt",
+      "text": "你来做什么？",
+      "pinyin": "Nǐ lái zuò shénme?",
+      "meaningVi": "Bạn đến làm gì?",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-prompt.wav",
+        "sha256": "e0e31d7ec9edd6d20b5559702d8db7def4c6d8866cbb95bb4297e10810c04500"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "parcel-reply",
+      "text": "请出示取件码。",
+      "pinyin": "Qǐng chūshì qǔjiànmǎ.",
+      "meaningVi": "Xin đưa mã lấy hàng.",
+      "context": "Báo đến lấy bưu kiện",
+      "audio": {
+        "path": "public/audio/parcel-reply.wav",
+        "sha256": "64e4da730d24614cb675c4328bae1e6fa555279836bbe8c3518e41b2c6cf497f"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-0",
+      "text": "明天一起吃饭吧。",
+      "pinyin": "Míngtiān yìqǐ chīfàn ba.",
+      "meaningVi": "Ngày mai cùng ăn cơm nhé.",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-0.wav",
+        "sha256": "d67581a197a116ea854700c379ec54b0718f322d7d10fa32b39f6d1eb79a346c"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-1",
+      "text": "明天我们一起吃饭，好吗？",
+      "pinyin": "Míngtiān wǒmen yìqǐ chīfàn, hǎo ma?",
+      "meaningVi": "Ngày mai chúng ta cùng ăn cơm được không?",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-1.wav",
+        "sha256": "d88820bb0fadd4d32465093b6ed14db5aa5a769aa8fe1e489870d185607c628b"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-2",
+      "text": "你明天愿意和我一起吃饭吗？",
+      "pinyin": "Nǐ míngtiān yuànyì hé wǒ yìqǐ chīfàn ma?",
+      "meaningVi": "Ngày mai bạn có muốn ăn cơm cùng tôi không?",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-2.wav",
+        "sha256": "17d11e10978f789c4facdc65bf65b64e3479e66115f3057baedd15c79b835ebb"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-3",
+      "text": "明天不要一起吃饭。",
+      "pinyin": "Míngtiān bú yào yìqǐ chīfàn.",
+      "meaningVi": "Ngày mai đừng ăn cơm cùng nhau.",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-3.wav",
+        "sha256": "6f3e4d142bac159d6b2c9a4880a23c21b6ee62aee836caed82f133335d67e37e"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-prompt",
+      "text": "明天有什么安排？",
+      "pinyin": "Míngtiān yǒu shénme ānpái?",
+      "meaningVi": "Ngày mai có dự định gì?",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-prompt.wav",
+        "sha256": "8b8fe73cc290b70717996add142a043c44daa3041997e33e670aaf5a89f6a756"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "invitation-reply",
+      "text": "好啊，明天一起吃饭。",
+      "pinyin": "Hǎo a, míngtiān yìqǐ chīfàn.",
+      "meaningVi": "Được đấy, ngày mai cùng ăn cơm.",
+      "context": "Mời bạn cùng ăn cơm ngày mai",
+      "audio": {
+        "path": "public/audio/invitation-reply.wav",
+        "sha256": "ce3afde719991b13f3613bef06733f1f7ffe18b9ab11cd99fa2689648e6218c3"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "verdict": "pending",
+      "notes": ""
+    }
+  ],
+  "modelOutputs": [
+    {
+      "id": "output-1",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-2",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-3",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-4",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-5",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-6",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-7",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-8",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-9",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-10",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-11",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-12",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-13",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-14",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-15",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-16",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-17",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-18",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-19",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-20",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-21",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-22",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-23",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-24",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-25",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-26",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-27",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-28",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-29",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    },
+    {
+      "id": "output-30",
+      "input": "",
+      "output": "",
+      "verdict": "pending",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+﻿connection,kind,a_map,a_edge,a_warp_cells,b_map,b_edge,b_warp_cells,a_to_b_arrivals,b_to_a_arrivals,purpose
+R01,outer,dorm,east,"[[19, 7], [19, 8]]",gate,west,"[[0, 7], [0, 8]]","[[1, 7], [1, 8]]","[[18, 7], [18, 8]]",Đường tiếp cận ký túc–cổng
+R02,outer,gate,east,"[[19, 7], [19, 8]]",library,west,"[[0, 7], [0, 8]]","[[1, 7], [1, 8]]","[[18, 7], [18, 8]]",Đường đón tiếp–khu học tập
+R03,outer,library,north,"[[9, 0], [10, 0]]",canteen,south,"[[9, 14], [10, 14]]","[[9, 13], [10, 13]]","[[9, 1], [10, 1]]",Đường học tập–nhà ăn
+R04,outer,canteen,west,"[[0, 7], [0, 8]]",street,east,"[[19, 7], [19, 8]]","[[18, 7], [18, 8]]","[[1, 7], [1, 8]]",Lối nhà ăn–dịch vụ
+R05,outer,street,west,"[[0, 7], [0, 8]]",garden,east,"[[19, 7], [19, 8]]","[[18, 7], [18, 8]]","[[1, 7], [1, 8]]",Đường dạo ven kênh phía đông
+R06,outer,garden,south,"[[9, 14], [10, 14]]",dorm,north,"[[9, 0], [10, 0]]","[[9, 1], [10, 1]]","[[9, 13], [10, 13]]",Lối cảnh quan–khu ở
+R07,shortcut,dorm,south,"[[9, 14], [10, 14]]",canteen,north,"[[9, 0], [10, 0]]","[[9, 1], [10, 1]]","[[9, 13], [10, 13]]",Lối đi ăn sáng nội bộ
+R08,shortcut,gate,north,"[[9, 0], [10, 0]]",street,south,"[[9, 14], [10, 14]]","[[9, 13], [10, 13]]","[[9, 1], [10, 1]]",Trục đón tiếp–dịch vụ
+R09,shortcut,library,east,"[[19, 7], [19, 8]]",garden,west,"[[0, 7], [0, 8]]","[[1, 7], [1, 8]]","[[18, 7], [18, 8]]",Cửa sau thư viện–bờ kênh
+R10,hub-spine,street,north,"[[9, 0], [10, 0]]",library,south,"[[9, 14], [10, 14]]","[[9, 13], [10, 13]]","[[9, 1], [10, 1]]",Trục dịch vụ–thư viện

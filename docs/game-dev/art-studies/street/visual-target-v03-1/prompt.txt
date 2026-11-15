@@ -1,0 +1,15 @@
+EDIT TARGET: the attached street/courier visual study. Preserve its original modern Jiangnan university 2026 art direction, ivory walls, charcoal tiled roofs, glass, walnut, red awning, bun shop, parcel shop, small contemporary NPCs and crafted pixel clusters. Produce a layout-corrected concept, not a poster and not a collage. Do not add text, pseudo-Chinese, numbers, labels, HUD or watermark.
+
+LAYOUT FIRST, following the supplied v0.3 environment-art blockout:
+
+1. Keep one continuous MAIN STREET/PEDestrian lane across the whole image at roughly 62%..77% height. It reaches the LEFT edge to the canteen and the RIGHT edge to the garden. Keep the outer 12% of the lane clear. Give the main lane one readable material and width; no decorative planter, bicycle, tree, NPC group or shadow may make either mouth appear blocked.
+
+2. Build a continuous SIDEWALK/SHOP FRONTAGE strip immediately above the main lane, roughly 47%..62% height. Both shop entrances face this same strip. Each door gets a short direct apron/threshold that joins the sidewalk, with a visibly plausible walking connection. Do not draw two isolated perpendicular paths that dissolve into a blank plaza.
+
+3. Make the LEFT bun/everyday-goods shop and RIGHT parcel shop part of one street composition: align their facade rhythm, roof/eave depth, sidewalk line and frontage height. Between them, replace the empty gap with a defined SHARED FORECOURT/OPEN ARCADE: a small paved public node with a continuous canopy or pergola edge, one modest seating/notice function and clear entrances from the sidewalk. It must be open and walkable, not a solid new building or a new collider. Keep its props above the main lane and away from edge mouths.
+
+4. Show a clear hierarchy at a glance: dark asphalt/stone main street; lighter sidewalk; slightly different shared forecourt; compact building footprints and door thresholds; low-contrast shoulders. Use subtle seams/corners only after this hierarchy reads in grayscale. Avoid decorative paving lines that look like extra paths.
+
+5. Give the facades spatial depth: show a shallow setback or covered threshold, side walls/returns, awning support and the relationship of each shop to the common sidewalk. Keep bicycles, parcels and counters within building/forecourt zones. The courier and shopkeeper need standable pockets near their own doors without occupying the main lane.
+
+Reduce the feeling of two models on an empty background. Keep density urban but calm: one shared street system, one meaningful center node, two distinct shop landmarks. Do not change gameplay IDs, colliders, spawn or exits; this is a visual target before runtime integration. Edge tile/road-marking polish remains a later pass after all six area concepts exist.

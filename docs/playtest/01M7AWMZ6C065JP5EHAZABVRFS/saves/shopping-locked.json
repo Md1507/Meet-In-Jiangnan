@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "revision": 0,
+  "scene": "street",
+  "x": 480,
+  "y": 380,
+  "day": 1,
+  "period": 0,
+  "seed": 2026,
+  "completed": [],
+  "steps": {},
+  "relations": {},
+  "skills": {
+    "speaking": {},
+    "sentence": {},
+    "handwriting": {}
+  },
+  "journal": [],
+  "attempts": [],
+  "events": [],
+  "activities": [],
+  "endingMode": null,
+  "settings": {
+    "volume": 0.6,
+    "pinyin": true,
+    "meaning": true
+  }
+}

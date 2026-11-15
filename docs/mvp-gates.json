@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "content": {
+    "path": "src/content/mvp.json",
+    "sha256": "1c7725684d5136a6d6ae360fd772d596e0699f82aa5bf514213bb690c95b02ea"
+  },
+  "corpus60Text40Audio": {
+    "deferred": true,
+    "reason": "Hoãn corpus game-intent 24/8/8 cho đợt có user thật; FLEURS chỉ là fixture ASR và không có speaker IDs."
+  },
+  "referenceMachine": {
+    "deferred": true,
+    "reason": "Sau khi sửa validator để loại diagnostic dist tạm, report máy chuẩn cũ không còn cùng snapshot; cần benchmark FPS/latency/memory lại trước khi đóng gate."
+  },
+  "realImeAndMic": {
+    "deferred": true,
+    "reason": "Phiên Edge headed mới đã ghi compositionstart/update, thu mic thật 48 kHz, playback, ASR local và track cleanup; chưa có compositionend/Enter rõ ràng và chưa đóng report schema gate cùng revision."
+  },
+  "m2": {
+    "evidence": "docs/evidence/gate-m2.json"
+  },
+  "m3": {
+    "evidence": "docs/evidence/gate-m3.json"
+  },
+  "m4": {
+    "deferred": true,
+    "reason": "Report M4 cũ được đo trước sửa provenance diagnostic; giữ làm tham khảo và chạy lại fault/privacy matrix trên snapshot kế tiếp trước nghiệm thu đầy đủ."
+  }
+}

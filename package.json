@@ -1,0 +1,30 @@
+{
+  "name": "jiangnan-language-spike",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/build-offline.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --experimental-strip-types tests/audio.test.ts && node --experimental-strip-types tests/recorder.test.ts && node --experimental-strip-types tests/intent.test.ts && node --experimental-strip-types tests/model-manager.test.ts && node --test tests/mvp-evidence.test.mjs && node --experimental-strip-types tests/chapter.test.ts && node --experimental-strip-types tests/ambient.test.ts",
+    "test:content": "node scripts/check-content.mjs",
+    "verify:mvp": "node scripts/verify-mvp.mjs",
+    "test:browser": "node scripts/browser-check.mjs",
+    "test:assets": "node scripts/models.mjs && node tests/model-assets.test.mjs",
+    "bench:asr": "node scripts/bench-fleurs.mjs",
+    "bench:intent": "node scripts/bench-intent-corpus.mjs",
+    "bench:browser-ai": "node scripts/bench-browser-ai.mjs",
+    "verify:m0-m1": "npm run typecheck && npm run build && npm run test:unit && npm run test:assets && npm run test:content && npm run test:browser"
+  },
+  "dependencies": {
+    "pixi.js": "8.23.0",
+    "@huggingface/transformers": "4.3.2",
+    "hanzi-writer": "3.7.3"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "playwright": "1.65.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "not-tested",
+  "tester": "",
+  "browser": "",
+  "ime": "",
+  "microphone": "",
+  "cases": [
+    {
+      "id": "ime-candidate-enter",
+      "status": "pending",
+      "observed": "",
+      "log": null
+    },
+    {
+      "id": "mic-record-playback",
+      "status": "pending",
+      "observed": "",
+      "log": null
+    },
+    {
+      "id": "mic-denied",
+      "status": "pending",
+      "observed": "",
+      "log": null
+    },
+    {
+      "id": "mic-unplugged",
+      "status": "pending",
+      "observed": "",
+      "log": null
+    },
+    {
+      "id": "unsupported-codec",
+      "status": "pending",
+      "observed": "",
+      "log": null
+    }
+  ]
+}

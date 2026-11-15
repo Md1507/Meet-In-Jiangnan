@@ -1,0 +1,345 @@
+{
+    "schemaVersion":  1,
+    "audioKind":  "synthetic-local-sapi",
+    "voice":  "Microsoft Huihui Desktop - Chinese (Simplified)",
+    "reviewStatus":  "pending-human",
+    "license":  "public/licenses/ambient-dialogues.txt",
+    "lines":  [
+                  {
+                      "id":  "student-a-newcomer-prompt",
+                      "text":  "你是新来的学生吗？",
+                      "pinyin":  "Nǐ shì xīn lái de xuésheng ma?",
+                      "meaningVi":  "Bạn là sinh viên mới đến à?",
+                      "path":  "public/audio/ambient/student-a-newcomer-prompt.wav",
+                      "sha256":  "dd318c7952ad3c5fded0799fcc3d584ce202d8a62334e7a373021cd1a4134f93"
+                  },
+                  {
+                      "id":  "student-a-newcomer-student-sample",
+                      "text":  "对，我是新生。",
+                      "pinyin":  "Duì, wǒ shì xīnshēng.",
+                      "meaningVi":  "Đúng, mình là sinh viên mới.",
+                      "path":  "public/audio/ambient/student-a-newcomer-student-sample.wav",
+                      "sha256":  "78cd0b11c7b71dcfe696da8a3e76d3dffb5dc481eae9c784d06b2501c9c87c0a"
+                  },
+                  {
+                      "id":  "student-a-newcomer-student-reply",
+                      "text":  "欢迎你！慢慢熟悉这里吧。",
+                      "pinyin":  "Huānyíng nǐ! Mànmàn shúxī zhèlǐ ba.",
+                      "meaningVi":  "Chào mừng bạn! Cứ từ từ làm quen với nơi này nhé.",
+                      "path":  "public/audio/ambient/student-a-newcomer-student-reply.wav",
+                      "sha256":  "26796d18f5ac69f26df2210df414f78845212e49258c1a2d08ee35ab55bdec4c"
+                  },
+                  {
+                      "id":  "student-a-newcomer-visitor-sample",
+                      "text":  "不是，我来找朋友。",
+                      "pinyin":  "Bú shì, wǒ lái zhǎo péngyou.",
+                      "meaningVi":  "Không, mình đến tìm bạn.",
+                      "path":  "public/audio/ambient/student-a-newcomer-visitor-sample.wav",
+                      "sha256":  "4c5e2e89cfcf48bc3494f36ef36ad4c4d6e1cfbbb09709a74142bc5ac06d9e96"
+                  },
+                  {
+                      "id":  "student-a-newcomer-visitor-reply",
+                      "text":  "原来是这样，希望你玩得开心。",
+                      "pinyin":  "Yuánlái shì zhèyàng, xīwàng nǐ wán de kāixīn.",
+                      "meaningVi":  "Ra là vậy, chúc bạn có thời gian vui vẻ.",
+                      "path":  "public/audio/ambient/student-a-newcomer-visitor-reply.wav",
+                      "sha256":  "8310476d718b467e87beaf595bdb5633056c66792ba0639b0a83c254188522cc"
+                  },
+                  {
+                      "id":  "student-a-destination-prompt",
+                      "text":  "你想去哪里？",
+                      "pinyin":  "Nǐ xiǎng qù nǎlǐ?",
+                      "meaningVi":  "Bạn muốn đi đâu?",
+                      "path":  "public/audio/ambient/student-a-destination-prompt.wav",
+                      "sha256":  "37b9942be8f8258cbdeaa7c5ee1d25d9bd284cafbe2173a4b2ef32bb0099fac7"
+                  },
+                  {
+                      "id":  "student-a-destination-place-sample",
+                      "text":  "我想去食堂。",
+                      "pinyin":  "Wǒ xiǎng qù shítáng.",
+                      "meaningVi":  "Mình muốn đến nhà ăn.",
+                      "path":  "public/audio/ambient/student-a-destination-place-sample.wav",
+                      "sha256":  "3ada511b352ae94112d78c931c29e34c6c9e593f297fbefe5d9f001666641809"
+                  },
+                  {
+                      "id":  "student-a-destination-place-reply",
+                      "text":  "好的，校园里的路牌可以帮你。",
+                      "pinyin":  "Hǎo de, xiàoyuán lǐ de lùpái kěyǐ bāng nǐ.",
+                      "meaningVi":  "Được, các biển chỉ dẫn trong trường sẽ giúp bạn.",
+                      "path":  "public/audio/ambient/student-a-destination-place-reply.wav",
+                      "sha256":  "610580be5012e5e123822c79e85bee38d4357e86bc8653b76f611908680bd0b9"
+                  },
+                  {
+                      "id":  "student-a-destination-unsure-sample",
+                      "text":  "我还没想好。",
+                      "pinyin":  "Wǒ hái méi xiǎng hǎo.",
+                      "meaningVi":  "Mình vẫn chưa nghĩ ra.",
+                      "path":  "public/audio/ambient/student-a-destination-unsure-sample.wav",
+                      "sha256":  "6a11c549df8d8c384405789347a782673130cafc100047ff69261797b688a89c"
+                  },
+                  {
+                      "id":  "student-a-destination-unsure-reply",
+                      "text":  "没关系，随便走走也不错。",
+                      "pinyin":  "Méi guānxi, suíbiàn zǒuzou yě bú cuò.",
+                      "meaningVi":  "Không sao, đi dạo một chút cũng hay mà.",
+                      "path":  "public/audio/ambient/student-a-destination-unsure-reply.wav",
+                      "sha256":  "893f7a96184ad5f9973981035026210d260477a8e9aec6b753e4bbe52c4bb798"
+                  },
+                  {
+                      "id":  "resident-b-neighborhood-prompt",
+                      "text":  "你喜欢这里的生活吗？",
+                      "pinyin":  "Nǐ xǐhuan zhèlǐ de shēnghuó ma?",
+                      "meaningVi":  "Cháu thích cuộc sống ở đây không?",
+                      "path":  "public/audio/ambient/resident-b-neighborhood-prompt.wav",
+                      "sha256":  "29e98c975f7447b1a21f0095569cc911c374ab8278e7a96b6222f64eb5bf7023"
+                  },
+                  {
+                      "id":  "resident-b-neighborhood-like-sample",
+                      "text":  "我很喜欢这里。",
+                      "pinyin":  "Wǒ hěn xǐhuan zhèlǐ.",
+                      "meaningVi":  "Cháu rất thích nơi này.",
+                      "path":  "public/audio/ambient/resident-b-neighborhood-like-sample.wav",
+                      "sha256":  "9160c59726cc4e1f540b3eec14bc82f937abe17fe40c922e010cee58398ebf11"
+                  },
+                  {
+                      "id":  "resident-b-neighborhood-like-reply",
+                      "text":  "那就好，欢迎常来逛逛。",
+                      "pinyin":  "Nà jiù hǎo, huānyíng cháng lái guàngguang.",
+                      "meaningVi":  "Vậy thì tốt, cháu cứ ghé chơi thường xuyên nhé.",
+                      "path":  "public/audio/ambient/resident-b-neighborhood-like-reply.wav",
+                      "sha256":  "0ac6bae8d72c33e2c46836a1272f5a0cbdccc18cccc1b9bf34de21baffc42cfe"
+                  },
+                  {
+                      "id":  "resident-b-neighborhood-adjusting-sample",
+                      "text":  "我还不太习惯。",
+                      "pinyin":  "Wǒ hái bú tài xíguàn.",
+                      "meaningVi":  "Cháu vẫn chưa quen lắm.",
+                      "path":  "public/audio/ambient/resident-b-neighborhood-adjusting-sample.wav",
+                      "sha256":  "ab58f566274cbc0ea41eef5dd537e79da8c2ce7e9e1084e43e17a8ee2637baed"
+                  },
+                  {
+                      "id":  "resident-b-neighborhood-adjusting-reply",
+                      "text":  "慢慢来，适应新地方需要时间。",
+                      "pinyin":  "Mànmàn lái, shìyìng xīn dìfang xūyào shíjiān.",
+                      "meaningVi":  "Cứ từ từ, làm quen với nơi mới cần thời gian mà.",
+                      "path":  "public/audio/ambient/resident-b-neighborhood-adjusting-reply.wav",
+                      "sha256":  "7d25f8545ed490a1b0a529478cc82817b2d48f66aa2d2718d682dd471cd1d96d"
+                  },
+                  {
+                      "id":  "resident-b-hobby-prompt",
+                      "text":  "你平时喜欢做什么？",
+                      "pinyin":  "Nǐ píngshí xǐhuan zuò shénme?",
+                      "meaningVi":  "Bình thường cháu thích làm gì?",
+                      "path":  "public/audio/ambient/resident-b-hobby-prompt.wav",
+                      "sha256":  "29bc3c6786c6f3e3fe446415e88ce855ac774ab491a787012d8ece33fe259a47"
+                  },
+                  {
+                      "id":  "resident-b-hobby-activity-sample",
+                      "text":  "我喜欢听音乐。",
+                      "pinyin":  "Wǒ xǐhuan tīng yīnyuè.",
+                      "meaningVi":  "Cháu thích nghe nhạc.",
+                      "path":  "public/audio/ambient/resident-b-hobby-activity-sample.wav",
+                      "sha256":  "de8771eb27dcc6bd9eaac7d8814c2f66eb8c3d8438c2fcb394814c8b9bd0871f"
+                  },
+                  {
+                      "id":  "resident-b-hobby-activity-reply",
+                      "text":  "有自己的爱好真好。",
+                      "pinyin":  "Yǒu zìjǐ de àihào zhēn hǎo.",
+                      "meaningVi":  "Có sở thích riêng thật là tốt.",
+                      "path":  "public/audio/ambient/resident-b-hobby-activity-reply.wav",
+                      "sha256":  "a3dd5359d86f971e9633113159cf8ccdd724bbb74b0c290cdc80382bb33ad792"
+                  },
+                  {
+                      "id":  "resident-b-hobby-none-sample",
+                      "text":  "我还没有什么爱好。",
+                      "pinyin":  "Wǒ hái méiyǒu shénme àihào.",
+                      "meaningVi":  "Cháu vẫn chưa có sở thích gì.",
+                      "path":  "public/audio/ambient/resident-b-hobby-none-sample.wav",
+                      "sha256":  "70c0c9b2eda0bbbd31c604dc83dad9527408d805e4eb3050f0da01c1cda66661"
+                  },
+                  {
+                      "id":  "resident-b-hobby-none-reply",
+                      "text":  "没关系，可以慢慢找。",
+                      "pinyin":  "Méi guānxi, kěyǐ mànmàn zhǎo.",
+                      "meaningVi":  "Không sao, cháu cứ từ từ tìm nhé.",
+                      "path":  "public/audio/ambient/resident-b-hobby-none-reply.wav",
+                      "sha256":  "916627b4b6b0d363970fd652414afeac11fd4bf7d337f9f6a83689cc27610ab3"
+                  },
+                  {
+                      "id":  "elder-c-busy-prompt",
+                      "text":  "你今天忙吗？",
+                      "pinyin":  "Nǐ jīntiān máng ma?",
+                      "meaningVi":  "Hôm nay cháu có bận không?",
+                      "path":  "public/audio/ambient/elder-c-busy-prompt.wav",
+                      "sha256":  "23c7f5846359af28daed4ef0bd27c08c877580269bf9538d61f6a347252472c1"
+                  },
+                  {
+                      "id":  "elder-c-busy-busy-sample",
+                      "text":  "今天有点忙。",
+                      "pinyin":  "Jīntiān yǒudiǎn máng.",
+                      "meaningVi":  "Hôm nay cháu hơi bận.",
+                      "path":  "public/audio/ambient/elder-c-busy-busy-sample.wav",
+                      "sha256":  "5e6f6aa4506166930485c9ccc0b07a00a15227bc49b6378e145498258933abd8"
+                  },
+                  {
+                      "id":  "elder-c-busy-busy-reply",
+                      "text":  "那也要记得休息。",
+                      "pinyin":  "Nà yě yào jìde xiūxi.",
+                      "meaningVi":  "Vậy cũng nhớ nghỉ ngơi nhé.",
+                      "path":  "public/audio/ambient/elder-c-busy-busy-reply.wav",
+                      "sha256":  "2d477f5be5ce00d99b32f4710b6e51f34a2c46df9b2a22835b14463460b05bbf"
+                  },
+                  {
+                      "id":  "elder-c-busy-free-sample",
+                      "text":  "我今天不忙。",
+                      "pinyin":  "Wǒ jīntiān bù máng.",
+                      "meaningVi":  "Hôm nay cháu không bận.",
+                      "path":  "public/audio/ambient/elder-c-busy-free-sample.wav",
+                      "sha256":  "0835a2c511d5a165359dc616d632b33f92d707d958d36f46879fba92359bd49f"
+                  },
+                  {
+                      "id":  "elder-c-busy-free-reply",
+                      "text":  "有空出来走走很好。",
+                      "pinyin":  "Yǒu kòng chūlái zǒuzou hěn hǎo.",
+                      "meaningVi":  "Có thời gian ra ngoài đi dạo rất tốt.",
+                      "path":  "public/audio/ambient/elder-c-busy-free-reply.wav",
+                      "sha256":  "7dc838b26132a7e902c6d8e3ff111c6a4db76831b4ddcf63a5f0e14218f5b47b"
+                  },
+                  {
+                      "id":  "elder-c-sit-prompt",
+                      "text":  "要不要在这里坐一会儿？",
+                      "pinyin":  "Yào bu yào zài zhèlǐ zuò yíhuìr?",
+                      "meaningVi":  "Cháu có muốn ngồi đây một lát không?",
+                      "path":  "public/audio/ambient/elder-c-sit-prompt.wav",
+                      "sha256":  "73d68bc38ba5dd3ab0d4037c43da9e783789da4eb2dea191a9acbbbbd1c055ed"
+                  },
+                  {
+                      "id":  "elder-c-sit-yes-sample",
+                      "text":  "好啊，谢谢您。",
+                      "pinyin":  "Hǎo a, xièxie nín.",
+                      "meaningVi":  "Vâng ạ, cháu cảm ơn ông.",
+                      "path":  "public/audio/ambient/elder-c-sit-yes-sample.wav",
+                      "sha256":  "4ce95c156c287edea18539bb033695e3f59c136cd984729da30ebc2be0739d58"
+                  },
+                  {
+                      "id":  "elder-c-sit-yes-reply",
+                      "text":  "别客气，休息一下吧。",
+                      "pinyin":  "Bié kèqi, xiūxi yíxià ba.",
+                      "meaningVi":  "Đừng khách sáo, nghỉ một chút nhé.",
+                      "path":  "public/audio/ambient/elder-c-sit-yes-reply.wav",
+                      "sha256":  "9d78669c450e7e0be9e70971d1cf0b52e165eab3561ab78e171aadf3402306a4"
+                  },
+                  {
+                      "id":  "elder-c-sit-no-sample",
+                      "text":  "不用了，谢谢您。",
+                      "pinyin":  "Bú yòng le, xièxie nín.",
+                      "meaningVi":  "Thôi ạ, cháu cảm ơn ông.",
+                      "path":  "public/audio/ambient/elder-c-sit-no-sample.wav",
+                      "sha256":  "35f899a685d01b8f54bc1ba1c2db5a4f140a7034a272cacf32a8575bdfcda439"
+                  },
+                  {
+                      "id":  "elder-c-sit-no-reply",
+                      "text":  "好的，路上小心。",
+                      "pinyin":  "Hǎo de, lùshang xiǎoxīn.",
+                      "meaningVi":  "Được, cháu đi đường cẩn thận nhé.",
+                      "path":  "public/audio/ambient/elder-c-sit-no-reply.wav",
+                      "sha256":  "373efb1f7bbda2a6676117c795d5880261f3d83e248bf2cc5adbee9852842918"
+                  },
+                  {
+                      "id":  "guard-purpose-prompt",
+                      "text":  "同学，你来做什么？",
+                      "pinyin":  "Tóngxué, nǐ lái zuò shénme?",
+                      "meaningVi":  "Em đến đây làm gì?",
+                      "path":  "public/audio/ambient/guard-purpose-prompt.wav",
+                      "sha256":  "685f0ed492612a6e9444f01aaf95b28a3c24420e6c7ca2339ace683b89cbd25b"
+                  },
+                  {
+                      "id":  "guard-purpose-study-sample",
+                      "text":  "我来上课。",
+                      "pinyin":  "Wǒ lái shàngkè.",
+                      "meaningVi":  "Cháu đến học.",
+                      "path":  "public/audio/ambient/guard-purpose-study-sample.wav",
+                      "sha256":  "08be6777179200d1f7692de8e57db2f1a6a915789a276305a5b11e5aa9a24906"
+                  },
+                  {
+                      "id":  "guard-purpose-study-reply",
+                      "text":  "好，祝你学习顺利。",
+                      "pinyin":  "Hǎo, zhù nǐ xuéxí shùnlì.",
+                      "meaningVi":  "Được, chúc cháu học tập thuận lợi.",
+                      "path":  "public/audio/ambient/guard-purpose-study-reply.wav",
+                      "sha256":  "4559e56a75b3ed7036850f742a9ffa2ed9d92484d0682727c57cf7ce209f4c82"
+                  },
+                  {
+                      "id":  "guard-purpose-visit-sample",
+                      "text":  "我来找朋友。",
+                      "pinyin":  "Wǒ lái zhǎo péngyou.",
+                      "meaningVi":  "Cháu đến tìm bạn.",
+                      "path":  "public/audio/ambient/guard-purpose-visit-sample.wav",
+                      "sha256":  "a137d40e9cdd20afc406834c4fbafe10adfce5596127631e1b36ac8e740acb29"
+                  },
+                  {
+                      "id":  "guard-purpose-visit-reply",
+                      "text":  "好，可以先联系你的朋友。",
+                      "pinyin":  "Hǎo, kěyǐ xiān liánxì nǐ de péngyou.",
+                      "meaningVi":  "Được, cháu có thể liên lạc với bạn trước.",
+                      "path":  "public/audio/ambient/guard-purpose-visit-reply.wav",
+                      "sha256":  "d359675d9e052c09c11519b699d41f98374d4ff86b9372e60a4fd820b2614802"
+                  },
+                  {
+                      "id":  "guard-purpose-parcel-sample",
+                      "text":  "我来拿快递。",
+                      "pinyin":  "Wǒ lái ná kuàidì.",
+                      "meaningVi":  "Cháu đến nhận bưu kiện.",
+                      "path":  "public/audio/ambient/guard-purpose-parcel-sample.wav",
+                      "sha256":  "256f09bd094f1c1b6ad4a5f52ad21e18aa92f9b97ac0fe5eedf76ee9ab793b9b"
+                  },
+                  {
+                      "id":  "guard-purpose-parcel-reply",
+                      "text":  "记得准备好取件码。",
+                      "pinyin":  "Jìde zhǔnbèi hǎo qǔjiànmǎ.",
+                      "meaningVi":  "Nhớ chuẩn bị mã lấy hàng nhé.",
+                      "path":  "public/audio/ambient/guard-purpose-parcel-reply.wav",
+                      "sha256":  "a0c8c448c79826e639ef50d3b1d508ebbfb61c670ddc3a942d0ac2f1df4e646d"
+                  },
+                  {
+                      "id":  "guard-card-prompt",
+                      "text":  "你带学生证了吗？",
+                      "pinyin":  "Nǐ dài xuéshengzhèng le ma?",
+                      "meaningVi":  "Cháu mang thẻ sinh viên chưa?",
+                      "path":  "public/audio/ambient/guard-card-prompt.wav",
+                      "sha256":  "b4f2c5cef34af2421608645bb9843a1701c9e66e446543dddb7b3027915e1aca"
+                  },
+                  {
+                      "id":  "guard-card-have-sample",
+                      "text":  "带了，在这里。",
+                      "pinyin":  "Dài le, zài zhèlǐ.",
+                      "meaningVi":  "Cháu mang rồi, ở đây ạ.",
+                      "path":  "public/audio/ambient/guard-card-have-sample.wav",
+                      "sha256":  "2c44c8ef9ff31e6b03e3dc2c843e4f9b7f83f0cd5728368b6b8f3c123f63ce3b"
+                  },
+                  {
+                      "id":  "guard-card-have-reply",
+                      "text":  "好的，请保管好。",
+                      "pinyin":  "Hǎo de, qǐng bǎoguǎn hǎo.",
+                      "meaningVi":  "Được, cháu giữ cẩn thận nhé.",
+                      "path":  "public/audio/ambient/guard-card-have-reply.wav",
+                      "sha256":  "4a18a05de6d6848004390d9654f36f168b1f412b4782916b3be220106db292c9"
+                  },
+                  {
+                      "id":  "guard-card-missing-sample",
+                      "text":  "我忘带了。",
+                      "pinyin":  "Wǒ wàng dài le.",
+                      "meaningVi":  "Cháu quên mang rồi.",
+                      "path":  "public/audio/ambient/guard-card-missing-sample.wav",
+                      "sha256":  "c1187b85e78a6596d0e683619d875f6a1cfa57e6d40a698564919b6eddb3dabc"
+                  },
+                  {
+                      "id":  "guard-card-missing-reply",
+                      "text":  "没关系，下次出门记得检查一下。",
+                      "pinyin":  "Méi guānxi, xià cì chūmén jìde jiǎnchá yíxià.",
+                      "meaningVi":  "Không sao, lần sau ra ngoài nhớ kiểm tra nhé.",
+                      "path":  "public/audio/ambient/guard-card-missing-reply.wav",
+                      "sha256":  "72f3b73e2e4d45dbc25184d7408710aa2aceb983f50d1b7f1439ac2b6e7d147f"
+                  }
+              ]
+}

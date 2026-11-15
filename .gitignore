@@ -1,0 +1,94 @@
+# bint:begin
+.bint/local.yml
+.codex/hooks.json
+# bint:end
+
+# Dependencies, generated builds and caches
+node_modules/
+/dist/
+/coverage/
+/.vite/
+/.cache/
+/.vercel/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Downloaded AI assets (restore with: node scripts/models.mjs --download)
+/public/models/
+/public/runtime/
+# Downloaded benchmark audio (restore with: python scripts/fetch-fleurs.py)
+/tests/fixtures/fleurs/*.wav
+
+# Local agent, task and editor configuration
+/.agents/
+/.bint/
+/.codex/
+/.claude/
+/.idea/
+/.vscode/
+
+# Secrets and local environment; keep templates safe to share
+*.local
+*.local.*
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+/.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials.json
+credentials.*.json
+service-account*.json
+
+# Raw test/benchmark output may contain transcripts, device or network details.
+# Keep authored Markdown summaries and synthetic playtest saves.
+*.log
+/test-results/
+/playwright-report/
+/blob-report/
+/docs/evidence/*
+!/docs/evidence/*.md
+/docs/playtest/**/evidence/
+/docs/*-results.json
+*.har
+*.trace.zip
+trace.zip
+
+# Player exports, recordings and other private local data
+/recordings/
+/private/
+/local-data/
+/downloads/
+
+# Local textbook reference supplied by the user; see docs/learning-sources/.
+/[[]hanka.edu.vn] 301 cau dam thoai tieng Hoa - pdf - video-mp3/
+
+giang-nam-ngay-*.json
+storage-state*.json
+storageState*.json
+cookies.json
+
+# Temporary, backup, crash and OS files
+*.tmp
+*.temp
+*.partial
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+*.dmp
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,4 @@
+Hẹn ở Giang Nam — original chapter text and vector pixel art, 2026.
+CC0-1.0 dedication for these newly generated assets. Draft language: human review pending.
+Audio: local eSpeak-NG Mandarin formant synthesis of this text; not human recordings.
+Engine source/license: https://github.com/espeak-ng/espeak-ng (GPL-3.0-or-later); engine is a build tool, not bundled in the game.

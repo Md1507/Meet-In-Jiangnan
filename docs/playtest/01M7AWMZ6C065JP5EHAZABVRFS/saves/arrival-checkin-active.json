@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "revision": 0,
+  "scene": "gate",
+  "x": 480,
+  "y": 380,
+  "day": 1,
+  "period": 0,
+  "seed": 2026,
+  "completed": [],
+  "steps": {
+    "arrival": [
+      "greeting",
+      "introduction"
+    ]
+  },
+  "relations": {},
+  "skills": {
+    "speaking": {},
+    "sentence": {},
+    "handwriting": {}
+  },
+  "journal": [
+    {
+      "id": "greeting-0",
+      "text": "老师好。",
+      "pinyin": "Lǎoshī hǎo.",
+      "meaningVi": "Em chào thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-0.wav",
+        "sha256": "9af814d84ea70cf6c05ef862e071ab56b8b3daa090ab4c52e4d3b66d884d010b"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 1,
+      "dueDays": [
+        2,
+        4,
+        8
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "introduction-0",
+      "text": "我叫小雨。",
+      "pinyin": "Wǒ jiào Xiǎoyǔ.",
+      "meaningVi": "Tôi tên là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-0.wav",
+        "sha256": "e19a5774ae97dfde5d663950b23b73976178645e70625638477c61ba73cf19ba"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 1,
+      "dueDays": [
+        2,
+        4,
+        8
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    }
+  ],
+  "attempts": [
+    {
+      "scenario": "greeting",
+      "text": "老师好。",
+      "source": "typed",
+      "hint": 0,
+      "day": 1,
+      "accepted": true
+    },
+    {
+      "scenario": "introduction",
+      "text": "我叫小雨。",
+      "source": "typed",
+      "hint": 0,
+      "day": 1,
+      "accepted": true
+    }
+  ],
+  "events": [],
+  "activities": [],
+  "endingMode": null,
+  "settings": {
+    "volume": 0.6,
+    "pinyin": true,
+    "meaning": true
+  }
+}

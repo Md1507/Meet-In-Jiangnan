@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+let p='src/main.ts',s=fs.readFileSync(p,'utf8');
+s=s.replace("let composing=false, justComposed=false, session=0, url='';","let composing=false, justComposed=false, session=0, recordingVersion=0, url='';");
+s=s.replace("const close=()=>{session++;recorder.stop();", "const close=()=>{session++;recordingVersion++;recorder.stop();");
+s=s.replace("rawTranscript='';model.cancel();try{await recorder.start();", "rawTranscript='';recordingVersion++;model.cancel();try{await recorder.start();");
+s=s.replace("recorder.onRecording=async blob=>{if(current!==session)return;", "recorder.onRecording=async blob=>{const version=recordingVersion;if(current!==session)return;");
+s=s.replace("if(!hasAudibleSignal(pcm))", "if(current!==session||version!==recordingVersion)return;if(!hasAudibleSignal(pcm))");
+s=s.replace("if(current!==session)return;rawTranscript=text", "if(current!==session||version!==recordingVersion)return;rawTranscript=text");
+s=s.replace("if(current===session)feedback.textContent='Không thể chép lời.", "if(current===session&&version===recordingVersion)feedback.textContent='Không thể chép lời.");
+s=s.replace("el<HTMLButtonElement>('#hint-stroke').onclick=()=>writer.animateCharacter();", "el<HTMLButtonElement>('#hint-stroke').onclick=()=>writer.highlightStroke(0);");
+fs.writeFileSync(p,s);

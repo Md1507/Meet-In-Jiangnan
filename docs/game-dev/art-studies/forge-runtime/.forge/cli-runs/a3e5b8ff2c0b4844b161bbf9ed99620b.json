@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "provider": "openai",
+  "kind": "image",
+  "route": "codex-cli",
+  "requestedModel": "codex-image_gen",
+  "options": {
+    "tool": "image_gen"
+  },
+  "promptSha256": "f7e55dde9c47b5ff57d00aa1e2cce951c55518a5d110ac78e7c1a9a8b05c2851",
+  "references": [
+    {
+      "sha256": "c9d080b23d74338ec0da65d9a6fdad0dbaa43c8f3c99757169d9a6acb4715954",
+      "bytes": 3058855
+    }
+  ],
+  "fingerprint": "c7220f51b792faa005c4d2243b94db751f92b59ea12247262cc81b7c5ec01e9f",
+  "estimate": {
+    "usd": 0.0,
+    "currency": "USD",
+    "pricesVersion": "2026-10-06",
+    "items": [],
+    "basis": "subscription quota call: no per-call USD price; counted by call caps"
+  },
+  "consent": {
+    "provider": "openai",
+    "model": "codex-image_gen",
+    "calls": 1,
+    "estimateUsd": 0.0,
+    "route": "codex-cli",
+    "quota": true,
+    "account": "the user's own Codex sign-in (ChatGPT)",
+    "note": "uses the subscription quota of that sign-in, never API credit"
+  },
+  "artSource": "host_image",
+  "execution": "execute",
+  "status": "done",
+  "outputDir": "../../../garden/visual-target-v03-1",
+  "receipt": {
+    "startedAt": "2026-11-14T15:05:37.078Z",
+    "submittedAt": "2026-11-14T15:05:37.089Z",
+    "completedAt": "2026-11-14T15:07:20.190Z",
+    "wallMs": 103112,
+    "providerMs": 103047,
+    "attempt": 1,
+    "purpose": "v0.3 layout correction: garden bridge, canal, pavilion access and clear main path",
+    "toolVersion": "cli_media/0.6.0",
+    "outcomeCode": "ok"
+  },
+  "ledger": {
+    "projectDir": "../..",
+    "reservationId": "c6e1e920f3e5494b91868518e7e2ffc5",
+    "status": "done"
+  },
+  "cliRun": {
+    "tool": "codex",
+    "runId": "a3e5b8ff2c0b4844b161bbf9ed99620b",
+    "cwd": "<tmp>/forge-cli-a3e5b8ff2c0b-560aae74",
+    "startedAt": "2026-11-14T15:05:37.078Z",
+    "version": "0.167.2",
+    "versionText": "codex-cli 0.167.2",
+    "recipe": "codex-exec-imagegen/1",
+    "home": "CODEX_HOME",
+    "verifiedBefore": true,
+    "threadId": "01a1da97-b444-78f0-82ce-2f78168c1174"
+  },
+  "adoption": {
+    "method": "native-run-folder",
+    "source": "CODEX_HOME/generated_images/01a1da97-b444-78f0-82ce-2f78168c1174/exec-b9cdef5e-496d-4342-a19c-70293311d7c2.png",
+    "sourceSha256": "9eac36c4ada07eb295abb1f4bfb22d5a0513152c63ef434a6445fc44f67788d4",
+    "sourceMtime": "2026-11-14T15:07:15Z",
+    "freshAfter": "2026-11-14T15:05:37.091Z",
+    "checks": [
+      "inside the CLI's own folder for this run",
+      "no symlink or junction",
+      "regular file of a sane size",
+      "newer than the run",
+      "magic bytes",
+      "decodes",
+      "exactly one output",
+      "exclusive copy with matching sha256"
+    ],
+    "finalAnswerNamesFile": true
+  },
+  "artifact": {
+    "path": "../../../garden/visual-target-v03-1/generated.png",
+    "sha256": "9eac36c4ada07eb295abb1f4bfb22d5a0513152c63ef434a6445fc44f67788d4",
+    "bytes": 3243590,
+    "format": "PNG",
+    "size": [
+      1671,
+      941
+    ]
+  }
+}

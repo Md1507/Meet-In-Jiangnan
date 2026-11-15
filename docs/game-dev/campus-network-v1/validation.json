@@ -1,0 +1,36 @@
+{
+  "status": "passed-data-validation-not-runtime-playtest",
+  "maps": 6,
+  "width": 20,
+  "height": 15,
+  "two_way_connections": 10,
+  "directed_warp_objects": 40,
+  "distinct_neighbors": {
+    "dorm": 3,
+    "gate": 3,
+    "library": 4,
+    "canteen": 3,
+    "street": 4,
+    "garden": 3
+  },
+  "graph_diameter_map_transitions": 2,
+  "average_map_transitions_distinct_pair": 1.3333333333333333,
+  "checks": [
+    "exact JSON keys/types/dimensions/tile IDs",
+    "all grass/road/warp tiles reachable",
+    "road-only center-to-all-exits connectivity",
+    "all warp tiles registered exactly once",
+    "three or four distinct adjacent areas per map",
+    "two-tile ports and closed unused edges",
+    "complete paired-edge terrain equality and tangential coordinate matching",
+    "reciprocal warps and safe inward road arrivals",
+    "two garden bridges across canal"
+  ],
+  "not_checked": [
+    "runtime integration",
+    "actor bounds/tile pixel size",
+    "visual art",
+    "human playtest"
+  ],
+  "maps_sha256": "08e23f643b455fc135ef23695bbb3e6aca18ae50bb6b54fc03a7371551818a1d"
+}

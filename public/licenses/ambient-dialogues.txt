@@ -1,0 +1,8 @@
+Hẹn ở Giang Nam — original optional NPC conversation text, 2026.
+CC0-1.0 dedication for the newly authored conversation text.
+Topic reference: the user's local 301 conversation collection; no book pages,
+recordings, video segments or extended dialogues were copied into these assets.
+Audio is synthetic speech of the original text, generated locally using
+Microsoft Huihui Desktop (Simplified Chinese), Windows SAPI. It is not a human
+recording. The voice engine is not included in the game.
+Per-line text and SHA-256: ambient-audio.json. Human language/audio review pending.

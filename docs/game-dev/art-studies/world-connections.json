@@ -1,0 +1,332 @@
+{
+  "status": "proposed-art-contract-v0.3-2",
+  "source": {
+    "path": "src/content/mvp.json",
+    "sha256": "1c7725684d5136a6d6ae360fd772d596e0699f82aa5bf514213bb690c95b02ea"
+  },
+  "world": {
+    "width": 960,
+    "height": 540
+  },
+  "sharedArtLane": {
+    "leftX": 0,
+    "rightX": 960,
+    "topY": 348,
+    "bottomY": 412,
+    "centerY": 380,
+    "safeActorOriginY": [
+      370,
+      396
+    ]
+  },
+  "currentRuntime": {
+    "source": "src/chapter/app.ts",
+    "sha256": "9434c510a006ebaa23ef9fc1fc290a49c8fff10483bfd3f1d800f883b8dc0f90",
+    "automaticHorizontalEdgeTravel": true,
+    "leftThresholdX": 32,
+    "rightThresholdX": 928,
+    "triggerLimitedToArtLaneY": false,
+    "arrivalUsesDestinationCenterSpawn": true
+  },
+  "scenes": [
+    {
+      "scene": "dorm",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "garden",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "gate",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    },
+    {
+      "scene": "gate",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "dorm",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "library",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    },
+    {
+      "scene": "library",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "gate",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "canteen",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    },
+    {
+      "scene": "canteen",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "library",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "street",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    },
+    {
+      "scene": "street",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "canteen",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "garden",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    },
+    {
+      "scene": "garden",
+      "ports": [
+        {
+          "side": "left",
+          "destination": "street",
+          "destinationSide": "right",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        },
+        {
+          "side": "right",
+          "destination": "dorm",
+          "destinationSide": "left",
+          "artOpeningY": [
+            332,
+            416
+          ]
+        }
+      ],
+      "existingSpawn": {
+        "x": 480,
+        "y": 380
+      },
+      "existingColliders": [
+        [
+          64,
+          64,
+          336,
+          280
+        ],
+        [
+          624,
+          64,
+          896,
+          280
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "method": "static manifest reciprocity and rectangle overlap only",
+    "results": [
+      {
+        "scene": "dorm",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      },
+      {
+        "scene": "gate",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      },
+      {
+        "scene": "library",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      },
+      {
+        "scene": "canteen",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      },
+      {
+        "scene": "street",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      },
+      {
+        "scene": "garden",
+        "reciprocalExitPairs": 2,
+        "proposedCorridorClearOfExistingColliders": true,
+        "spawnYFitsProposedCorridor": true
+      }
+    ],
+    "artworkMeasured": false,
+    "runtimeTraversalTested": false
+  },
+  "camera": {
+    "mode": "top-down orthographic with shallow front face",
+    "maxStudyFrontFaceWorldUnits": 16,
+    "groundBuildingBridgeActorSharedAxes": true
+  },
+  "streetFunction": "campus pedestrian street with low-speed bicycles; no motor-vehicle lane",
+  "notes": [
+    "Visual layout proposal only; runtime trigger remains x-based and unchanged.",
+    "Bridge orientation must be perpendicular to horizontal canal and its deck must connect both bank paths."
+  ]
+}

@@ -1,0 +1,21 @@
+EDIT TARGET: attached street visual target v0.3-2. Preserve the improved shallow top-down orthographic camera, distinct bun shop and parcel shop, warm Jiangnan university palette, NPC scale and shared street concept. Make one final layout correction for review.
+
+COMPOSITION AND ROAD FUNCTION:
+- This is a campus pedestrian street with low-speed bicycles, not a car road. Use medium-light warm-grey stone paving, no wide dark asphalt field.
+- Keep the main pedestrian/bicycle lane continuous across the left and right edges, but make it a compact band only about 9–12% of image height, centered around normalized y=70%..78% (world y≈348..412). Do not leave a huge empty road-shaped area below it. Keep only a narrow, purposeful lower shoulder/sidewalk and a small amount of ground margin.
+- Expand the functional frontage above the lane so the composition is balanced: continuous sidewalk, door aprons, shared forecourt and shop footprints occupy the center of the scene. The player and ambient students should look embedded in that street system, not stranded in a lower field.
+
+CAMERA:
+- Keep ground, roofs, doors, thresholds, arcade, props and actors in one top-down orthographic convention with shallow front bands. Roof/top planes carry most building identity; no tall front-facing facade and no strong 3/4 perspective.
+- Preserve enough roof plane to read both buildings, but keep visible wall/fascia shallow and aligned with the sidewalk.
+
+CENTER FORECOURT / ARCADE:
+- Replace the oversized full-width central roof with a SMALL, shallow open campus arcade or tile-and-walnut awning set back from the sidewalk. Its roof depth is modest and should not visually merge into the two shop roofs as one giant building.
+- Keep the center a purposeful open student forecourt: one bench and one notice board set at the rear, clear walking space in front, and two short connections to the common sidewalk. Any posts sit at the rear/side edge, outside the walking line. No glass wall or new solid building.
+
+SHOP ACCESS AND IDENTITY:
+- Left: bun/everyday-goods shop with a compact planned bike bay in its own apron, service counter and clear threshold.
+- Right: parcel shop with locker/scanner frontage, parcel waiting pocket and courier standable area.
+- Both doors directly meet the continuous sidewalk; no decorative path dissolves into blank ground. Keep NPCs near these functions and clear of edge mouths.
+
+No text, pseudo-Chinese, labels, HUD, watermark, collage or extra exits. This remains a visual study and must not imply changes to IDs, collider, spawn or scene runtime.

@@ -1,0 +1,18 @@
+EDIT TARGET: the attached v0.3 garden/canal visual study. Preserve its Jiangnan university 2026 mood, willow/olive palette, compact canal garden, modern pavilion, small students and crafted pixel-art quality. This is a new camera-and-layout correction, not a final runtime background.
+
+CAMPUS CONTINUITY — mandatory:
+This garden and canal are landscaped grounds INSIDE the same Jiangnan university campus, not an off-campus water town or tourist district. Its LEFT edge continues the internal student-services lane and its RIGHT edge leads to the campus dormitory. Match paired path paving, width, height, camera, character scale, lighting and campus material families. Keep the current connections and approved routes; introduce no route outside the university. The pavilion and canal must belong to the same campus as the canteen, library and dormitory.
+
+CAMERA CONTRACT — mandatory:
+Use one coherent top-down orthographic camera with a shallow front-face convention. The ground, stone paths, canal banks, bridge deck, pavilion roof, door thresholds and characters share the same axes. Show the pavilion primarily as a readable roof/top plane and shallow wall band; do NOT show a tall front elevation as if viewed straight on and then paste it onto top-down ground. Keep any visible front fascia below about 16 world units in the study. Character feet remain on the ground plane. No isometric diamonds, no cinematic perspective, no separate viewpoint for the bridge.
+
+BRIDGE CONTRACT — mandatory:
+The canal flows horizontally left-to-right. The bridge has a vertical north-south axis, perpendicular to that canal. Draw the BRIDGE DECK as a clear walkable vertical top plane with stone paving visible from one bank to the other, wide enough for one game character plus a small passing margin. Add narrow stone parapets/rails along its sides. The arch is only a shallow side-elevation cue beneath the deck, small and subordinate; never draw a giant frontal half-circle arch as the main visual. Both deck ends must visibly touch stone bank paths and merge into the same paving rhythm. One approach comes from the upper garden path/pavilion forecourt; the other reaches the main east-west path at y about 348..412. No bridge foot touches water, grass or a flower bed. The bridge is a secondary path, not an edge transition.
+
+TRAFFIC AND ZONES:
+- Main pedestrian path runs continuously x=0..960 at y about 348..412, with clear outer edge mouths toward street and dorm. No plants, rocks, water, rails, NPCs or shadows block the outer 12%.
+- Canal is a compact horizontal water zone above the main path, with separate stone banks and visible walkable paths along/around it. Do not let water span the main path or create a false cut.
+- Left pavilion has a door facing a small stone forecourt. A short direct apron reaches the upper garden path, then a clear branch reaches the main path. Do not leave the door on a decorative facade with no access.
+- Grass, willow, shrubs and flowers are side zones/background; they must not slice the main path or hide bridge junctions. Keep tree trunks and hard rocks away from the exact connection points.
+
+Keep the composition compact around pavilion, canal, bridge and one right-side dorm-direction landmark rather than filling the whole width with water. No text, labels, pseudo-Chinese, HUD, watermark or collage.

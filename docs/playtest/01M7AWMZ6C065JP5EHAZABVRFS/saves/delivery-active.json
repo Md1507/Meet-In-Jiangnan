@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "revision": 0,
+  "scene": "street",
+  "x": 480,
+  "y": 380,
+  "day": 5,
+  "period": 0,
+  "seed": 2026,
+  "completed": [
+    "arrival",
+    "breakfast",
+    "classroom",
+    "shopping"
+  ],
+  "steps": {
+    "arrival": [
+      "greeting",
+      "introduction",
+      "checkin"
+    ],
+    "breakfast": [
+      "order_water"
+    ],
+    "classroom": [
+      "directions",
+      "schedule"
+    ],
+    "shopping": [
+      "price",
+      "quantity"
+    ]
+  },
+  "relations": {
+    "officer": 1,
+    "seller": 1,
+    "mentor": 1,
+    "shopkeeper": 1
+  },
+  "skills": {
+    "speaking": {},
+    "sentence": {},
+    "handwriting": {}
+  },
+  "journal": [
+    {
+      "id": "greeting-0",
+      "text": "老师好。",
+      "pinyin": "Lǎoshī hǎo.",
+      "meaningVi": "Em chào thầy/cô.",
+      "context": "Chào thầy cô khi gặp mặt",
+      "audio": {
+        "path": "public/audio/greeting-0.wav",
+        "sha256": "9af814d84ea70cf6c05ef862e071ab56b8b3daa090ab4c52e4d3b66d884d010b"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 1,
+      "dueDays": [
+        2,
+        4,
+        8
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "introduction-0",
+      "text": "我叫小雨。",
+      "pinyin": "Wǒ jiào Xiǎoyǔ.",
+      "meaningVi": "Tôi tên là Tiểu Vũ.",
+      "context": "Giới thiệu tên Tiểu Vũ",
+      "audio": {
+        "path": "public/audio/introduction-0.wav",
+        "sha256": "e19a5774ae97dfde5d663950b23b73976178645e70625638477c61ba73cf19ba"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 1,
+      "dueDays": [
+        2,
+        4,
+        8
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "checkin-0",
+      "text": "我来办理入住。",
+      "pinyin": "Wǒ lái bànlǐ rùzhù.",
+      "meaningVi": "Tôi đến làm thủ tục nhận phòng.",
+      "context": "Báo đến làm thủ tục nhận phòng",
+      "audio": {
+        "path": "public/audio/checkin-0.wav",
+        "sha256": "8cc32787d93bf13f43b4c9560eb41ba1cd2276dd77ba1e74fcd4e49a9c8162f1"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 1,
+      "dueDays": [
+        2,
+        4,
+        8
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "order_water-0",
+      "text": "我要一杯热水。",
+      "pinyin": "Wǒ yào yì bēi rèshuǐ.",
+      "meaningVi": "Tôi muốn một cốc nước nóng.",
+      "context": "Gọi một cốc nước nóng",
+      "audio": {
+        "path": "public/audio/order_water-0.wav",
+        "sha256": "617fc251447fbe4af95f6cb55db34821a1ae22a5a460fb81e47503cc5f6bf4d0"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 2,
+      "dueDays": [
+        3,
+        5,
+        9
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "directions-0",
+      "text": "图书馆在哪里？",
+      "pinyin": "Túshūguǎn zài nǎlǐ?",
+      "meaningVi": "Thư viện ở đâu?",
+      "context": "Hỏi thư viện ở đâu",
+      "audio": {
+        "path": "public/audio/directions-0.wav",
+        "sha256": "4cc83549e03ed417ffa3e22aa002c429bfc06cc3655cbfea0d7d6c3f6e92fc9a"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 3,
+      "dueDays": [
+        4,
+        6,
+        10
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "schedule-0",
+      "text": "几点开始上课？",
+      "pinyin": "Jǐ diǎn kāishǐ shàngkè?",
+      "meaningVi": "Mấy giờ bắt đầu học?",
+      "context": "Hỏi mấy giờ bắt đầu học",
+      "audio": {
+        "path": "public/audio/schedule-0.wav",
+        "sha256": "21a67177da25008bf0b1c6ccc68a0f854acf0f7ef0c58577af5d4bbc64eba405"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 3,
+      "dueDays": [
+        4,
+        6,
+        10
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "price-0",
+      "text": "这个多少钱？",
+      "pinyin": "Zhège duōshao qián?",
+      "meaningVi": "Cái này bao nhiêu tiền?",
+      "context": "Hỏi giá món đồ này",
+      "audio": {
+        "path": "public/audio/price-0.wav",
+        "sha256": "6a58d1dbff6302bec1b964a80ae2147ed4e459a8e4d292aef99825ad4d49e233"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 4,
+      "dueDays": [
+        5,
+        7,
+        11
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    },
+    {
+      "id": "quantity-0",
+      "text": "我要两个包子。",
+      "pinyin": "Wǒ yào liǎng ge bāozi.",
+      "meaningVi": "Tôi muốn hai cái bánh bao.",
+      "context": "Mua hai cái bánh bao",
+      "audio": {
+        "path": "public/audio/quantity-0.wav",
+        "sha256": "bd094596708a99aeeb639cc76805250770c99f487ce69c7547a59960668c8e72"
+      },
+      "license": {
+        "path": "public/licenses/chapter-original.txt",
+        "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+      },
+      "audioKind": "synthetic-espeak-ng",
+      "reviewStatus": "pending-human",
+      "learnedDay": 4,
+      "dueDays": [
+        5,
+        7,
+        11
+      ],
+      "reviewedDays": [],
+      "hint": 0,
+      "source": "typed"
+    }
+  ],
+  "attempts": [
+    {
+      "scenario": "greeting",
+      "text": "老师好。",
+      "source": "typed",
+      "hint": 0,
+      "day": 1,
+      "accepted": true
+    },
+    {
+      "scenario": "introduction",
+      "text": "我叫小雨。",
+      "source": "typed",
+      "hint": 0,
+      "day": 1,
+      "accepted": true
+    },
+    {
+      "scenario": "checkin",
+      "text": "我来办理入住。",
+      "source": "typed",
+      "hint": 0,
+      "day": 1,
+      "accepted": true
+    },
+    {
+      "scenario": "order_water",
+      "text": "我要一杯热水。",
+      "source": "typed",
+      "hint": 0,
+      "day": 2,
+      "accepted": true
+    },
+    {
+      "scenario": "directions",
+      "text": "图书馆在哪里？",
+      "source": "typed",
+      "hint": 0,
+      "day": 3,
+      "accepted": true
+    },
+    {
+      "scenario": "schedule",
+      "text": "几点开始上课？",
+      "source": "typed",
+      "hint": 0,
+      "day": 3,
+      "accepted": true
+    },
+    {
+      "scenario": "price",
+      "text": "这个多少钱？",
+      "source": "typed",
+      "hint": 0,
+      "day": 4,
+      "accepted": true
+    },
+    {
+      "scenario": "quantity",
+      "text": "我要两个包子。",
+      "source": "typed",
+      "hint": 0,
+      "day": 4,
+      "accepted": true
+    }
+  ],
+  "events": [],
+  "activities": [],
+  "endingMode": null,
+  "settings": {
+    "volume": 0.6,
+    "pinyin": true,
+    "meaning": true
+  }
+}

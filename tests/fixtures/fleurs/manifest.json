@@ -1,0 +1,294 @@
+{
+  "dataset": "google/fleurs",
+  "config": "cmn_hans_cn",
+  "split": "dev",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "license": "CC-BY-4.0",
+  "attribution": "Google FLEURS contributors",
+  "source": "https://huggingface.co/datasets/google/fleurs",
+  "archive": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/cmn_hans_cn/audio/dev.tar.gz",
+  "modifications": "None; original WAV and transcript",
+  "purpose": "ASR smoke only; not the 24/8/8 game intent evaluation corpus; speaker IDs unavailable",
+  "samples": [
+    {
+      "file": "10149760684641961155.wav",
+      "text": "因为远离大陆，哺乳动物无法长途跋涉而来，使得巨龟成为科隆群岛主要的食草动物。",
+      "seconds": 7.44,
+      "gender": "FEMALE",
+      "sha256": "577a635c2261680c61dda5fecbc4f83bff6f37f453665b8d9d1a68f210f57c0a"
+    },
+    {
+      "file": "10291819997967779677.wav",
+      "text": "亚马逊河也是地球上最宽的河流，有些河段的宽度可达6英里。",
+      "seconds": 7.56,
+      "gender": "MALE",
+      "sha256": "8234c830aba9500be3c32dab1f91e72599b9bb03c36f962ae8b6bfc174ca13f0"
+    },
+    {
+      "file": "10519077850963840950.wav",
+      "text": "他称，他制作了一个 WiFi 门铃。",
+      "seconds": 5.58,
+      "gender": "MALE",
+      "sha256": "740b099bcbe2ef18d0605505bdf34494086b2422ce9677b4ab92bc056780aeff"
+    },
+    {
+      "file": "10878784572167100857.wav",
+      "text": "新王国时期的古埃及人惊叹于其前辈的已有一千多年历史的纪念碑。",
+      "seconds": 7.68,
+      "gender": "FEMALE",
+      "sha256": "730e744d3c19f935003323fa93f01059c03cc835c16a0dda0243ddef6a8ec5e1"
+    },
+    {
+      "file": "11184525298057700964.wav",
+      "text": "西班牙人开始了长达三个世纪的殖民时期。",
+      "seconds": 4.74,
+      "gender": "FEMALE",
+      "sha256": "c9d9e8847eefc89ff4e5411e2f35313d72e7777dec4397e139f38013205564d8"
+    },
+    {
+      "file": "11401752723132552192.wav",
+      "text": "内陆水道可以作为假期游玩的一个不错的主题。",
+      "seconds": 4.8,
+      "gender": "FEMALE",
+      "sha256": "0ad2f3362e42d947696df64785e9d22e60260f0944860f5d3963172f4c1a5c05"
+    },
+    {
+      "file": "11883900098453826298.wav",
+      "text": "然后，拉卡·辛格带头唱了拜赞歌。",
+      "seconds": 4.98,
+      "gender": "FEMALE",
+      "sha256": "eba0b68aa12dd62c40f78ea201be03e51f790c1811c8f6b5a646c17a1a9691ed"
+    },
+    {
+      "file": "11896869400830064294.wav",
+      "text": "西班牙人开始了长达三个世纪的殖民时期。",
+      "seconds": 7.26,
+      "gender": "MALE",
+      "sha256": "6be47279f387399fab776347a91a9ce6f85363684239ad6ebc89b0ea54f842ae"
+    },
+    {
+      "file": "11926847670991044823.wav",
+      "text": "有些音乐节会为带小孩的家庭设立特别的露营区。",
+      "seconds": 7.62,
+      "gender": "MALE",
+      "sha256": "f69fd18dd87ad10389756c3bf8873701094bb06427a33a2628902e2a4ed4b287"
+    },
+    {
+      "file": "11978822748877094326.wav",
+      "text": "内陆水道可以作为假期游玩的一个不错的主题。",
+      "seconds": 4.38,
+      "gender": "FEMALE",
+      "sha256": "cfbeb4886b4dd9d0214c0d3b0aaac81a9801a56edf264707e9b7a2032ba0d040"
+    },
+    {
+      "file": "12271166592937959079.wav",
+      "text": "最终，木轮被铁轮所取代。1767 年，第一条全铁轨道问世。",
+      "seconds": 7.38,
+      "gender": "FEMALE",
+      "sha256": "f003e394cc559e65b3ebb99c177adb9afe206488597f87efe57c142fe1414284"
+    },
+    {
+      "file": "12390417728772901363.wav",
+      "text": "阿根廷以拥有世界顶尖的马球队和球员而闻名。",
+      "seconds": 7.68,
+      "gender": "MALE",
+      "sha256": "d0cf95dd79b52248bcef5cf03514d2eb2418033aa5941b4e9d602483cb4cd27f"
+    },
+    {
+      "file": "12407061541266279165.wav",
+      "text": "在组织能够创新前，领导必须创造出一种创新文化，分享知识，并进行有组织的学习。",
+      "seconds": 6.78,
+      "gender": "FEMALE",
+      "sha256": "3f31cc63c7b7be29a49133f4fcf642b35def3e46ae656b94c28dda947ea06e49"
+    },
+    {
+      "file": "12458238763518474227.wav",
+      "text": "这是马特利 (Martelly) 四年来第五次入选海地临时选举委员会 (CEP)。",
+      "seconds": 5.34,
+      "gender": "FEMALE",
+      "sha256": "7ff50f6891de1be36422b981d927c5f502538073aa8ba8a50457df38cc199d74"
+    },
+    {
+      "file": "12592273636388083444.wav",
+      "text": "从国王到平民，它遍布十方的力量影响着每一个人。",
+      "seconds": 4.74,
+      "gender": "FEMALE",
+      "sha256": "f8bdfe60956a229473b0f4ae6fccfd3e945c3cdb6753921b5d74ef5e873445a9"
+    },
+    {
+      "file": "12669688310041695222.wav",
+      "text": "迦南没有大森林，所以木材非常昂贵。",
+      "seconds": 4.14,
+      "gender": "FEMALE",
+      "sha256": "3a16288e653540601c7a54eb285f0625da7e9ca0c5dbba48f29818746ffe3e3d"
+    },
+    {
+      "file": "12720876761211996171.wav",
+      "text": "当地政府警告核电站附近的居民，要待在室内，关掉空调，不要喝自来水。",
+      "seconds": 5.94,
+      "gender": "FEMALE",
+      "sha256": "903b9baa2d91ca850df0e097fea89d58d96badeb7dd171a6cd8d6a82ae6d8f5d"
+    },
+    {
+      "file": "12874255559718766812.wav",
+      "text": "你可以在黑暗中看到金字塔，在节目开始前你可以看到它们默默地在那里。",
+      "seconds": 7.14,
+      "gender": "FEMALE",
+      "sha256": "4dc3e996de58cea97d3a793beca85027b6be07201ea77c5cfbc7e6c5620c8b18"
+    },
+    {
+      "file": "13431952474476517053.wav",
+      "text": "又因为相对偏僻，“廷巴克图”被用来比喻遥远的异国他乡。",
+      "seconds": 7.26,
+      "gender": "FEMALE",
+      "sha256": "0de0a4ab9fc6baf62f2ee8ebbdede0da7859b5b9f0f04ed6b58b9d6008d1dde9"
+    },
+    {
+      "file": "13452153356803873218.wav",
+      "text": "教堂墓地里，一些坟墓上方摆着有趣的大理石鸽子雕塑。",
+      "seconds": 6.48,
+      "gender": "FEMALE",
+      "sha256": "78752c31b13241e052a11aed7daf1e107de5b69779404115730103c40a5c6a70"
+    },
+    {
+      "file": "1366745426988339540.wav",
+      "text": "太空中的卫星接到电话后，几乎是立刻将其反射回去。",
+      "seconds": 4.98,
+      "gender": "FEMALE",
+      "sha256": "06c8c9e0eddfbe0f43319c11719c37f67912112874b531edade36e984e489e78"
+    },
+    {
+      "file": "13719601250695601702.wav",
+      "text": "我觉得这毫无道理；显然不公平。",
+      "seconds": 3.66,
+      "gender": "FEMALE",
+      "sha256": "cf8bd0e5c2aec394069637b4d705bf10ff701b35f1a83277246000aa37d28b06"
+    },
+    {
+      "file": "13767012080146307603.wav",
+      "text": "咖喱饭菜既可以是“干”的，也可以是“湿”的，干湿情况取决于水量多少。",
+      "seconds": 7.62,
+      "gender": "MALE",
+      "sha256": "3b7ba0e38419141473b4312012209cc4ba4e024a86e25e5b7b8ed540fa7121b9"
+    },
+    {
+      "file": "14130676014228881557.wav",
+      "text": "在冰雪覆盖的路面上，摩擦力很小，你不能像在光洁的柏油路上一样开车。",
+      "seconds": 6.36,
+      "gender": "FEMALE",
+      "sha256": "3f3c17e107f2c2cb7bbdca7f247ef7238482c34bb8d82e2a05f99aa95c3cc4d0"
+    },
+    {
+      "file": "1440950289340612986.wav",
+      "text": "这是马特利 (Martelly) 四年来第五次入选海地临时选举委员会 (CEP)。",
+      "seconds": 5.64,
+      "gender": "FEMALE",
+      "sha256": "aed32b477e19484282071454b8c7b2900e4b3f374b8eb31864cde14023d2e505"
+    },
+    {
+      "file": "1456445590578782145.wav",
+      "text": "内陆水道可以作为假期游玩的一个不错的主题。",
+      "seconds": 4.62,
+      "gender": "FEMALE",
+      "sha256": "8d4ee4f3308cabef9fd8c1545943dd8186f46e408afef5382c635d15c2d5e0a8"
+    },
+    {
+      "file": "1478628175764868814.wav",
+      "text": "然后，拉卡·辛格带头唱了拜赞歌。",
+      "seconds": 6.42,
+      "gender": "MALE",
+      "sha256": "06a8a03362646cff6eb04dcebab072f470f01aa95f1352564d91a264843d5742"
+    },
+    {
+      "file": "14796953969874615547.wav",
+      "text": "阿根廷以拥有世界顶尖的马球队和球员而闻名。",
+      "seconds": 7.14,
+      "gender": "MALE",
+      "sha256": "a6001abf640e72db2638a405dae9e20dad382cc43fccbed893149fb38e49ec20"
+    },
+    {
+      "file": "14914093536536976090.wav",
+      "text": "7 月下旬报告了本季节的第一批病例。",
+      "seconds": 5.82,
+      "gender": "MALE",
+      "sha256": "d42ae141a998566dbd2473036928263182b27d4ce770ff1e271d49fa838c116c"
+    },
+    {
+      "file": "15119654797764315030.wav",
+      "text": "西班牙人开始了长达三个世纪的殖民时期。",
+      "seconds": 4.92,
+      "gender": "FEMALE",
+      "sha256": "7029eafa1b9a46916d1ba75c744a9c3283443dd5d00d48cb0d647992217a9cb0"
+    },
+    {
+      "file": "15335676567828833343.wav",
+      "text": "原来的种群根本没有改变，它们仍需要和以前一样适应环境。",
+      "seconds": 5.7,
+      "gender": "FEMALE",
+      "sha256": "8fe745f83dd3ed74673b54fde79d7305fd683e2070696929f0d56d191404f137"
+    },
+    {
+      "file": "15502119316165638375.wav",
+      "text": "7 月下旬报告了本季节的第一批病例。",
+      "seconds": 5.22,
+      "gender": "FEMALE",
+      "sha256": "6392c67463f0f7cc2075881876e22c043519ea1e60044143cfcf6e856e7b7d22"
+    },
+    {
+      "file": "15526409030129154980.wav",
+      "text": "两小时内，政府大楼附近又发生了三起炸弹爆炸事件。",
+      "seconds": 7.8,
+      "gender": "MALE",
+      "sha256": "f46519b9e3985425e89d670cc1ec5650a5f24e281b13e34473ddbc77263a78ee"
+    },
+    {
+      "file": "15719560074410019863.wav",
+      "text": "在这个迷人的村庄漫步半小时是值得的。",
+      "seconds": 7.92,
+      "gender": "MALE",
+      "sha256": "dabdc0f36112d659a7ef4789df9276c665a2992fced7ef46472faa018b5efab2"
+    },
+    {
+      "file": "15773051360192141160.wav",
+      "text": "有些音乐节会为带小孩的家庭设立特别的露营区。",
+      "seconds": 6.9,
+      "gender": "MALE",
+      "sha256": "b34da32e7d5347421754ef3365edf50c252890cc6acb16f3badfb93b36e99bf0"
+    },
+    {
+      "file": "15862057001911172718.wav",
+      "text": "它也没有权力推翻各州之间的税法和关税。",
+      "seconds": 5.46,
+      "gender": "FEMALE",
+      "sha256": "0a0050862654ab17623726aabe035c65c562f559fc4055bc3d1347c2f0081c39"
+    },
+    {
+      "file": "162645787048957234.wav",
+      "text": "所有的这些都成为了独立的学科，着重为现实生活中的问题提供解决方案。",
+      "seconds": 6.84,
+      "gender": "FEMALE",
+      "sha256": "d3b169574c52c13d2a1d70fa8a9da8de86e8afd17a902e88a25b3ee77e097e57"
+    },
+    {
+      "file": "16310254616266041554.wav",
+      "text": "原来的种群根本没有改变，它们仍需要和以前一样适应环境。",
+      "seconds": 6.6,
+      "gender": "FEMALE",
+      "sha256": "942253e1a02a1f51c66df726db37a53260c7b8cc3760d20deea8f0244572123c"
+    },
+    {
+      "file": "16344808851156693606.wav",
+      "text": "绘图分析的结果将发布在公网上。",
+      "seconds": 3.9,
+      "gender": "FEMALE",
+      "sha256": "57ae1b3c91316c3430bad3a8fcf45eb7c4d258336345b717dbbc7b71e9e5e629"
+    },
+    {
+      "file": "16742255866960866027.wav",
+      "text": "摩尔多瓦 (Moldova) 的主要宗教是东正教。",
+      "seconds": 4.38,
+      "gender": "FEMALE",
+      "sha256": "e500cf28458d065fba4e26671e35af36cac70cb33e68de880b57d559aaa85a31"
+    }
+  ]
+}

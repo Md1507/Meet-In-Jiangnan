@@ -1,0 +1,15 @@
+EDIT TARGET: the attached garden/canal visual study. Use it only as the art-style and subject reference. Preserve the warm Jiangnan university 2026 feeling, modern glass pavilion, willow trees, stone, flowers, water reflections, small contemporary students, and crafted pixel-art rendering. Make a new layout-corrected concept of the same garden; do not add labels, diagrams or a collage.
+
+LAYOUT FIRST, following the supplied v0.3 environment-art blockout:
+
+1. A SINGLE CLEAR MAIN PEDESTRIAN PATH is a continuous horizontal band across the full image at roughly 62%..77% height. It must visibly reach the extreme LEFT edge toward the shopping street and the extreme RIGHT edge toward the dorm. Use one coherent paving material and width. Keep both outer 12% of that band empty of plants, rocks, water, bridge rails, NPCs, shadows or furniture. Do not let grass shapes or decorative grout create fake breaks in this path.
+
+2. Place a narrower canal ABOVE the main path, with a clear stone bank on both sides. The canal should occupy a compact middle/upper garden zone rather than spanning almost the entire width of the image. It must never cross, overlap or visually sever the main path. End the water before the outer edge mouths or use planted embankments that clearly show the main path continues behind the garden. Water and bank must have separate silhouettes.
+
+3. The small arched stone bridge must connect two walkable banks with two obvious approach paths: one approach from the upper garden path and one approach down to the main path. Both bridge ends must meet solid bank/stone path, never grass, water, a wall or a random flower bed. Keep rails/trees away from the exact junctions. The bridge is a secondary landmark, not the east-west screen exit.
+
+4. The modern glass pavilion on the LEFT must have a readable door facing a small stone forecourt, with a direct short walkway from its threshold to the upper garden path and then to the main path. Group the pavilion, forecourt and canal bank as one functional zone; don't leave the building floating on a horizontal strip. On the RIGHT, use a compact dorm-side notice/bike area as a second functional zone with a clear walkable connection.
+
+5. Separate traffic from scenery: main path and bridge approaches are gameplay-priority; side paths and forecourts are secondary; willow canopies, shrubs, flowers and rocks are decoration. Keep decorative plants out of path junctions. If a tree is close to a path, show a clear walk-around space and do not make its shadow look like water or a wall. Do not imply new colliders beyond existing gameplay data.
+
+Reduce the panoramic, horizontally stretched feeling by giving the upper garden a compact composition and a clear central activity node. Preserve the established palette and character scale, but let path geometry, banks and entrances read at gameplay size before adding detail. No cinematic horizon, no extra top/bottom exits, no text, no pseudo-Chinese, no watermark. This is a visual target for review, not a final runtime background.

@@ -1,0 +1,21 @@
+{
+  "original": {
+    "path": "public/licenses/chapter-original.txt",
+    "sha256": "416eb5d8df882024a4967fe3f68ad061e8bd883d4389eeb700df8a753ce22320"
+  },
+  "hanzi": {
+    "repo": "chanind/hanzi-writer-data",
+    "revision": "68d10a4b21150cae5e1ebbd223eed289cf32d90c",
+    "license": "Arphic Public License",
+    "characters": "你好我是学生人中国大小一二三口水日月来去"
+  },
+  "font": {
+    "repo": "notofonts/noto-cjk",
+    "revision": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+    "license": "SIL OFL-1.1"
+  },
+  "audio": {
+    "tool": "espeakng-loader 0.2.4 / eSpeak-NG",
+    "kind": "local synthetic Mandarin, human review pending"
+  }
+}

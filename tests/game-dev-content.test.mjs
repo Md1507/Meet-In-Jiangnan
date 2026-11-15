@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import {content} from '../src/chapter/content.ts';
+import {questNarratives,lessonContexts,characterContexts,daySixPreparation} from '../src/content/chapter-context.ts';
+import {validChapter} from '../src/chapter/engine.ts';
+import {readFileSync} from 'node:fs';
+const ids=x=>x.map(v=>v.id).sort();
+assert.deepEqual(Object.keys(questNarratives).sort(),ids(content.quests));
+for(const value of Object.values(questNarratives))for(const key of ['entry','locked','active','error','cancel','complete','replay'])assert.ok(value[key]?.trim(),key);
+assert.deepEqual(Object.keys(lessonContexts).sort(),ids(content.sentenceLessons));
+assert.deepEqual(Object.keys(characterContexts).sort(),ids(content.characters));
+for(const action of daySixPreparation.actions){const list=action.kind==='lesson'?content.sentenceLessons:action.kind==='character'?content.characters:content.scenarios;assert.ok(list.some(x=>x.id===action.targetId));}
+const dir='docs/playtest/01M7AWMZ6C065JP5EHAZABVRFS/saves/';
+const load=name=>JSON.parse(readFileSync(dir+name+'.json','utf8'));
+for(const name of ['new-game','canteen-before','canteen-after','day6-preparation','day7-ending-ready'])assert.ok(validChapter(load(name)),name);
+assert.equal(validChapter(load('invalid-schema')),false);
+const before=load('canteen-before'),after=load('canteen-after'),six=load('day6-preparation'),seven=load('day7-ending-ready');
+assert.equal(before.day,2);assert.equal(before.scene,'canteen');assert.ok(!before.completed.includes('breakfast'));assert.deepEqual(before.skills.speaking,{});
+assert.ok(after.completed.includes('breakfast'));assert.equal(after.relations.seller,1);assert.deepEqual(after.skills.speaking,{});assert.ok(after.journal.some(j=>j.source==='typed'));
+assert.equal(six.day,6);assert.ok(six.completed.includes('delivery'));assert.ok(!six.skills.sentence['lesson-10']&&!six.skills.handwriting['我']);
+assert.equal(seven.day,7);assert.ok(seven.skills.sentence['lesson-10']&&seven.skills.handwriting['我']);assert.ok(!seven.completed.includes('welcome'));
+console.log('Metadata references, branches and fixture milestones validated.');

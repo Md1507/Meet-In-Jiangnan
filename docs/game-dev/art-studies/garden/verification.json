@@ -1,0 +1,24 @@
+{
+  "take": "visual-target-1",
+  "status": "file-checked-only",
+  "png": {
+    "size": [1672, 941],
+    "bytes": 3058855,
+    "sha256": "c9d080b23d74338ec0da65d9a6fdad0dbaa43c8f3c99757169d9a6acb4715954"
+  },
+  "jobStatus": "done",
+  "route": "local:codex-cli",
+  "cliVersion": "0.167.2",
+  "checks": [
+    "PNG signature and dimensions match job.json",
+    "byte count and SHA-256 match job.json",
+    "source manifest/runtime not changed by this study"
+  ],
+  "notProven": [
+    "runtime loader integration",
+    "edge-to-edge traversal or arrival placement",
+    "seam match with street or dorm",
+    "pixel-grid/alpha/anchor acceptance",
+    "user visual approval"
+  ]
+}

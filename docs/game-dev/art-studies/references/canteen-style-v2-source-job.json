@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "provider": "openai",
+  "kind": "image",
+  "route": "codex-cli",
+  "requestedModel": "codex-image_gen",
+  "options": {
+    "tool": "image_gen"
+  },
+  "promptSha256": "25ccfae86d4572efa8c04fe4c992b6bafbcc06524f408c65900d2273de327173",
+  "references": [
+    {
+      "sha256": "73dd53b699de635d9be28c986c4fa7d3914c0bdb53cd7aee228397ffb460c88a",
+      "bytes": 2362902
+    }
+  ],
+  "fingerprint": "3b18e16383bf704be04e39689a044a6fdc5859f1eb8ff69974377662dd58476a",
+  "estimate": {
+    "usd": 0.0,
+    "currency": "USD",
+    "pricesVersion": "2026-10-06",
+    "items": [],
+    "basis": "subscription quota call: no per-call USD price; counted by call caps"
+  },
+  "consent": {
+    "provider": "openai",
+    "model": "codex-image_gen",
+    "calls": 1,
+    "estimateUsd": 0.0,
+    "route": "codex-cli",
+    "quota": true,
+    "account": "the user's own Codex sign-in (ChatGPT)",
+    "note": "uses the subscription quota of that sign-in, never API credit"
+  },
+  "artSource": "host_image",
+  "execution": "execute",
+  "status": "done",
+  "receipt": {
+    "startedAt": "2026-11-14T13:04:15.451Z",
+    "submittedAt": "2026-11-14T13:04:15.470Z",
+    "completedAt": "2026-11-14T13:05:11.505Z",
+    "wallMs": 56055,
+    "providerMs": 55985,
+    "attempt": 1,
+    "purpose": "User requested five ambient student NPCs in liked canteen visual target",
+    "toolVersion": "cli_media/0.6.0",
+    "outcomeCode": "ok"
+  },
+  "ledger": {
+    "projectDir": "../forge-runtime",
+    "reservationId": "3300c22426e242e6b19c92b703365332",
+    "status": "done"
+  },
+  "cliRun": {
+    "tool": "codex",
+    "runId": "fb369267ec9b48b0b880d361aced232a",
+    "cwd": "<tmp>/forge-cli-fb369267ec9b-01788d6c",
+    "startedAt": "2026-11-14T13:04:15.451Z",
+    "version": "0.167.2",
+    "versionText": "codex-cli 0.167.2",
+    "recipe": "codex-exec-imagegen/1",
+    "home": "CODEX_HOME",
+    "verifiedBefore": true,
+    "threadId": "01a1da28-97f1-7490-894d-4f52989de8cb"
+  },
+  "adoption": {
+    "method": "native-run-folder",
+    "source": "CODEX_HOME/generated_images/01a1da28-97f1-7490-894d-4f52989de8cb/exec-3b9f2d12-4f76-4aa3-82df-8a174735e585.png",
+    "sourceSha256": "c1cf61311df1777b3a1f338807ecb10225bf2d8fd2b46ca20d44907c97db6e23",
+    "sourceMtime": "2026-11-14T13:05:06Z",
+    "freshAfter": "2026-11-14T13:04:15.476Z",
+    "checks": [
+      "inside the CLI's own folder for this run",
+      "no symlink or junction",
+      "regular file of a sane size",
+      "newer than the run",
+      "magic bytes",
+      "decodes",
+      "exactly one output",
+      "exclusive copy with matching sha256"
+    ],
+    "finalAnswerNamesFile": true
+  },
+  "artifact": {
+    "path": "generated.png",
+    "sha256": "c1cf61311df1777b3a1f338807ecb10225bf2d8fd2b46ca20d44907c97db6e23",
+    "bytes": 2242027,
+    "format": "PNG",
+    "size": [
+      1671,
+      941
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "reviewStatus": "pending-human",
+  "source": "Original campus conversations; topic reference: docs/learning-sources/301-conversation.md",
+  "npcs": [
+    {
+      "id": "student-a", "name": "Sinh viên An · 小安", "scene": "library", "ambientIndex": 1,
+      "context": "Một sinh viên đang nghỉ giữa hai tiết học muốn làm quen với bạn.",
+      "turns": [
+        {
+          "id": "newcomer", "goal": "Cho An biết bạn là sinh viên mới hay đến thăm. Cả hai đều được.",
+          "prompt": ["你是新来的学生吗？", "Nǐ shì xīn lái de xuésheng ma?", "Bạn là sinh viên mới đến à?"],
+          "hints": ["Bạn có thể nhận mình là sinh viên mới hoặc nói mình đến thăm.", "新生 xīnshēng · 刚来 gāng lái · 找朋友 zhǎo péngyou"],
+          "responses": [
+            {"intent": "student", "sample": ["对，我是新生。", "Duì, wǒ shì xīnshēng.", "Đúng, mình là sinh viên mới."], "reply": ["欢迎你！慢慢熟悉这里吧。", "Huānyíng nǐ! Mànmàn shúxī zhèlǐ ba.", "Chào mừng bạn! Cứ từ từ làm quen với nơi này nhé."]},
+            {"intent": "visitor", "sample": ["不是，我来找朋友。", "Bú shì, wǒ lái zhǎo péngyou.", "Không, mình đến tìm bạn."], "reply": ["原来是这样，希望你玩得开心。", "Yuánlái shì zhèyàng, xīwàng nǐ wán de kāixīn.", "Ra là vậy, chúc bạn có thời gian vui vẻ."]}
+          ]
+        },
+        {
+          "id": "destination", "goal": "Nói nơi bạn muốn đến: thư viện, nhà ăn, ký túc, vườn, cổng trường hoặc cửa hàng.",
+          "prompt": ["你想去哪里？", "Nǐ xiǎng qù nǎlǐ?", "Bạn muốn đi đâu?"],
+          "hints": ["Chỉ cần nói địa điểm cũng đủ ý. Nếu chưa biết đi đâu, có thể nói thật.", "图书馆 túshūguǎn · 食堂 shítáng · 宿舍 sùshè · 还没想好 hái méi xiǎng hǎo"],
+          "responses": [
+            {"intent": "place", "sample": ["我想去食堂。", "Wǒ xiǎng qù shítáng.", "Mình muốn đến nhà ăn."], "reply": ["好的，校园里的路牌可以帮你。", "Hǎo de, xiàoyuán lǐ de lùpái kěyǐ bāng nǐ.", "Được, các biển chỉ dẫn trong trường sẽ giúp bạn." ]},
+            {"intent": "unsure", "sample": ["我还没想好。", "Wǒ hái méi xiǎng hǎo.", "Mình vẫn chưa nghĩ ra."], "reply": ["没关系，随便走走也不错。", "Méi guānxi, suíbiàn zǒuzou yě bú cuò.", "Không sao, đi dạo một chút cũng hay mà."]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resident-b", "name": "Cô Bình · 平阿姨", "scene": "street", "ambientIndex": 3,
+      "context": "Một người sống ở khu phố hỏi thăm cuộc sống mới của bạn.",
+      "turns": [
+        {
+          "id": "neighborhood", "goal": "Chia sẻ bạn thích nơi này hay vẫn chưa quen. Không có lựa chọn bị chấm sai.",
+          "prompt": ["你喜欢这里的生活吗？", "Nǐ xǐhuan zhèlǐ de shēnghuó ma?", "Cháu thích cuộc sống ở đây không?"],
+          "hints": ["Thích, không thích hoặc chưa quen đều là câu trả lời hợp lệ.", "喜欢 xǐhuan · 不喜欢 bù xǐhuan · 不习惯 bù xíguàn"],
+          "responses": [
+            {"intent": "like", "sample": ["我很喜欢这里。", "Wǒ hěn xǐhuan zhèlǐ.", "Cháu rất thích nơi này."], "reply": ["那就好，欢迎常来逛逛。", "Nà jiù hǎo, huānyíng cháng lái guàngguang.", "Vậy thì tốt, cháu cứ ghé chơi thường xuyên nhé."]},
+            {"intent": "adjusting", "sample": ["我还不太习惯。", "Wǒ hái bú tài xíguàn.", "Cháu vẫn chưa quen lắm."], "reply": ["慢慢来，适应新地方需要时间。", "Mànmàn lái, shìyìng xīn dìfang xūyào shíjiān.", "Cứ từ từ, làm quen với nơi mới cần thời gian mà."]}
+          ]
+        },
+        {
+          "id": "hobby", "goal": "Chia sẻ một sở thích: đọc sách, nghe nhạc, đi dạo, chơi game hoặc thể thao.",
+          "prompt": ["你平时喜欢做什么？", "Nǐ píngshí xǐhuan zuò shénme?", "Bình thường cháu thích làm gì?"],
+          "hints": ["Có thể trả lời ngắn bằng một hoạt động. Chưa có sở thích cũng nói được.", "看书 kàn shū · 听音乐 tīng yīnyuè · 散步 sànbù · 玩游戏 wán yóuxì · 运动 yùndòng"],
+          "responses": [
+            {"intent": "activity", "sample": ["我喜欢听音乐。", "Wǒ xǐhuan tīng yīnyuè.", "Cháu thích nghe nhạc."], "reply": ["有自己的爱好真好。", "Yǒu zìjǐ de àihào zhēn hǎo.", "Có sở thích riêng thật là tốt."]},
+            {"intent": "none", "sample": ["我还没有什么爱好。", "Wǒ hái méiyǒu shénme àihào.", "Cháu vẫn chưa có sở thích gì."], "reply": ["没关系，可以慢慢找。", "Méi guānxi, kěyǐ mànmàn zhǎo.", "Không sao, cháu cứ từ từ tìm nhé."]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elder-c", "name": "Ông Trần · 陈爷爷", "scene": "garden", "ambientIndex": 5,
+      "context": "Một ông lão đang nghỉ bên vườn, vui vẻ hỏi thăm bạn.",
+      "turns": [
+        {
+          "id": "busy", "goal": "Nói hôm nay bạn bận hay rảnh. Câu trả lời nào cũng được.",
+          "prompt": ["你今天忙吗？", "Nǐ jīntiān máng ma?", "Hôm nay cháu có bận không?"],
+          "hints": ["Nói bận hoặc không bận; không cần lặp cả câu hỏi.", "忙 máng · 没空 méi kòng · 不忙 bù máng · 有空 yǒu kòng"],
+          "responses": [
+            {"intent": "busy", "sample": ["今天有点忙。", "Jīntiān yǒudiǎn máng.", "Hôm nay cháu hơi bận."], "reply": ["那也要记得休息。", "Nà yě yào jìde xiūxi.", "Vậy cũng nhớ nghỉ ngơi nhé."]},
+            {"intent": "free", "sample": ["我今天不忙。", "Wǒ jīntiān bù máng.", "Hôm nay cháu không bận."], "reply": ["有空出来走走很好。", "Yǒu kòng chūlái zǒuzou hěn hǎo.", "Có thời gian ra ngoài đi dạo rất tốt."]}
+          ]
+        },
+        {
+          "id": "sit", "goal": "Nhận lời ngồi nghỉ hoặc lịch sự từ chối.",
+          "prompt": ["要不要在这里坐一会儿？", "Yào bu yào zài zhèlǐ zuò yíhuìr?", "Cháu có muốn ngồi đây một lát không?"],
+          "hints": ["Bạn có thể nhận lời hoặc từ chối; NPC sẽ tôn trọng câu trả lời.", "好的 hǎo de · 坐一会儿 zuò yíhuìr · 不用了 bú yòng le · 谢谢 xièxie"],
+          "responses": [
+            {"intent": "yes", "sample": ["好啊，谢谢您。", "Hǎo a, xièxie nín.", "Vâng ạ, cháu cảm ơn ông."], "reply": ["别客气，休息一下吧。", "Bié kèqi, xiūxi yíxià ba.", "Đừng khách sáo, nghỉ một chút nhé."]},
+            {"intent": "no", "sample": ["不用了，谢谢您。", "Bú yòng le, xièxie nín.", "Thôi ạ, cháu cảm ơn ông."], "reply": ["好的，路上小心。", "Hǎo de, lùshang xiǎoxīn.", "Được, cháu đi đường cẩn thận nhé."]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guard", "name": "Chú bảo vệ · 保安叔叔", "scene": "gate", "ambientIndex": 7,
+      "context": "Chú bảo vệ ở cổng trường hỏi thăm người mới đến. Đây là trò chuyện, không phải thủ tục mở cổng.",
+      "turns": [
+        {
+          "id": "purpose", "goal": "Nói bạn đến học, tìm bạn hoặc nhận bưu kiện.",
+          "prompt": ["同学，你来做什么？", "Tóngxué, nǐ lái zuò shénme?", "Em đến đây làm gì?"],
+          "hints": ["Chỉ cần nói việc mình đến làm, không cần đúng tên một nhiệm vụ.", "上课 shàngkè · 找朋友 zhǎo péngyou · 取快递 qǔ kuàidì"],
+          "responses": [
+            {"intent": "study", "sample": ["我来上课。", "Wǒ lái shàngkè.", "Cháu đến học."], "reply": ["好，祝你学习顺利。", "Hǎo, zhù nǐ xuéxí shùnlì.", "Được, chúc cháu học tập thuận lợi."]},
+            {"intent": "visit", "sample": ["我来找朋友。", "Wǒ lái zhǎo péngyou.", "Cháu đến tìm bạn."], "reply": ["好，可以先联系你的朋友。", "Hǎo, kěyǐ xiān liánxì nǐ de péngyou.", "Được, cháu có thể liên lạc với bạn trước."]},
+            {"intent": "parcel", "sample": ["我来拿快递。", "Wǒ lái ná kuàidì.", "Cháu đến nhận bưu kiện."], "reply": ["记得准备好取件码。", "Jìde zhǔnbèi hǎo qǔjiànmǎ.", "Nhớ chuẩn bị mã lấy hàng nhé."]}
+          ]
+        },
+        {
+          "id": "card", "goal": "Cho chú biết bạn có mang thẻ sinh viên không. Không có thẻ vẫn trò chuyện được.",
+          "prompt": ["你带学生证了吗？", "Nǐ dài xuéshengzhèng le ma?", "Cháu mang thẻ sinh viên chưa?"],
+          "hints": ["Đã mang, chưa mang hoặc quên mang đều có phản hồi riêng.", "带了 dài le · 有 yǒu · 没带 méi dài · 忘带 wàng dài"],
+          "responses": [
+            {"intent": "have", "sample": ["带了，在这里。", "Dài le, zài zhèlǐ.", "Cháu mang rồi, ở đây ạ."], "reply": ["好的，请保管好。", "Hǎo de, qǐng bǎoguǎn hǎo.", "Được, cháu giữ cẩn thận nhé."]},
+            {"intent": "missing", "sample": ["我忘带了。", "Wǒ wàng dài le.", "Cháu quên mang rồi."], "reply": ["没关系，下次出门记得检查一下。", "Méi guānxi, xià cì chūmén jìde jiǎnchá yíxià.", "Không sao, lần sau ra ngoài nhớ kiểm tra nhé."]}
+          ]
+        }
+      ]
+    }
+  ]
+}

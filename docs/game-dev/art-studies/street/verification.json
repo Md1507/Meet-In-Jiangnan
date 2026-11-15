@@ -1,0 +1,24 @@
+{
+  "pngChecks": [
+    {
+      "take": 1,
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 2359144,
+      "sha256": "279421d42af30c4684dc40e90a5571082ee5b6be6da0ddd13309f2ea32d87b0e"
+    },
+    {
+      "take": 2,
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 2339779,
+      "sha256": "38d6310296567f7bab37e32179f71894ce70b48d1ad852a9be0af8d25f2101dc"
+    }
+  ],
+  "runtimeSourcesUnchanged": true,
+  "connectionData": "12 reciprocal exits, 6 corridors checked against collider data; artwork/runtime not certified"
+}
