@@ -1,0 +1,55 @@
+{
+  "schema": "pixel-map-review/render-evidence@1",
+  "sourceSvg": "C:/Users/LENOVO/AppData/Local/bint/state/Game-fd2129962cbf/worktrees/01M7G4A8J4DQ4K797CFQ1MFR3D/docs/game-dev/street-asset-kit/assembled-preview.svg",
+  "cleanSvg": "evidence/street-clean.svg",
+  "tool": {
+    "playwright": "1.65.0",
+    "chromium": "158.0.8127.18",
+    "headless": true
+  },
+  "views": [
+    {
+      "file": "evidence/preview-overlay.png",
+      "viewport": "320x240",
+      "scale": "1x",
+      "overlay": true,
+      "viewed": true,
+      "independentRenderVerified": false,
+      "sha256": "0532a30fd23addaed9ef6f3bed68853b63376edc49a43f0b38bc2a0902fe3993"
+    },
+    {
+      "file": "evidence/preview-clean.png",
+      "viewport": "320x240",
+      "scale": "1x",
+      "overlay": false,
+      "viewed": true,
+      "independentRenderVerified": false,
+      "sha256": "b4309d5db5fe6674c3c1a95164cb70f7e8ec0e5d004d75e7e5e9a0db2e952fe3"
+    },
+    {
+      "file": "evidence/preview-overlay-4x.png",
+      "viewport": "1280x960",
+      "scale": "4x integer CSS enlargement",
+      "overlay": true,
+      "viewed": true,
+      "independentRenderVerified": false,
+      "sha256": "c3c4e29d5b5ccf30d0240c66652f414b224923061bd8bef48a1a84904091f540"
+    },
+    {
+      "file": "evidence/preview-clean-4x.png",
+      "viewport": "1280x960",
+      "scale": "4x integer CSS enlargement",
+      "overlay": false,
+      "viewed": true,
+      "independentRenderVerified": false,
+      "sha256": "527eecb498338a86d1286a15bb3275bd6d14ae20e094591c7995343dd34d2bbc"
+    }
+  ],
+  "limitations": [
+    "The clean SVG is a non-mutating assembler output generated with overlay=false from the donor JSON/manifest; it remains SVG output.",
+    "Raster screenshots are visual evidence only and do not convert the SVG assets into production PNG pixel art.",
+    "No water material appears in the street map; water/shoreline coverage is therefore N/A for this visual slice and remains a six-map library gap."
+  ],
+  "provenance": "Bản nháp từ bước planning bị di chuyển; b-feat đã xem bốn ảnh nhưng chưa tự render lại hoặc xác minh độc lập linked assets. Orca open runtime_open_timeout; visual QA trực tiếp pending.",
+  "supersededBy": "verified-render.json; independent rendering and inspection now complete; this file documents historical draft only"
+}

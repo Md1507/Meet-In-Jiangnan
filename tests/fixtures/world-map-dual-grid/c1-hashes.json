@@ -1,0 +1,38 @@
+{
+  "dorm": {
+    "layout": "ada9fa5fe1e541691c972b5ad40ac823e178dd381315b96f07a0941d77801f3c",
+    "walkable": "5a9a035fb66a41550ebfe9c8ab3c95166dd41d5bf7a31ddec74ab631f2f6482f",
+    "blocked": "1b811bfa4df7dac3fa7b1205a00dd02f63f98ebeac03b7738d2141f0b2c16520",
+    "candidate": "54730f4131c5faf09f6f16246c0cca52dbafe5e5bdf16f89b0b0b2afd534ffa5"
+  },
+  "gate": {
+    "layout": "00ed68e8793cf38f48c5158c55f8eec38fa7c1185f144a06c5ff5d7060d2222e",
+    "walkable": "8cf197ca877ce6cc89761f3c4a2319e65f0ba0ea0fdf32dec642674b52edb966",
+    "blocked": "d7e52b25a23d19c97a1f205772d339b9d715a525e0b90fe23679ae34797897d7",
+    "candidate": "1457947fa652c7b5fb3db8c043e0ee57b3af4662eb7faed4bd9755a0dd675aca"
+  },
+  "library": {
+    "layout": "425a0ebd75c99fe6a4a9bd7c4ee2c888af5e0c1afe263f4a0f82e456191525ff",
+    "walkable": "a40f1e46e444578f88458b07f258c0435e3eae6c3d97017c46d3e27bfec1053b",
+    "blocked": "1389fd3fe4bd0a537dd8cf9165afd2ccc7fd174f0b4eacc0cd5bd010f4f983a7",
+    "candidate": "c59901bcf30475553cce0200cb3b2cca60cc3297974f1d0a84265dff03051fb4"
+  },
+  "canteen": {
+    "layout": "7a2816db4a82a76043d88ee37d4b4c8b3e81569ae792f4fb11e769307246f908",
+    "walkable": "ed0eb998a3c181a570440e3c093e04c42622635391a550fff6347f0662e6e110",
+    "blocked": "3acd4ddce2b6b972568c15c45f3fa3be480f87953c70a40cde52b283d5d16d01",
+    "candidate": "c181a8bfdb7245377a606a87fa212e3598a4b74e198b2c6242555e13b7feae8a"
+  },
+  "street": {
+    "layout": "39c3cc0091545ead2a4ec0b134e17fc1a6d17d3a2aea80ba0eda351bfcaa1db5",
+    "walkable": "95c8d76a72c5c869d48d7a2b90f35d2b6f2fc9008c924b3a75bbfcad6368fdcc",
+    "blocked": "17091c742073adc8dff573152cacd4e01df4fed2027db9f3dd5b6c967c649550",
+    "candidate": "b19f2181f3fd2a239b7b92e8b0d0ed96b9161f6fbb7845be4dd1a5c91f389782"
+  },
+  "garden": {
+    "layout": "50ecf871343ff10bda568487e5ea5bf56de2d5de1dc25efcd0d7148d324aeb88",
+    "walkable": "889951f397e2c9f22a970d7292856346e0a4439de3a9194365fcd809c889c62e",
+    "blocked": "a53c1617be881f2493eda1f1d9dc4db7ddec0154ac9d248184e5e2e67faf6801",
+    "candidate": "231a06405b16f0a50d23397f488ca3237bf727d53d788c23ea62cdbd5e015bed"
+  }
+}

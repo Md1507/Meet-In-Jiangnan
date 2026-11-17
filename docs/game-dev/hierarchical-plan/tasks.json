@@ -1,0 +1,2528 @@
+{
+  "schema_version": 1,
+  "root_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+  "planned_at": "2026-11-16T15:51:33.118Z",
+  "note": "Planning snapshot. Live status/approvals must be read from Bint. Verification commands are proposed and unexecuted.",
+  "nodes": [
+    {
+      "key": "ROOT",
+      "id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "title": "Hoàn thiện Hẹn ở Giang Nam",
+      "kind": "root",
+      "deps": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "criteria": [
+        "Bản desktop chạy trên HTTPS bằng PixiJS, có 6 khu vực liên thông, di chuyển WASD hoặc phím mũi tên, va chạm và tương tác NPC bằng phím E.",
+        "Chơi trọn chương mở đầu 7 ngày trong năm 2026 với 6 nhiệm vụ cốt truyện, 6 NPC gồm mentor, và một kết thúc kiểm tra giao tiếp đã học.",
+        "Có 4 hoạt động hàng ngày và 4 sự kiện bất ngờ có điều kiện; cùng seed cho cùng chuỗi sự kiện, mỗi sự kiện tối đa một lần mỗi ngày và không khóa nhiệm vụ chính.",
+        "Có 12 tình huống giao tiếp đời thường; mỗi tình huống chấp nhận ít nhất 3 cách diễn đạt đúng và từ chối ít nhất 1 câu sai ý trong bộ kiểm thử.",
+        "Luyện nói ghi âm tối đa 20 giây, nghe lại, nhận bản chép tiếng Trung từ model tại máy và sửa hoặc thu lại; nghiệm thu smoke trên chương hiện tại với một mic thật và một ca phục hồi; không hiển thị điểm thanh điệu hay phát âm suy từ bản chép.",
+        "Luyện viết câu có 10 bài qua bộ gõ pinyin của hệ điều hành, hỗ trợ composition tiếng Trung; nghiệm thu smoke một bài bằng IME thật trên chương hiện tại, không gửi câu khi Enter đang chọn chữ và phản hồi theo ý định cùng thành phần câu.",
+        "Luyện viết tay có 20 chữ Hán, chế độ tô nét, gợi nét và tự viết chữ mục tiêu; phản hồi thứ tự nét, cho thử lại và lưu tiến bộ riêng.",
+        "Mentor hỗ trợ 3 mức gợi ý; sổ tay lưu câu, nghĩa, pinyin và lịch ôn sau 1, 3, 7 ngày trong game, với tiến bộ nói, viết câu và viết tay tách biệt.",
+        "Whisper Tiny đa ngôn ngữ và model hội thoại nhỏ được lượng tử hóa chạy trong browser qua worker; có một trace HTTPS trên bản phát hành phủ audio, câu trả lời, nét viết, ASR và LLM; toàn bộ audio, câu trả lời và nét viết không gửi lên mạng.",
+        "Có tiến trình tải, hủy và thử lại model, cache có phiên bản và nút xóa; mất WebGPU thử ASR bằng WASM, lỗi hoặc quá hạn chuyển sang gõ và hội thoại biên soạn mà giữ tiến độ.",
+        "Đồ họa pixel nguyên bản thể hiện cả đại học hiện đại năm 2026 và khu phố Giang Nam; 6 khu vực có nhận diện riêng, chữ Hán cùng dấu pinyin đọc rõ ở 1280x720 và tài sản có nguồn cùng giấy phép.",
+        "Tải lại khôi phục vị trí, ngày, nhiệm vụ, quan hệ và tiến bộ học; lưu có schema version, xuất nhập JSON và phục hồi bản lưu trước khi dữ liệu lỗi.",
+        "Lệnh npm run verify:mvp được định nghĩa để kiểm tra kiểu, nội dung, logic và luồng chơi; đo cảnh 10 NPC đạt trung vị ít nhất 50 FPS trong 60 giây trên máy chuẩn ghi rõ cấu hình, gói chơi đầu không quá 30 MiB và gói AI tải riêng không quá 800 MiB.",
+        "Toàn bộ nội dung học bắt buộc có chữ giản thể, pinyin có dấu, nghĩa tiếng Việt, ngữ cảnh và âm thanh mẫu; bộ kiểm chứng AI gồm 60 câu chưa dùng làm ví dụ và 40 bản ghi có nhãn, đạt ngưỡng smoke tại plan.md trước khi coi MVP hoàn tất.",
+        "Campus v1 có runtime, dữ liệu terrain, shared asset library và renderer production cho đủ sáu map; conversion/camera/full actor clearance được chốt trước final art, mọi preview xuất từ đúng JSON/manifest/asset.",
+        "Cây task cha con và dependency được kiểm nhất quán; chỉ đóng kế hoạch tổng khi mọi phiếu nhóm và phiếu lá hoàn tất đúng bằng chứng, giữ nghiệm thu MVP và báo cáo lịch sử."
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "14 AC phiếu MVP; yêu cầu mới chia toàn bộ plan thành cha con; mọi phiếu nguồn",
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "action": "Điều phối toàn bộ backlog đã phân rã; chỉ thực thi từng task lá và tổng hợp bằng chứng đúng phạm vi, giữ các kết quả MVP đã được chấp nhận.",
+      "mode": "aggregate",
+      "verify": "",
+      "parent_id": null,
+      "depends_on": [
+        "01M7JGEDRBMFT0FV3YJPNC85MV",
+        "01M7JGEDZ4BW4S4D20X09NF483",
+        "01M7JGEE67FZHK5A1W7E6TSJ6J",
+        "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+        "01M7JGEEKZ2K6QGTG2NP555EFR",
+        "01M7JGEEV1G7GFSKSCFM1TT8KB",
+        "01M7JGEF24Y6W9R7M982M8PVTC",
+        "01M7JGEF8Y9M6M2FQN9MW59X1E"
+      ],
+      "artifact_export": "tasks/ROOT.md"
+    },
+    {
+      "key": "A",
+      "title": "Khép baseline và các thay đổi đang có",
+      "role": "Tích hợp",
+      "action": "Giữ thành quả đã có, khép dependency của patch trước khi làm tiếp trên một baseline tự đủ.",
+      "kind": "group",
+      "deps": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "MVP TSK-1..30; M4 technical preparation; tất cả phiếu nguồn; 01M7ENBWCPTCW9G8VJXNCFNDV8 done; campus finding .22; 01M7DFRHC8PKN728NQKSS64J82 .22; [k:01M7FD5MSA8DHMHTYVMNVCGVBN]; MVP/M4 và campus/Pinyin; [k:01M7DE8V43RRQF5CG91ESM8A48]",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm A hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm A liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEDRBMFT0FV3YJPNC85MV",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEFFSXVZM0R97HS8B159C",
+        "01M7JGEFPMHWCA61PXYPKP11NC",
+        "01M7JGEFXK81Z6FWAD17YZB3SE",
+        "01M7JGEG4NZ01DYAHWMWBCJGSG"
+      ],
+      "artifact_export": "tasks/A.md"
+    },
+    {
+      "key": "B",
+      "title": "Hoàn thiện runtime campus v1",
+      "role": "Gameplay",
+      "action": "Tái sử dụng runtime trong phiếu campus; khép coverage cổng, input, collision và save trước art.",
+      "kind": "group",
+      "deps": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "Campus AC1/2/8; source maps v1; Campus AC3/4/9; Campus finding .23; input/session knowledge; Campus AC5/7; Pinyin/save đã có; Campus AC7/9/10 và finding .24; MVP TSK-11/14/23",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm B hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm B liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1",
+        "01M7JGEGJQ2RC84TD1931P8MWF",
+        "01M7JGEGT29WJZBKKZ2BRZ5F1T",
+        "01M7JGEH11SK7VZ3BDFBES8Y8M",
+        "01M7JGEH7TYRQQE5RYYN99PSZS"
+      ],
+      "artifact_export": "tasks/B.md"
+    },
+    {
+      "key": "C",
+      "title": "Terrain, Dual-Grid và hợp đồng không gian",
+      "role": "Gameplay/data",
+      "action": "Dữ liệu sáu map trước; display terrain và full actor clearance trước final art.",
+      "kind": "group",
+      "deps": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "01M7DE19CK6RBTTHB1TWVQY2ZS AC1..8; 01M7FYN3NA9M6SGQCXF917ZD10 AC1/2; Dual-Grid AC3/4; campus port/arrival; Dual-Grid AC5/6; Dual-Grid AC7/8/9; Street finding .12; campus AC2/4/8; [k:01M7DE9PM7AGR97AHC45J63GNW]; Pipeline AC5/9/10; street manifest và Dual-Grid requirements",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        11,
+        13
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm C hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm C liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEHEY5Y1MB253HBZSW5NH",
+        "01M7JGEHP0ARF9FZM5RJ9KKM82",
+        "01M7JGEHWWVBN1YHAQ4EA5H92Z",
+        "01M7JGEJ3QZ9KY8998VP1QWE2V",
+        "01M7JGEJAPKMBMPT65MZD09PKG",
+        "01M7JGEJHJ3AH22K3384TP7DGW",
+        "01M7JGEJRKKR7TMBKF5HN658D0"
+      ],
+      "artifact_export": "tasks/C.md"
+    },
+    {
+      "key": "D",
+      "title": "Sản xuất bộ asset dùng chung và từng khu",
+      "role": "Art",
+      "action": "Asset tách rời từ phố trước, tái sử dụng thư viện chung cho năm khu còn lại và actor/UI.",
+      "kind": "group",
+      "deps": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "01M7G4A8J4DQ4K797CFQ1MFR3D AC1..5, finding .12; Pipeline AC9; Dual-Grid AC4/5/6; Pipeline AC9; art style/asset generation guide; Campus maps v1 dorm; pipeline AC9; hậu MVP art; Campus maps v1 gate; pipeline AC9; hậu MVP art; Campus maps v1 library; pipeline AC9; hậu MVP art; Campus maps v1 canteen; pipeline AC9; hậu MVP art; Campus maps v1 garden; pipeline AC9; hậu MVP art; MVP TSK-27; campus actor bounds; MVP TSK-26/27; AC1/11",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        6,
+        7,
+        8,
+        11
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm D hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm D liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS",
+        "01M7JGEKMYNVVH3EM7KPEVKK4S",
+        "01M7JGEKW1CCBB7SYHNM6KCXXZ",
+        "01M7JGEM2ZFXYF39R8NG3N8CJG",
+        "01M7JGEM9V3KNNR9X93QJP3TKG",
+        "01M7JGEMH46E3C0EX73140XVQ8",
+        "01M7JGEMR2W40MBMTP3HJW87DT",
+        "01M7JGEMYT5EKFZFNMANFHTXWR"
+      ],
+      "artifact_export": "tasks/D.md"
+    },
+    {
+      "key": "E",
+      "title": "Renderer, ghép từng map và tích hợp",
+      "role": "Polish",
+      "action": "Render từ JSON, manifest và asset thật; ghép từng khu trong một phiếu nhỏ trước khi nối runtime.",
+      "kind": "group",
+      "deps": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "Pipeline AC9/10; street findings .7/.10; Pipeline AC10; Image Generation/Map Generator/Map Renderer tách vai trò; Campus street; pipeline AC10; MVP AC11; Campus dorm; pipeline AC10; MVP AC11; Campus gate; pipeline AC10; MVP AC11; Campus library; pipeline AC10; MVP AC11; Campus canteen; pipeline AC10; MVP AC11; Campus garden; pipeline AC10; MVP AC11; Campus AC6/7/8/9; pipeline AC10",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        13
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm E hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm E liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEN60AFS7BX0MGZW6Z46G",
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGENKNAFEX8T13MDDZNEZK",
+        "01M7JGENTM7YS6FKJEMRQ711Q1",
+        "01M7JGEP1DYX2ZAE9JJRDZDXA8",
+        "01M7JGEP8DBGXME0Y2NA2C6CKA",
+        "01M7JGEPFDN5M065BK9ECQVX1R",
+        "01M7JGEPPTS7EFJ4HXFSCSWW4P",
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF"
+      ],
+      "artifact_export": "tasks/E.md"
+    },
+    {
+      "key": "F",
+      "title": "Nội dung học, font và audio",
+      "role": "Content",
+      "action": "Giữ chương đã chơi được; chỉ sửa thiếu sót có audit và giữ người rà ngôn ngữ riêng.",
+      "kind": "group",
+      "deps": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "MVP TSK-11/13/14/20/28; ambient content; MVP TSK-11/13/14/28; Pinyin done; ambient negation knowledge; Font subset warning; MVP AC11/14; Audio generator warning; MVP TSK-20/AC14; MVP plan ngưỡng smoke; AC14; hoãn người rà sau MVP",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        14
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm F hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm F liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGEQ4VAHK66HYW9W9V94N5",
+        "01M7JGEQBPV1KD3S4VTD67N8W2",
+        "01M7JGEQJNSRJRQ408GAS5YK3S",
+        "01M7JGEQSS9MTD1FPX2N2E1CG8",
+        "01M7JGER0FZRQA5HEFPCT7RSPY"
+      ],
+      "artifact_export": "tasks/F.md"
+    },
+    {
+      "key": "G",
+      "title": "AI cục bộ và bộ kiểm chứng",
+      "role": "AI",
+      "action": "Tái dùng manager/worker/harness đã có; kiểm tính toàn vẹn, recovery và corpus độc lập.",
+      "kind": "group",
+      "deps": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "MVP TSK-2/19; M4 technical preparation; ONNX integrity knowledge; MVP TSK-3/18/19; M4 fault; session knowledge; MVP TSK-5/24; AC4/14; MVP TSK-5/24; AC14; Ngưỡng smoke MVP plan TSK-24; AI chỉ gợi ý; Ngưỡng smoke MVP plan TSK-24; ASR corpus40",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        4,
+        5,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm G hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm G liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGER76FXAPJD2G5EZN5MFD",
+        "01M7JGEREDT3WRNV6FDBCDYV64",
+        "01M7JGERPDYM0FW72W38WCT85C",
+        "01M7JGERXCM19ZC6NHKYXZ2RV0",
+        "01M7JGES444Q9XVXYMSQQ17Q1X",
+        "01M7JGESAXGHK7KHGZXTYVD938"
+      ],
+      "artifact_export": "tasks/G.md"
+    },
+    {
+      "key": "H",
+      "title": "Kiểm bản tích hợp và nghiệm thu",
+      "role": "Review/acceptance",
+      "action": "Đo đúng build mới; tách thiết bị thật, privacy, hiệu năng, playtest campus và đóng gate đầy đủ.",
+      "kind": "group",
+      "deps": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/**"
+      ],
+      "source": "MVP AC6; device evidence còn thiếu compositionend/Enter; MVP AC5; device evidence hiện có cần gắn gate; M4 technical preparation; MVP AC9/10/12; MVP TSK-22/24; M4 measurement harness; MVP TSK-23/30; provenance knowledge; MVP TSK-29 đã chấp nhận; campus AC10; art mới; Feedback campus/art mới; không mở lại TSK-29; MVP 14 AC + backlog hậuMVP + mọi task con",
+      "mode": "aggregate",
+      "verify": "",
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "criteria": [
+        "Mọi task lá của nhóm H hoàn tất theo tiêu chí riêng; không có task con đang làm, bị chặn hoặc chưa có bằng chứng mà phiếu nhóm được đóng.",
+        "Có bảng tổng hợp nhóm H liên kết source/build hoặc hash đầu vào, dependency đã tích hợp và bằng chứng từng task; mọi gate chưa đủ điều kiện được giữ mở, không sửa evidence lịch sử."
+      ],
+      "id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "parent_id": "01M7JF6C7ESFJSP30JNK5QM01B",
+      "depends_on": [
+        "01M7JGESHRC4ZBZK82F584K3S9",
+        "01M7JGESRGVCKQN0M7G9TM2AZD",
+        "01M7JGESZ64C9GRGX3132RYA6Q",
+        "01M7JGET6844HC8ECTCA5WZ7CG",
+        "01M7JGETD8H9PZYWQFRT8PDWSS",
+        "01M7JGETM6CNG6ARBYFP7D6RNZ",
+        "01M7JGETVHS2XGEA8Z9DK360F6",
+        "01M7JGEV2F0FH7F9H54810WDAS"
+      ],
+      "artifact_export": "tasks/H.md"
+    },
+    {
+      "key": "A1",
+      "group": "A",
+      "title": "Kiểm kê baseline, phiếu cũ và bằng chứng kế thừa",
+      "deps": [],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "scope": [
+        "scripts/verify-game-baseline.mjs",
+        "tests/game-baseline.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/A1/**"
+      ],
+      "verify": "node --test tests/game-baseline.test.mjs",
+      "action": "Lập inventory source hiện tại, từng phiếu/worktree/patch chưa land, các module import và evidence; phân met lịch sử, cần tích hợp, pending và deferred. Viết checker inventory chỉ đọc và test bằng fixture thiếu module hoặc sai hash.",
+      "criteria": [
+        "Có inventory đủ 14 phiếu nguồn tại thời điểm lập kế hoạch, HEAD và dirty files, dependency imports, 14 AC gốc và các gate còn mở; checker phát hiện thiếu file/hash sai; TSK-29 và các phiếu done không bị mở lại.",
+        "Có bàn giao riêng A1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-1..30; M4 technical preparation; tất cả phiếu nguồn",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEFFSXVZM0R97HS8B159C",
+      "parent_id": "01M7JGEDRBMFT0FV3YJPNC85MV",
+      "depends_on": [],
+      "artifact_export": "tasks/A1.md"
+    },
+    {
+      "key": "A2",
+      "group": "A",
+      "title": "Đối chiếu và tích hợp phần Pinyin/viết tay đã hoàn tất",
+      "deps": [
+        "A1",
+        "OLD_PINYIN"
+      ],
+      "legacy_ac": [
+        4,
+        6,
+        7,
+        8,
+        12
+      ],
+      "scope": [
+        "src/chapter/answer-normalization.ts",
+        "src/chapter/handwriting-session.ts",
+        "src/chapter/content.ts",
+        "src/chapter/ambient.ts",
+        "src/chapter/app.ts",
+        "tests/chapter.test.ts",
+        "tests/ambient.test.ts",
+        "tests/handwriting-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/A2/**"
+      ],
+      "verify": "npm run typecheck && node --experimental-strip-types tests/chapter.test.ts && node --experimental-strip-types tests/ambient.test.ts",
+      "action": "Đối chiếu diff phiếu done với cây gốc trước khi áp phần thiếu; nhận đủ normalization/session module cùng consumer, giữ rawTranscript và nguồn nhập. Nếu đã có đủ thì ghi kết quả đối chiếu, không viết lại tính năng.",
+      "criteria": [
+        "Bản gốc có đủ module Pinyin/handwriting và consumer tự resolve; hành vi đã được phiếu Pinyin chấp nhận giữ nguyên, unit hồi quy qua trên tập thay đổi thực tích hợp.",
+        "Có bàn giao riêng A2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "01M7ENBWCPTCW9G8VJXNCFNDV8 done; campus finding .22",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEFPMHWCA61PXYPKP11NC",
+      "parent_id": "01M7JGEDRBMFT0FV3YJPNC85MV",
+      "depends_on": [
+        "01M7JGEFFSXVZM0R97HS8B159C",
+        "01M7ENBWCPTCW9G8VJXNCFNDV8"
+      ],
+      "artifact_export": "tasks/A2.md"
+    },
+    {
+      "key": "A3",
+      "group": "A",
+      "title": "Khép gói patch campus và dependency của nó",
+      "deps": [
+        "A2"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        12,
+        13
+      ],
+      "scope": [
+        "src/chapter/**",
+        "tests/campus-*",
+        "tests/chapter-flow.mjs",
+        "tests/chapter.test.ts",
+        "tests/ambient.test.ts",
+        "tests/handwriting-flow.mjs",
+        "tests/game-dev-flow.mjs",
+        "scripts/campus-network-fixtures.mjs",
+        "scripts/game-dev-fixtures.mjs",
+        "scripts/verify-campus-network-v1.mjs",
+        "scripts/check-campus-package.mjs",
+        "tests/campus-package.test.mjs",
+        "docs/game-dev/campus-network-v1/runtime-contract.md",
+        "docs/game-dev/campus-network-v1/runtime-handoff.md",
+        "docs/game-dev/campus-network-v1/polish-handoff.md",
+        "docs/playtest/01M7DFRHC8PKN728NQKSS64J82/**",
+        "docs/playtest/01M7ENBWCPTCW9G8VJXNCFNDV8/README.md",
+        "docs/game-dev/hierarchical-plan/runs/A3/**"
+      ],
+      "verify": "node --test tests/campus-package.test.mjs && npm run typecheck",
+      "action": "Tách rõ phần patch campus còn thiếu với phần Pinyin đã tích hợp; kiểm module, helper fixtures/navigation trong base cộng patch và các tệp được README/contract tham chiếu. Tài liệu/fixture/report nguồn chưa có chỉ tiếp nhận nguyên byte, không viết lại lịch sử; report mới ở runs/A3. Chuẩn bị tập tích hợp self-contained, không import từ worktree donor bằng đường dẫn tuyệt đối.",
+      "criteria": [
+        "Finding campus .22 được đối chiếu bằng inventory base+patch không thiếu module hoặc tài liệu bắt buộc; typecheck chạy được trên tập tích hợp độc lập; phần protected/overlap chưa duyệt được nêu rõ trước khi land qua Core.",
+        "Có bàn giao riêng A3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "01M7DFRHC8PKN728NQKSS64J82 .22; [k:01M7FD5MSA8DHMHTYVMNVCGVBN]",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEFXK81Z6FWAD17YZB3SE",
+      "parent_id": "01M7JGEDRBMFT0FV3YJPNC85MV",
+      "depends_on": [
+        "01M7JGEFPMHWCA61PXYPKP11NC"
+      ],
+      "artifact_export": "tasks/A3.md"
+    },
+    {
+      "key": "A4",
+      "group": "A",
+      "title": "Chốt baseline tích hợp và sổ đối chiếu phiếu cũ",
+      "deps": [
+        "A3"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        12,
+        13
+      ],
+      "scope": [
+        "scripts/verify-game-baseline.mjs",
+        "tests/game-baseline.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/A4/**"
+      ],
+      "verify": "node --test tests/game-baseline.test.mjs && npm run typecheck && npm run test:unit && npm run test:content",
+      "action": "Ghi inventory mới sau tích hợp, từng patch đã nhận/chưa nhận và đường chạy hiện hành. Đối chiếu trạng thái source với phiếu cũ mà không sửa revision, approval hoặc checkbox lịch sử.",
+      "criteria": [
+        "Có một baseline tự đủ với source revision/hash, kết quả type/unit/content sau tích hợp và bảng phần còn lại; không nhận PASS worktree cũ thành PASS baseline mới.",
+        "Có bàn giao riêng A4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP/M4 và campus/Pinyin; [k:01M7DE8V43RRQF5CG91ESM8A48]",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEG4NZ01DYAHWMWBCJGSG",
+      "parent_id": "01M7JGEDRBMFT0FV3YJPNC85MV",
+      "depends_on": [
+        "01M7JGEFXK81Z6FWAD17YZB3SE"
+      ],
+      "artifact_export": "tasks/A4.md"
+    },
+    {
+      "key": "B1",
+      "group": "B",
+      "title": "Đối chiếu SceneDefinition, loader và camera campus v1",
+      "deps": [
+        "A4"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "src/chapter/campus-network*",
+        "src/chapter/scene*",
+        "src/chapter/world*",
+        "src/chapter/app.ts",
+        "tests/campus-network-v1.test.ts",
+        "docs/game-dev/hierarchical-plan/runs/B1/**"
+      ],
+      "verify": "npm run typecheck && node --experimental-strip-types tests/campus-network-v1.test.ts",
+      "action": "Tái dùng SceneDefinition/loader/camera từ patch campus, sửa đúng khoảng thiếu nếu có. Giữ macro20x15, tile runtime48, world960x720, viewport960x540 cuộn dọc, actor bounds thực; đây là runtime contract hiện có, chưa phê duyệt conversion art.",
+      "criteria": [
+        "Một contract tile↔world được loader/camera/collision dùng nhất quán; sáu scene ID và 40 warp được validate, dữ liệu schema/arrival/facing sai bị từ chối; camera scale đồng đều và không cắt actor tại cổng.",
+        "Có bàn giao riêng B1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus AC1/2/8; source maps v1",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEGBN0ZC6PB1C5J21VAT1",
+      "parent_id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "depends_on": [
+        "01M7JGEG4NZ01DYAHWMWBCJGSG"
+      ],
+      "artifact_export": "tasks/B1.md"
+    },
+    {
+      "key": "B2",
+      "group": "B",
+      "title": "Khép kiểm 40 warp, collider, cầu và NPC ba buổi",
+      "deps": [
+        "B1"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3
+      ],
+      "scope": [
+        "src/chapter/campus-network*",
+        "src/chapter/app.ts",
+        "src/chapter/engine.ts",
+        "tests/campus-network-v1.test.ts",
+        "tests/campus-network-v1-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/B2/**",
+        "scripts/verify-campus-network-v1.mjs",
+        "scripts/campus-network-fixtures.mjs",
+        "tests/campus-navigation.mjs",
+        "tests/campus-runner-output.test.mjs"
+      ],
+      "verify": "node scripts/verify-campus-network-v1.mjs --output-dir docs/game-dev/hierarchical-plan/runs/B2",
+      "action": "Trước phép kiểm, thêm --output-dir cho runner campus và truyền cùng gốc output tới fixture generator/browser flow; test bắt mọi lần ghi ra packet lịch sử ngoài output mới. Tái dùng collision/warp/NPC đã làm, kiểm đủ 40 records bằng input và full actor bounds; kiểm hai cầu garden, closed edges, góc, delta lớn, approach và lịch ba buổi. Chỉ sửa lỗi được phép kiểm chỉ ra.",
+      "criteria": [
+        "40 warp tới đúng arrival/facing, không bật ngược hoặc chồng transition; tường/nước cản đầy đủ collider, hai cầu và mọi spawn/NPC tương tác reachable cả sáu cảnh theo lịch.",
+        "Có bàn giao riêng B2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus AC3/4/9",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEGJQ2RC84TD1931P8MWF",
+      "parent_id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "depends_on": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1"
+      ],
+      "artifact_export": "tasks/B2.md"
+    },
+    {
+      "key": "B3",
+      "group": "B",
+      "title": "Bổ sung giữ phím qua warp và blur trong runner chính",
+      "deps": [
+        "B1",
+        "B2"
+      ],
+      "legacy_ac": [
+        1,
+        6,
+        10
+      ],
+      "scope": [
+        "src/chapter/app.ts",
+        "tests/campus-network-v1-flow.mjs",
+        "scripts/verify-campus-network-v1.mjs",
+        "docs/game-dev/hierarchical-plan/runs/B3/**",
+        "scripts/campus-network-fixtures.mjs",
+        "tests/campus-navigation.mjs",
+        "tests/campus-runner-output.test.mjs"
+      ],
+      "verify": "node scripts/verify-campus-network-v1.mjs --output-dir docs/game-dev/hierarchical-plan/runs/B3",
+      "action": "Sửa coverage finding .23: giữ keydown qua nhiều frame sau arrival, kiểm đứng yên rồi keyup+keydown mới đi; blur thật trong browser phù hợp và chuyển focus panel. Dùng cùng quyền điều khiển ở keydown/ticker, giữ session callback.",
+      "criteria": [
+        "Runner production báo riêng held-through-transition, blur/focus và panel; phím cũ không gây chạy/warp lặp sau transition hoặc focus UI, phím mới đi bình thường sau trả canvas; lỗi capture/hạ tầng trả nonzero.",
+        "Có bàn giao riêng B3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus finding .23; input/session knowledge",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEGT29WJZBKKZ2BRZ5F1T",
+      "parent_id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "depends_on": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1",
+        "01M7JGEGJQ2RC84TD1931P8MWF"
+      ],
+      "artifact_export": "tasks/B3.md"
+    },
+    {
+      "key": "B4",
+      "group": "B",
+      "title": "Kiểm migration save, import và thưởng trên layout v1",
+      "deps": [
+        "B1",
+        "B2"
+      ],
+      "legacy_ac": [
+        8,
+        12
+      ],
+      "scope": [
+        "src/chapter/store.ts",
+        "src/chapter/engine.ts",
+        "src/chapter/campus-network*",
+        "src/storage/save.ts",
+        "tests/campus-network-v1.test.ts",
+        "tests/campus-network-v1-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/B4/**",
+        "scripts/verify-campus-network-v1.mjs",
+        "scripts/campus-network-fixtures.mjs",
+        "tests/campus-navigation.mjs",
+        "tests/campus-runner-output.test.mjs"
+      ],
+      "verify": "node scripts/verify-campus-network-v1.mjs --output-dir docs/game-dev/hierarchical-plan/runs/B4",
+      "action": "Tái dùng save migration và kiểm enum trước ép kiểu, legacy/schema2, arrival an toàn, conflict hai tab, backup/import hỏng. Giữ quest/skill/reward/raw source khi đổi tọa độ và không sửa saved historical reports.",
+      "criteria": [
+        "Reload/import/backup và stale-tab giữ scene, ngày, quest, quan hệ, kỹ năng, nguồn nhập; migration hợp lệ tìm vị trí an toàn, mảng giả enum/save hỏng bị từ chối, không cấp thưởng lặp.",
+        "Có bàn giao riêng B4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus AC5/7; Pinyin/save đã có",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEH11SK7VZ3BDFBES8Y8M",
+      "parent_id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "depends_on": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1",
+        "01M7JGEGJQ2RC84TD1931P8MWF"
+      ],
+      "artifact_export": "tasks/B4.md"
+    },
+    {
+      "key": "B5",
+      "group": "B",
+      "title": "Khép hồi quy chapter và packet runtime semantic",
+      "deps": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        12
+      ],
+      "scope": [
+        "tests/chapter-flow.mjs",
+        "tests/campus-network-v1-flow.mjs",
+        "scripts/verify-campus-network-v1.mjs",
+        "docs/game-dev/hierarchical-plan/runs/B5/**",
+        "scripts/campus-network-fixtures.mjs",
+        "tests/campus-navigation.mjs",
+        "tests/campus-runner-output.test.mjs"
+      ],
+      "verify": "node scripts/verify-campus-network-v1.mjs --output-dir docs/game-dev/hierarchical-plan/runs/B5",
+      "action": "Sửa giả định tuyến/NPC của browser flow theo campus thực, không hạ coverage học. Tạo packet mới trong runs/B5 trỏ manifest/source/build hiện hành; semantic rendering được ghi rõ chưa là final art.",
+      "criteria": [
+        "Walkthrough bảy ngày, 6 quest/NPC, 4 activity/event, 10 bài câu và 20 chữ giữ hành vi hiện có; packet trỏ đúng build, kiểm input/save và chưa tự nhận playtest người dùng hoặc IME/mic.",
+        "Có bàn giao riêng B5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus AC7/9/10 và finding .24; MVP TSK-11/14/23",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEH7TYRQQE5RYYN99PSZS",
+      "parent_id": "01M7JGEDZ4BW4S4D20X09NF483",
+      "depends_on": [
+        "01M7JGEGJQ2RC84TD1931P8MWF",
+        "01M7JGEGT29WJZBKKZ2BRZ5F1T",
+        "01M7JGEH11SK7VZ3BDFBES8Y8M"
+      ],
+      "artifact_export": "tasks/B5.md"
+    },
+    {
+      "key": "C1",
+      "group": "C",
+      "title": "Đưa baseline parser và terrain sáu map vào gói tự đủ",
+      "deps": [
+        "A1"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "scripts/world-map/pipeline.mjs",
+        "scripts/world-map/config.json",
+        "tests/world-map.test.mjs",
+        "docs/game-dev/world-map-pipeline/**",
+        "docs/game-dev/hierarchical-plan/runs/C1/**"
+      ],
+      "verify": "node --test tests/world-map.test.mjs && node scripts/world-map/pipeline.mjs --check",
+      "action": "Tiếp nhận phần data-only đã có ở phiếu pipeline, giữ ASCII/maps.json và report cũ; generator xuất snapshot mới có nguồn/config/code hashes. Không chạy lại toàn chương hoặc import module donor bằng absolute path.",
+      "criteria": [
+        "Parser đối chiếu đủ 6x300 ô, 18 landmark, 20 cạnh có hướng, 40 warp và 2 cầu; macro/detail masks cùng terrain16px tái lập, unknown asset metadata để pending và gói chạy độc lập.",
+        "Có bàn giao riêng C1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "01M7DE19CK6RBTTHB1TWVQY2ZS AC1..8",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEHEY5Y1MB253HBZSW5NH",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEFFSXVZM0R97HS8B159C"
+      ],
+      "artifact_export": "tasks/C1.md"
+    },
+    {
+      "key": "C2",
+      "group": "C",
+      "title": "Triển khai corner mask và dirty update Dual-Grid",
+      "deps": [
+        "C1"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "scripts/world-map/dual-grid.mjs",
+        "scripts/world-map/dual-grid-config.json",
+        "tests/world-map-dual-grid.test.mjs",
+        "tests/fixtures/world-map-dual-grid/**",
+        "docs/game-dev/hierarchical-plan/runs/C2/**"
+      ],
+      "verify": "node --test tests/world-map.test.mjs tests/world-map-dual-grid.test.mjs",
+      "action": "Theo plan Dual-Grid đã có: NW/NE/SE/SW bits1/2/4/8, display origin16u-8/16v-8, lookup0..15, saddle5/10 không tạo cầu chéo; đổi world cell cập nhật bốn display cells của cả vật liệu cũ/mới.",
+      "criteria": [
+        "Fixtures độc lập phủ 16 mask và atlas mapping; incremental bằng full rebuild, tọa độ offset -8 đúng, giữ nguyên hashes logic/collision của sáu map.",
+        "Có bàn giao riêng C2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "01M7FYN3NA9M6SGQCXF917ZD10 AC1/2",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEHP0ARF9FZM5RJ9KKM82",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEHEY5Y1MB253HBZSW5NH"
+      ],
+      "artifact_export": "tasks/C2.md"
+    },
+    {
+      "key": "C3",
+      "group": "C",
+      "title": "Xử lý biên, halo, nhiều vật liệu và cầu Dual-Grid",
+      "deps": [
+        "C2"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "scripts/world-map/dual-grid.mjs",
+        "scripts/world-map/dual-grid-config.json",
+        "tests/world-map-dual-grid.test.mjs",
+        "tests/fixtures/world-map-dual-grid/**",
+        "docs/game-dev/hierarchical-plan/runs/C3/**"
+      ],
+      "verify": "node --test tests/world-map-dual-grid.test.mjs",
+      "action": "Thêm display W+1xH+1/crop/halo và seam strips đúng port thay arrival; khai báo binary layers/pairs, underlay, junction ba vật liệu, water/bank/bridge và obstacle_macro. Missing contract phải hiện pending hoặc fail.",
+      "criteria": [
+        "Biên1x1/1xN/Nx1 và 10 cặp cổng hai chiều không hở/crop lệch hoặc wrap; multi-material/bridge không bị nền mặc định che lỗi, collision và route nguồn giữ nguyên.",
+        "Có bàn giao riêng C3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Dual-Grid AC3/4; campus port/arrival",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEHWWVBN1YHAQ4EA5H92Z",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEHP0ARF9FZM5RJ9KKM82"
+      ],
+      "artifact_export": "tasks/C3.md"
+    },
+    {
+      "key": "C4",
+      "group": "C",
+      "title": "Tạo biến thể terrain ổn định và kiểm seam",
+      "deps": [
+        "C3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "scripts/world-map/dual-grid.mjs",
+        "scripts/world-map/dual-grid-config.json",
+        "tests/world-map-dual-grid.test.mjs",
+        "tests/fixtures/world-map-dual-grid/**",
+        "docs/game-dev/hierarchical-plan/runs/C4/**"
+      ],
+      "verify": "node --test tests/world-map-dual-grid.test.mjs",
+      "action": "Hash có version của seed/map/layer/coordinate/mask/variant set; weights mặc định70/20/10, không phụ thuộc traversal. Variant chỉ đổi chi tiết trong tile; animation/off-grid decoration có seam signature, anchor và vùng cấm.",
+      "criteria": [
+        "Known vectors và10.000 tọa độ kiểm weights hợp lệ/phân bố trong ±3 điểm phần trăm; reload/traversal cho cùng kết quả, variant/frame không đổi edge-alpha silhouette hoặc masks logic.",
+        "Có bàn giao riêng C4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Dual-Grid AC5/6",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEJ3QZ9KY8998VP1QWE2V",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEHWWVBN1YHAQ4EA5H92Z"
+      ],
+      "artifact_export": "tasks/C4.md"
+    },
+    {
+      "key": "C5",
+      "group": "C",
+      "title": "Xuất debug terrain của cả sáu map có provenance",
+      "deps": [
+        "C4"
+      ],
+      "legacy_ac": [
+        11,
+        13
+      ],
+      "scope": [
+        "scripts/world-map/dual-grid-build.mjs",
+        "scripts/world-map/dual-grid-debug-render.mjs",
+        "tests/world-map-dual-grid.test.mjs",
+        "docs/game-dev/world-map-pipeline/dual-grid/**",
+        "docs/game-dev/hierarchical-plan/runs/C5/**"
+      ],
+      "verify": "node --test tests/world-map.test.mjs tests/world-map-dual-grid.test.mjs",
+      "action": "Render fixture atlas code-native và 6 ảnh debug từ display JSON, nearest/integer pixels, overlay world/display/collision; tạo báo cáo mới có hash toàn chuỗi. Chắt lọc guide vào supplement, giữ guide gốc.",
+      "criteria": [
+        "Sáu debug PNG và JSON/index tái lập từ đúng input/config/code/atlas hashes; missing atlas/underlay bị phát hiện; output ghi debug rõ và không được gọi production preview hoặc bằng chứng clearance.",
+        "Có bàn giao riêng C5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Dual-Grid AC7/8/9",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEJAPKMBMPT65MZD09PKG",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEJ3QZ9KY8998VP1QWE2V"
+      ],
+      "artifact_export": "tasks/C5.md"
+    },
+    {
+      "key": "C6",
+      "group": "C",
+      "title": "Chốt conversion art↔world và full actor clearance",
+      "deps": [
+        "B1",
+        "C1",
+        "C5"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "scripts/world-map/clearance.mjs",
+        "tests/world-map-clearance.test.mjs",
+        "docs/game-dev/world-map-pipeline/contracts/**",
+        "docs/game-dev/street-asset-kit/contracts/**",
+        "docs/game-dev/hierarchical-plan/runs/C6/**"
+      ],
+      "verify": "node --test tests/world-map-clearance.test.mjs",
+      "action": "Đối chiếu macro20x15/runtime48 world-unit, terrain16px/detail expansion và scale đồng đều. Tính visual16x45/collider16x38 từ source thực, anchor, approach, spawn/exit và camera; giải quyết finding phố .12 bằng contract ứng viên cụ thể. Nếu chọn expansion2 thì macro32 artpx→48 world-unit phải ghi scale1.5 và kiểm pixels; không coi ứng viên là đã duyệt.",
+      "criteria": [
+        "Có mapping đồng đều được kiểm cả full collider/visual trên cổng, cửa, cầu và 6 map; lỗi cổng32px không lọt38px bị test bắt; contract final-art có nguồn/phiên bản và bằng chứng duyệt phần thay đổi không gian trước sản xuất, thiếu duyệt giữ gate pending.",
+        "Có bàn giao riêng C6 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Street finding .12; campus AC2/4/8; [k:01M7DE9PM7AGR97AHC45J63GNW]",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEJHJ3AH22K3384TP7DGW",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1",
+        "01M7JGEHEY5Y1MB253HBZSW5NH",
+        "01M7JGEJAPKMBMPT65MZD09PKG"
+      ],
+      "artifact_export": "tasks/C6.md"
+    },
+    {
+      "key": "C7",
+      "group": "C",
+      "title": "Chốt schema asset, placement và nhu cầu dùng chung",
+      "deps": [
+        "C6"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/contracts/**",
+        "scripts/world-map/asset-schema.mjs",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/C7/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Từ 6 map/debug xác định terrain pairs/variants, architecture, vegetation/props; schema ID/path/dimensions/grid/anchor/footprint/layer/collision/provenance/license/bytes/hash và trạng thái source/runtime/preview. Mỗi ID có nơi dùng; không chép art study thành production.",
+      "criteria": [
+        "Có requirement matrix cho 6 map, schema reject thiếu metadata/duplicate ID/path/hash và số liệu chưa biết không giả; contract scale/layout đã duyệt là đầu vào bắt buộc của mọi task final-art.",
+        "Có bàn giao riêng C7 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Pipeline AC5/9/10; street manifest và Dual-Grid requirements",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEJRKKR7TMBKF5HN658D0",
+      "parent_id": "01M7JGEE67FZHK5A1W7E6TSJ6J",
+      "depends_on": [
+        "01M7JGEJHJ3AH22K3384TP7DGW"
+      ],
+      "artifact_export": "tasks/C7.md"
+    },
+    {
+      "key": "D1",
+      "group": "D",
+      "title": "Hoàn thiện bộ asset phố và sửa clearance theo contract",
+      "deps": [
+        "C7"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/street-kit/**",
+        "public/licenses/street-asset-kit.txt",
+        "docs/game-dev/street-asset-kit/**",
+        "scripts/street-asset-kit/**",
+        "tests/street-asset-kit.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D1/**"
+      ],
+      "verify": "node --test tests/street-asset-kit.test.mjs",
+      "action": "Tái sử dụng bộ phố có trong worktree; cập nhật đúng conversion đã chốt, không làm lại từ tranh study. Giữ terrain/buildings/props/manifests tách rời, F(4,3),P(15,3),s(7,5), 8 warp records và 4 hướng; full actor clearance thay BFS điểm đơn.",
+      "criteria": [
+        "Finding .12 được kiểm full bounds và giải quyết theo C6; 5 asset hiện có hoặc phần thay thế được định danh, hash/bytes/alpha/anchor/footprint đồng bộ và assembler preview đọc đúng JSON/asset; source layout/gameplay không bị sửa để hợp art.",
+        "Có bàn giao riêng D1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "01M7G4A8J4DQ4K797CFQ1MFR3D AC1..5, finding .12",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEJZE661T4SF5EMD5WYXS",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJRKKR7TMBKF5HN658D0"
+      ],
+      "artifact_export": "tasks/D1.md"
+    },
+    {
+      "key": "D2",
+      "group": "D",
+      "title": "Sản xuất atlas terrain Dual-Grid dùng chung",
+      "deps": [
+        "C7",
+        "C3",
+        "C4"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/terrain/**",
+        "public/art/world-map/manifests/terrain.json",
+        "public/licenses/world-map-terrain.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D2/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Sản xuất atlas thật cho đúng materials/pairs được C7 yêu cầu, đủ cases0..15 mỗi pass và variants ở vùng hay lặp. Water/bank/bridge/underlay theo contract, pixel/camera/palette chung; không đưa debug atlas thành thành phẩm.",
+      "criteria": [
+        "Atlas production bao phủ mọi required mask/material pair trên 6 map, alpha/edge signature qua variant và frame hợp lệ, kích thước/mapping/hash/license đúng; có QA1x/integer zoom và phần thẩm mỹ chưa duyệt nêu rõ.",
+        "Có bàn giao riêng D2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Pipeline AC9; Dual-Grid AC4/5/6",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEK6J09C3ST6A55GCQVVH",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJRKKR7TMBKF5HN658D0",
+        "01M7JGEHWWVBN1YHAQ4EA5H92Z",
+        "01M7JGEJ3QZ9KY8998VP1QWE2V"
+      ],
+      "artifact_export": "tasks/D2.md"
+    },
+    {
+      "key": "D3",
+      "group": "D",
+      "title": "Sản xuất vegetation và props dùng chung",
+      "deps": [
+        "C7"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/vegetation/**",
+        "public/art/world-map/props/**",
+        "public/art/world-map/manifests/props.json",
+        "public/licenses/world-map-props.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D3/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Làm đúng need matrix: cây/bụi/ghế/bảng gắn tường/đồ campus hiện đại; dùng lại props phố nếu phù hợp. Khai báo anchor/footprint/occlusion và vùng cấm cửa/warp/cầu/NPC; chữ chỉ dẫn là text layer.",
+      "criteria": [
+        "Props có alpha/metadata/hash/license thực, không bake actor/UI/Hán tự; placement candidate vào vùng cấm bị validator loại, reuse có ID ổn định và không tự thêm collider.",
+        "Có bàn giao riêng D3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Pipeline AC9; art style/asset generation guide",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEKDQYNJ34915JZQC9NKS",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJRKKR7TMBKF5HN658D0"
+      ],
+      "artifact_export": "tasks/D3.md"
+    },
+    {
+      "key": "D4",
+      "group": "D",
+      "title": "Sản xuất bộ công trình Ký túc xá",
+      "deps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/architecture/dorm/**",
+        "public/art/world-map/manifests/dorm.json",
+        "public/licenses/world-map-dorm.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D4/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Chỉ sản xuất bộ riêng dorm còn thiếu theo contract C6/C7; tái dùng terrain/props đã có. Hai khối ở/sinh hoạt và lối ăn sáng/vườn đọc được; giữ ngưỡng cửa, footprint và các cổng theo maps.json. Asset rời theo layer, cùng camera/palette/scale, có origin/anchor/collision footprint.",
+      "criteria": [
+        "Bộ dorm có sprite production runtime-ready, dimensions/alpha/hash/bytes/provenance/license và QA kích thước dùng; footprint/entrance/clearance đúng layout đã duyệt, không thay bằng tranh kín nền.",
+        "Có bàn giao riêng D4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus maps v1 dorm; pipeline AC9; hậu MVP art",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEKMYNVVH3EM7KPEVKK4S",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/D4.md"
+    },
+    {
+      "key": "D5",
+      "group": "D",
+      "title": "Sản xuất bộ công trình Cổng trường",
+      "deps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/architecture/gate/**",
+        "public/art/world-map/manifests/gate.json",
+        "public/licenses/world-map-gate.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D5/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Chỉ sản xuất bộ riêng gate còn thiếu theo contract C6/C7; tái dùng terrain/props đã có. Khối đón tiếp/cổng campus hiện đại, trục Đông–Tây và nhánh Bắc rõ; biển không bake chữ vào sprite. Asset rời theo layer, cùng camera/palette/scale, có origin/anchor/collision footprint.",
+      "criteria": [
+        "Bộ gate có sprite production runtime-ready, dimensions/alpha/hash/bytes/provenance/license và QA kích thước dùng; footprint/entrance/clearance đúng layout đã duyệt, không thay bằng tranh kín nền.",
+        "Có bàn giao riêng D5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus maps v1 gate; pipeline AC9; hậu MVP art",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEKW1CCBB7SYHNM6KCXXZ",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/D5.md"
+    },
+    {
+      "key": "D6",
+      "group": "D",
+      "title": "Sản xuất bộ công trình Thư viện",
+      "deps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/architecture/library/**",
+        "public/art/world-map/manifests/library.json",
+        "public/licenses/world-map-library.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D6/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Chỉ sản xuất bộ riêng library còn thiếu theo contract C6/C7; tái dùng terrain/props đã có. Hai cánh học và hub bốn hướng rõ, sân nước Tây Nam không che lối; cửa dẫn vào mạng tiếp cận. Asset rời theo layer, cùng camera/palette/scale, có origin/anchor/collision footprint.",
+      "criteria": [
+        "Bộ library có sprite production runtime-ready, dimensions/alpha/hash/bytes/provenance/license và QA kích thước dùng; footprint/entrance/clearance đúng layout đã duyệt, không thay bằng tranh kín nền.",
+        "Có bàn giao riêng D6 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus maps v1 library; pipeline AC9; hậu MVP art",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEM2ZFXYF39R8NG3N8CJG",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/D6.md"
+    },
+    {
+      "key": "D7",
+      "group": "D",
+      "title": "Sản xuất bộ công trình Nhà ăn",
+      "deps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/architecture/canteen/**",
+        "public/art/world-map/manifests/canteen.json",
+        "public/licenses/world-map-canteen.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D7/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Chỉ sản xuất bộ riêng canteen còn thiếu theo contract C6/C7; tái dùng terrain/props đã có. Khối phục vụ/ăn và sân bàn Đông Nam giữ ba cổng; quầy/NPC và đường xuyên không lẫn vào nền. Asset rời theo layer, cùng camera/palette/scale, có origin/anchor/collision footprint.",
+      "criteria": [
+        "Bộ canteen có sprite production runtime-ready, dimensions/alpha/hash/bytes/provenance/license và QA kích thước dùng; footprint/entrance/clearance đúng layout đã duyệt, không thay bằng tranh kín nền.",
+        "Có bàn giao riêng D7 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus maps v1 canteen; pipeline AC9; hậu MVP art",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEM9V3KNNR9X93QJP3TKG",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/D7.md"
+    },
+    {
+      "key": "D8",
+      "group": "D",
+      "title": "Sản xuất bộ công trình Vườn/kênh",
+      "deps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11
+      ],
+      "scope": [
+        "public/art/world-map/architecture/garden/**",
+        "public/art/world-map/manifests/garden.json",
+        "public/licenses/world-map-garden.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D8/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Chỉ sản xuất bộ riêng garden còn thiếu theo contract C6/C7; tái dùng terrain/props đã có. Kênh X5..6, hai cầu Y7..8/Y3..4 và pavilion Đông Bắc nối đúng bờ; không tạo exit mới. Asset rời theo layer, cùng camera/palette/scale, có origin/anchor/collision footprint.",
+      "criteria": [
+        "Bộ garden có sprite production runtime-ready, dimensions/alpha/hash/bytes/provenance/license và QA kích thước dùng; footprint/entrance/clearance đúng layout đã duyệt, không thay bằng tranh kín nền.",
+        "Có bàn giao riêng D8 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus maps v1 garden; pipeline AC9; hậu MVP art",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEMH46E3C0EX73140XVQ8",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/D8.md"
+    },
+    {
+      "key": "D9",
+      "group": "D",
+      "title": "Rà và polish player cùng sáu NPC theo tỷ lệ đã chốt",
+      "deps": [
+        "B5",
+        "C6"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "public/art/characters/**",
+        "public/art/world-map/manifests/characters.json",
+        "public/licenses/characters.txt",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D9/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Kiểm kê sprite/animation đã có; chỉ bổ sung silhouette/frame còn thiếu cho player và6 NPC. Khai báo pivot/visual bounds/direction/frames gắn collider thực; không thay collider/gameplay để hợp art.",
+      "criteria": [
+        "Player và6 NPC đọc được ở scale đã chốt, frame/anchor/bounds metadata đủ; đứng/đi/tương tác không lệch chân hoặc cắt tại cổng, mọi thay đổi chỉ art và nguồn/license có căn cứ.",
+        "Có bàn giao riêng D9 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-27; campus actor bounds",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEMR2W40MBMTP3HJW87DT",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEH7TYRQQE5RYYN99PSZS",
+        "01M7JGEJHJ3AH22K3384TP7DGW"
+      ],
+      "artifact_export": "tasks/D9.md"
+    },
+    {
+      "key": "D10",
+      "group": "D",
+      "title": "Polish UI học tập, focus và dấu hiệu tương tác",
+      "deps": [
+        "B5"
+      ],
+      "legacy_ac": [
+        1,
+        6,
+        7,
+        8,
+        11
+      ],
+      "scope": [
+        "src/chapter/chapter.css",
+        "src/style.css",
+        "public/art/ui/**",
+        "public/licenses/ui.txt",
+        "tests/ui-readability-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/D10/**"
+      ],
+      "verify": "node tests/ui-readability-flow.mjs",
+      "action": "Từ UI đã được MVP chấp nhận, sửa khoảng thiếu cụ thể ở1280x720: mục tiêu/E/focus/thu/xử lý/lỗi, pinyin/nghĩa/âm lượng/hint. Giữ ô HTML IME và UI chữ rõ, không tự thêm hệ thống mới.",
+      "criteria": [
+        "1280x720 không cắt Hán/pinyin/nút chính, bàn phím có focus rõ và đóng panel trả canvas; mức gợi ý, recorder/fallback state phân biệt được; screenshot/QA giới hạn thẩm mỹ nêu thật.",
+        "Có bàn giao riêng D10 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-26/27; AC1/11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEMYT5EKFZFNMANFHTXWR",
+      "parent_id": "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+      "depends_on": [
+        "01M7JGEH7TYRQQE5RYYN99PSZS"
+      ],
+      "artifact_export": "tasks/D10.md"
+    },
+    {
+      "key": "E1",
+      "group": "E",
+      "title": "Triển khai loader và validator asset manifest",
+      "deps": [
+        "C7",
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "legacy_ac": [
+        11,
+        13
+      ],
+      "scope": [
+        "scripts/world-map/asset-loader.mjs",
+        "scripts/world-map/validate-assets.mjs",
+        "tests/world-map-assets.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E1/**"
+      ],
+      "verify": "node --test tests/world-map-assets.test.mjs",
+      "action": "Đọc schema C7 và file production; kiểm dimensions/bytes/hash/alpha/anchor/layer/footprint/license cùng đường dẫn canonical. Không dùng metadata khai báo thay kiểm bytes thật.",
+      "criteria": [
+        "Loader resolve được bộ phố và shared library trong checkout tự đủ; missing/hash/dimension/path/duplicate/placement mismatch bị từ chối, không phụ thuộc đường dẫn máy donor.",
+        "Có bàn giao riêng E1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Pipeline AC9/10; street findings .7/.10",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEN60AFS7BX0MGZW6Z46G",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGEJRKKR7TMBKF5HN658D0",
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "artifact_export": "tasks/E1.md"
+    },
+    {
+      "key": "E2",
+      "group": "E",
+      "title": "Triển khai Map Renderer từ JSON và asset thật",
+      "deps": [
+        "E1"
+      ],
+      "legacy_ac": [
+        11,
+        13
+      ],
+      "scope": [
+        "scripts/world-map/render.mjs",
+        "scripts/world-map/assemble.mjs",
+        "tests/world-map-render.test.mjs",
+        "tests/fixtures/world-map-render/**",
+        "docs/game-dev/hierarchical-plan/runs/E2/**"
+      ],
+      "verify": "node --test tests/world-map-render.test.mjs tests/world-map-assets.test.mjs",
+      "action": "Render terrain/underlay/architecture/props/foreground theo thứ tự, clipping/crop/nearest và uniform scale C6; overlay world/display/footprint/warp/actor cho QA. Fixtures kiểm lỗi layer/missing asset và export tái lập.",
+      "criteria": [
+        "Một PNG fixture được dựng từ JSON+manifest+sprite thật, alpha/layer/camera/anchor đúng và lỗi input trả nonzero; mọi output có input/code/output hashes, không dùng ảnh gen độc lập làm assembled preview.",
+        "Có bàn giao riêng E2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Pipeline AC10; Image Generation/Map Generator/Map Renderer tách vai trò",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGENCSCQPQZFXBG61FT5ER",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGEN60AFS7BX0MGZW6Z46G"
+      ],
+      "artifact_export": "tasks/E2.md"
+    },
+    {
+      "key": "E3",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map street",
+      "deps": [
+        "E2",
+        "D1"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/street.json",
+        "public/art/world-map/maps/street/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E3/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement street từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map street có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus street; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGENKNAFEX8T13MDDZNEZK",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEJZE661T4SF5EMD5WYXS"
+      ],
+      "artifact_export": "tasks/E3.md"
+    },
+    {
+      "key": "E4",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map dorm",
+      "deps": [
+        "E2",
+        "D4"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/dorm.json",
+        "public/art/world-map/maps/dorm/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E4/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement dorm từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map dorm có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus dorm; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGENTM7YS6FKJEMRQ711Q1",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEKMYNVVH3EM7KPEVKK4S"
+      ],
+      "artifact_export": "tasks/E4.md"
+    },
+    {
+      "key": "E5",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map gate",
+      "deps": [
+        "E2",
+        "D5"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/gate.json",
+        "public/art/world-map/maps/gate/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E5/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement gate từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map gate có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus gate; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEP1DYX2ZAE9JJRDZDXA8",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEKW1CCBB7SYHNM6KCXXZ"
+      ],
+      "artifact_export": "tasks/E5.md"
+    },
+    {
+      "key": "E6",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map library",
+      "deps": [
+        "E2",
+        "D6"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/library.json",
+        "public/art/world-map/maps/library/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E6/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement library từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map library có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E6 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus library; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEP8DBGXME0Y2NA2C6CKA",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEM2ZFXYF39R8NG3N8CJG"
+      ],
+      "artifact_export": "tasks/E6.md"
+    },
+    {
+      "key": "E7",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map canteen",
+      "deps": [
+        "E2",
+        "D7"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/canteen.json",
+        "public/art/world-map/maps/canteen/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E7/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement canteen từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map canteen có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E7 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus canteen; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEPFDN5M065BK9ECQVX1R",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEM9V3KNNR9X93QJP3TKG"
+      ],
+      "artifact_export": "tasks/E7.md"
+    },
+    {
+      "key": "E8",
+      "group": "E",
+      "title": "Ghép và kiểm riêng map garden",
+      "deps": [
+        "E2",
+        "D8"
+      ],
+      "legacy_ac": [
+        1,
+        11
+      ],
+      "scope": [
+        "docs/game-dev/world-map-pipeline/placements/garden.json",
+        "public/art/world-map/maps/garden/**",
+        "tests/world-map-assembly.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E8/**"
+      ],
+      "verify": "node --test tests/world-map-assembly.test.mjs",
+      "action": "Tạo placement garden từ terrain/need matrix và đúng manifest; xuất PNG/layers/index và overlay. Kiểm full actor clearance, landmark, mọi port/arrival/approach, cửa và NPC; dùng chung asset thay vẽ lại cả nền.",
+      "criteria": [
+        "Map garden có preview/export dựng từ chính JSON/files đã giao, source/output hashes tái lập; asset references/route/clearance không thiếu, camera1x và grayscale QA có ghi kết quả, playtest runtime còn riêng.",
+        "Có bàn giao riêng E8 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus garden; pipeline AC10; MVP AC11",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEPPTS7EFJ4HXFSCSWW4P",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEMH46E3C0EX73140XVQ8"
+      ],
+      "artifact_export": "tasks/E8.md"
+    },
+    {
+      "key": "E9",
+      "group": "E",
+      "title": "Nối sáu map production vào runtime campus",
+      "deps": [
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "B5",
+        "D9",
+        "D10"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "scope": [
+        "src/chapter/app.ts",
+        "src/chapter/world*",
+        "src/chapter/scene*",
+        "src/chapter/map-renderer.ts",
+        "scripts/build-offline.mjs",
+        "tests/campus-network-v1-flow.mjs",
+        "tests/world-map-runtime-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/E9/**"
+      ],
+      "verify": "npm run typecheck && npm run build && node tests/world-map-runtime-flow.mjs",
+      "action": "Thay semantic fallback bằng layer renderer/exports có manifest kiểm; scale/camera C6, depth actor/roof/cầu và đường text riêng. Tải/hủy cảnh có generation token; lỗi asset giữ semantic fallback và tiến độ.",
+      "criteria": [
+        "Runtime nạp đủ 6 map và asset production trên build tự đủ,40 warp/input/camera/save giữ đúng; actor không xuyên/che sai vật cản, tải chậm/lỗi/callback cũ không ghi đè cảnh mới, offline manifest chứa tài nguyên cần.",
+        "Có bàn giao riêng E9 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Campus AC6/7/8/9; pipeline AC10",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+      "parent_id": "01M7JGEEKZ2K6QGTG2NP555EFR",
+      "depends_on": [
+        "01M7JGENKNAFEX8T13MDDZNEZK",
+        "01M7JGENTM7YS6FKJEMRQ711Q1",
+        "01M7JGEP1DYX2ZAE9JJRDZDXA8",
+        "01M7JGEP8DBGXME0Y2NA2C6CKA",
+        "01M7JGEPFDN5M065BK9ECQVX1R",
+        "01M7JGEPPTS7EFJ4HXFSCSWW4P",
+        "01M7JGEH7TYRQQE5RYYN99PSZS",
+        "01M7JGEMR2W40MBMTP3HJW87DT",
+        "01M7JGEMYT5EKFZFNMANFHTXWR"
+      ],
+      "artifact_export": "tasks/E9.md"
+    },
+    {
+      "key": "F1",
+      "group": "F",
+      "title": "Audit chương, bài học và nhánh hội thoại hiện có",
+      "deps": [
+        "A4"
+      ],
+      "legacy_ac": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        14
+      ],
+      "scope": [
+        "scripts/check-content.mjs",
+        "scripts/check-ambient-content.mjs",
+        "tests/game-dev-content.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/F1/**"
+      ],
+      "verify": "npm run test:content && node --test tests/game-dev-content.test.mjs",
+      "action": "Giữ chương đã nghiệm thu, lập audit 7 ngày/6 quest/6 NPC/4 activity/4 event/12 scenario/10 bài/20 chữ và mentor/sổ tay. Ghi mỗi nhánh sai/hủy/đã xong/hẹn lại; chỉ định thiếu sót cụ thể cho F2, không viết lại toàn truyện.",
+      "criteria": [
+        "Có matrix ID→ngày/quest/lesson/utterance/audio/hint và checklist nhánh, không có nhánh cụt theo kiểm dữ liệu; mọi thiếu text/pinyin/nghĩa/context/audio có ID thật và người rà còn pending.",
+        "Có bàn giao riêng F1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-11/13/14/20/28; ambient content",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEQ4VAHK66HYW9W9V94N5",
+      "parent_id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "depends_on": [
+        "01M7JGEG4NZ01DYAHWMWBCJGSG"
+      ],
+      "artifact_export": "tasks/F1.md"
+    },
+    {
+      "key": "F2",
+      "group": "F",
+      "title": "Sửa đúng khoảng thiếu nội dung và phản hồi theo cảnh",
+      "deps": [
+        "F1",
+        "B5"
+      ],
+      "legacy_ac": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        14
+      ],
+      "scope": [
+        "src/content/mvp.json",
+        "src/content/ambient-dialogues.json",
+        "src/content/chapter-context.ts",
+        "src/chapter/content.ts",
+        "src/chapter/ambient.ts",
+        "src/chapter/guidance.ts",
+        "tests/chapter.test.ts",
+        "tests/ambient.test.ts",
+        "docs/game-dev/hierarchical-plan/runs/F2/**"
+      ],
+      "verify": "npm run test:content && node --experimental-strip-types tests/chapter.test.ts && node --experimental-strip-types tests/ambient.test.ts",
+      "action": "Chỉ xử lý IDs audit F1: mục tiêu/hẹn lại/hint/nghĩa/context hoặc biến thể sai. Giữ Pinyin đã sửa, nhận phủ định theo nhánh hợp lệ và từ chối mâu thuẫn; raw transcript/source/skill không đổi. Text đổi phải liệt kê audio/glyph bị ảnh hưởng.",
+      "criteria": [
+        "Mọi khoảng thiếu nội dung bắt buộc do F1 phát hiện có sửa hoặc fallback biên soạn trong scope; 12 scene có ít nhất 3 câu đúng/1 sai và các ca phủ định hợp lệ,10 bài/20 chữ giữ đủ; audio/glyph delta có ID.",
+        "Có bàn giao riêng F2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-11/13/14/28; Pinyin done; ambient negation knowledge",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEQBPV1KD3S4VTD67N8W2",
+      "parent_id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "depends_on": [
+        "01M7JGEQ4VAHK66HYW9W9V94N5",
+        "01M7JGEH7TYRQQE5RYYN99PSZS"
+      ],
+      "artifact_export": "tasks/F2.md"
+    },
+    {
+      "key": "F3",
+      "group": "F",
+      "title": "Đồng bộ glyph font đóng gói với mọi JSON nội dung",
+      "deps": [
+        "F2"
+      ],
+      "legacy_ac": [
+        11,
+        14
+      ],
+      "scope": [
+        "scripts/subset-game-fonts.py",
+        "scripts/check-font-coverage.py",
+        "public/fonts/**",
+        "public/licenses/fonts.txt",
+        "tests/font-coverage.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/F3/**"
+      ],
+      "verify": "node --test tests/font-coverage.test.mjs",
+      "action": "Thu glyph từ mvp,ambient và các JSON/TS thực dùng; subset đúng font và kiểm glyph của file đóng gói, không dựa OS fallback. Không chạy build-chapter.py để cập nhật font.",
+      "criteria": [
+        "Font đóng gói phủ tất cả Hán tự/dấu pinyin bắt buộc trong nội dung hiện hành, test thêm JSON chứa glyph mới bắt thiếu; license/hash cập nhật đúng file và không ghi đè art/audio/content.",
+        "Có bàn giao riêng F3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Font subset warning; MVP AC11/14",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEQJNSRJRQ408GAS5YK3S",
+      "parent_id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "depends_on": [
+        "01M7JGEQBPV1KD3S4VTD67N8W2"
+      ],
+      "artifact_export": "tasks/F3.md"
+    },
+    {
+      "key": "F4",
+      "group": "F",
+      "title": "Đồng bộ đúng WAV đổi lời và bảng audio provenance",
+      "deps": [
+        "F2"
+      ],
+      "legacy_ac": [
+        5,
+        11,
+        14
+      ],
+      "scope": [
+        "public/audio/**",
+        "public/licenses/audio.txt",
+        "src/content/mvp.json",
+        "src/content/ambient-dialogues.json",
+        "scripts/check-content.mjs",
+        "scripts/regenerate-audio.mjs",
+        "tests/audio-content.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/F4/**"
+      ],
+      "verify": "node --test tests/audio-content.test.mjs && npm run test:content",
+      "action": "Chỉ tái tạo WAV của IDs đổi text hoặc audio thiếu/sai đã xác minh; cập nhật references/hash/bytes/nguồn/quyền. Có bảng text→file và listening checklist; generator không được giữ WAV cũ vì file tồn tại rồi gắn text mới.",
+      "criteria": [
+        "Mọi câu bắt buộc có audio tham chiếu hợp lệ và delta text/WAV được đồng bộ theo ID; hash/file duration kiểm tự động, kết quả nghe khớp lời ghi thật còn rà phát âm/ngôn ngữ thuộc F5.",
+        "Có bàn giao riêng F4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Audio generator warning; MVP TSK-20/AC14",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEQSS9MTD1FPX2N2E1CG8",
+      "parent_id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "depends_on": [
+        "01M7JGEQBPV1KD3S4VTD67N8W2"
+      ],
+      "artifact_export": "tasks/F4.md"
+    },
+    {
+      "key": "F5",
+      "group": "F",
+      "title": "Rà ngôn ngữ và audio bằng người có năng lực tiếng Trung",
+      "deps": [
+        "F3",
+        "F4",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "legacy_ac": [
+        14
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/runs/F5/**"
+      ],
+      "verify": "",
+      "action": "Chuẩn bị packet có câu/pinyin/nghĩa/context/audio và nhãn corpus, ít nhất 12 câu đúng phủ 12 scenario và12 output model. Người rà xác nhận hoặc nêu lỗi; đưa lỗi cụ thể về nội dung trong một lượt sửa hữu hạn rồi kiểm lại đúng IDs.",
+      "criteria": [
+        "Có nhận xét thật của người có năng lực cho ít nhất 12 câu phủ 12 scenario cùng audio/nhãn corpus và ít nhất 12 output với ít nhất 80% phù hợp; mục sai được sửa hoặc fallback. Chưa có người rà giữ pending/deferred đã được user cho phép, không tự ghi đạt.",
+        "Có bàn giao riêng F5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP plan ngưỡng smoke; AC14; hoãn người rà sau MVP",
+      "mode": "manual",
+      "kind": "leaf",
+      "id": "01M7JGER0FZRQA5HEFPCT7RSPY",
+      "parent_id": "01M7JGEEV1G7GFSKSCFM1TT8KB",
+      "depends_on": [
+        "01M7JGEQJNSRJRQ408GAS5YK3S",
+        "01M7JGEQSS9MTD1FPX2N2E1CG8",
+        "01M7JGERPDYM0FW72W38WCT85C",
+        "01M7JGERXCM19ZC6NHKYXZ2RV0",
+        "01M7JGES444Q9XVXYMSQQ17Q1X",
+        "01M7JGESAXGHK7KHGZXTYVD938"
+      ],
+      "artifact_export": "tasks/F5.md"
+    },
+    {
+      "key": "G1",
+      "group": "G",
+      "title": "Rà tính toàn vẹn weights, runtime và cache trên baseline",
+      "deps": [
+        "A4"
+      ],
+      "legacy_ac": [
+        9,
+        10,
+        13
+      ],
+      "scope": [
+        "src/ai/ModelManager.ts",
+        "src/ai/model.worker.ts",
+        "src/ai/model-manifest.json",
+        "scripts/models.mjs",
+        "tests/model-assets.test.mjs",
+        "tests/model-manager.test.ts",
+        "docs/game-dev/hierarchical-plan/runs/G1/**"
+      ],
+      "verify": "node scripts/models.mjs && node tests/model-assets.test.mjs && node --experimental-strip-types tests/model-manager.test.ts",
+      "action": "Tái dùng manifest/manager đã xong, kiểm weights cùng MJS/WASM sizes/SHA-256 trên network/cache; cache key digest và wasmPaths từ runtime đã kiểm. Chỉ sửa chỗ chưa đáp ứng; không đổi model mặc định hoặc tải mọi biến thể.",
+      "criteria": [
+        "Weights/runtime/worker có inventory thật dưới 800 MiB, cache hỏng bị xóa/tải lại và không bỏ qua integrity; model chạy worker local, không có external runtime import ngoài manifest.",
+        "Có bàn giao riêng G1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-2/19; M4 technical preparation; ONNX integrity knowledge",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGER76FXAPJD2G5EZN5MFD",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGEG4NZ01DYAHWMWBCJGSG"
+      ],
+      "artifact_export": "tasks/G1.md"
+    },
+    {
+      "key": "G2",
+      "group": "G",
+      "title": "Khép recovery và session của AI/recorder",
+      "deps": [
+        "G1",
+        "B5"
+      ],
+      "legacy_ac": [
+        5,
+        9,
+        10,
+        12
+      ],
+      "scope": [
+        "src/ai/ModelManager.ts",
+        "src/ai/model.worker.ts",
+        "src/audio/recorder.ts",
+        "src/chapter/app.ts",
+        "tests/model-manager.test.ts",
+        "tests/recorder.test.ts",
+        "scripts/verify-m4-technical-prep.mjs",
+        "docs/game-dev/hierarchical-plan/runs/G2/**"
+      ],
+      "verify": "node --experimental-strip-types tests/model-manager.test.ts && node --experimental-strip-types tests/recorder.test.ts",
+      "action": "Tái dùng fault harness; kiểm timeout/cancel/device-lost/WASM/mấtmạng/hash404/quota theo tuyến đã có, gắn session/request/generation xuyên await. Bổ sung đúng coverage còn thiếu và giữ draft/reward/quest khi chuyển gõ.",
+      "criteria": [
+        "Các fault có fallback/hủy/thử lại/cache rõ, WebGPU mất thử ASR WASM; callback/timer/kết quả cũ không sửa phiên mới, draft sau await có revision guard và thu âm cleanup không ảnh hưởng phiên sau.",
+        "Có bàn giao riêng G2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-3/18/19; M4 fault; session knowledge",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEREDT3WRNV6FDBCDYV64",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGER76FXAPJD2G5EZN5MFD",
+        "01M7JGEH7TYRQQE5RYYN99PSZS"
+      ],
+      "artifact_export": "tasks/G2.md"
+    },
+    {
+      "key": "G3",
+      "group": "G",
+      "title": "Chốt corpus 60 câu intent độc lập có nhãn",
+      "deps": [
+        "F2"
+      ],
+      "legacy_ac": [
+        4,
+        14
+      ],
+      "scope": [
+        "tests/fixtures/game-intent-heldout.json",
+        "scripts/check-game-corpus.mjs",
+        "tests/game-corpus.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/G3/**"
+      ],
+      "verify": "node --test tests/game-corpus.test.mjs",
+      "action": "Biên soạn corpus holdout chưa dùng làm ví dụ,30 đúng/30 sai theo12 scenario và thành phần cần có; phủ phủ định/mâu thuẫn/khác cách nói. Giữ bộ đo tách runtime rules/examples; người rà nhãn ở F5.",
+      "criteria": [
+        "Có60 câu có ID/context/label và kiểm độc lập với examples;30 đúng/30 sai phủ 12 scene và ca khó, audit không rò câu đáp án vào prompt; nhãn người rà thiếu ghi pending.",
+        "Có bàn giao riêng G3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-5/24; AC4/14",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGERPDYM0FW72W38WCT85C",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGEQBPV1KD3S4VTD67N8W2"
+      ],
+      "artifact_export": "tasks/G3.md"
+    },
+    {
+      "key": "G4",
+      "group": "G",
+      "title": "Chuẩn bị corpus 40 đoạn audio có nhãn và quyền",
+      "deps": [
+        "F2"
+      ],
+      "legacy_ac": [
+        5,
+        14
+      ],
+      "scope": [
+        "tests/fixtures/game-audio-corpus/**",
+        "scripts/check-game-corpus.mjs",
+        "tests/game-corpus.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/G4/**"
+      ],
+      "verify": "node --test tests/game-corpus.test.mjs",
+      "action": "Dùng corpus hoặc thu có quyền:24 câu đúng,8 sai,8im lặng/nhiễu, ít nhất 3 người; lưu speaker/thiết bị/text/intent/hash/license/consent tối thiểu. Không thay corpus giọng người bằng TTS rồi gọi người thật.",
+      "criteria": [
+        "Đủ40 audio có nhãn/source/hash/quyền và ít nhất 3 speaker ở phần speech theo protocol;24/8/8 đúng phân nhóm; thiếu người/file/quyền giữ pending rõ, không bịa dữ liệu hay gửi audio lên AI ngoài.",
+        "Có bàn giao riêng G4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-5/24; AC14",
+      "mode": "data_then_automated",
+      "kind": "leaf",
+      "id": "01M7JGERXCM19ZC6NHKYXZ2RV0",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGEQBPV1KD3S4VTD67N8W2"
+      ],
+      "artifact_export": "tasks/G4.md"
+    },
+    {
+      "key": "G5",
+      "group": "G",
+      "title": "Đo LLM intent thật bằng corpus đã chốt",
+      "deps": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "legacy_ac": [
+        9,
+        13,
+        14
+      ],
+      "scope": [
+        "scripts/bench-intent-corpus.mjs",
+        "scripts/bench-browser-ai.mjs",
+        "scripts/bench-game-intent.mjs",
+        "docs/game-dev/hierarchical-plan/runs/G5/**"
+      ],
+      "verify": "node scripts/bench-game-intent.mjs",
+      "action": "Chạy model đã chọn trong browser/worker trên corpus holdout; ghi raw output/schema/accepted/rejected và guard engine, cold/warm latency/backend/memory. Kết quả sai có fallback, không sửa nhãn/test để nâng điểm.",
+      "criteria": [
+        "Báo đủ 60 câu đạt ít nhất 51/60, nhận ít nhất 24/30 đúng và tối đa 3/30 sai; sau 2 lượt làm nóng, ít nhất 12 lượt có p95 LLM tối đa 14s cùng phần cứng/phần mềm/memory/cách đo/source/build. Chưa đạt giữ gate mở.",
+        "Có bàn giao riêng G5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Ngưỡng smoke MVP plan TSK-24; AI chỉ gợi ý",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGES444Q9XVXYMSQQ17Q1X",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGER76FXAPJD2G5EZN5MFD",
+        "01M7JGEREDT3WRNV6FDBCDYV64",
+        "01M7JGERPDYM0FW72W38WCT85C"
+      ],
+      "artifact_export": "tasks/G5.md"
+    },
+    {
+      "key": "G6",
+      "group": "G",
+      "title": "Đo ASR thật bằng corpus audio đã chốt",
+      "deps": [
+        "G1",
+        "G2",
+        "G4"
+      ],
+      "legacy_ac": [
+        5,
+        9,
+        13,
+        14
+      ],
+      "scope": [
+        "scripts/bench-browser-ai.mjs",
+        "scripts/bench-game-asr.mjs",
+        "scripts/bench-fleurs.mjs",
+        "docs/game-dev/hierarchical-plan/runs/G6/**"
+      ],
+      "verify": "node scripts/bench-game-asr.mjs",
+      "action": "Đo Whisper local trên 40 audio bằng intent và raw transcript có nguồn, không đo thanh điệu từ text. Ghi cold/warm/backend/memory, lỗi/noise và recovery; FLEURS diagnostic chỉ bổ trợ không thay corpus game.",
+      "criteria": [
+        "Nhận ít nhất 16/24 câu đúng, tối đa 2/8 câu sai và0/8 nhiễu; sau 2 lượt làm nóng, ít nhất 12 lượt p95 ASR tối đa 18s cùng máy/browser/backend/memory và provenance. Chưa đủ speaker/corpus hoặc không đạt giữ pending.",
+        "Có bàn giao riêng G6 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Ngưỡng smoke MVP plan TSK-24; ASR corpus40",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGESAXGHK7KHGZXTYVD938",
+      "parent_id": "01M7JGEF24Y6W9R7M982M8PVTC",
+      "depends_on": [
+        "01M7JGER76FXAPJD2G5EZN5MFD",
+        "01M7JGEREDT3WRNV6FDBCDYV64",
+        "01M7JGERXCM19ZC6NHKYXZ2RV0"
+      ],
+      "artifact_export": "tasks/G6.md"
+    },
+    {
+      "key": "H1",
+      "group": "H",
+      "title": "Bổ sung smoke Pinyin IME hệ điều hành thật",
+      "deps": [
+        "E9",
+        "F3"
+      ],
+      "legacy_ac": [
+        6
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/runs/H1/**"
+      ],
+      "verify": "",
+      "action": "Tạo checklist một bài câu trên build hiện hành và thực hiện bằng OS Chinese Pinyin IME thật: compositionstart/update/end, Enter chọn chữ, Enter gửi sau composition. Ghi browser/OS/build và capture đủ chuỗi, không dùng dispatch giả thay OS.",
+      "criteria": [
+        "Có một lượt IME thật trên chapter cùng build xác nhận Enter chọn chữ không gửi, câu không mất và gửi sau composition đúng; report gate có provenance và bằng chứng thật, thiếu thiết bị/người thao tác giữ pending.",
+        "Có bàn giao riêng H1 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP AC6; device evidence còn thiếu compositionend/Enter",
+      "mode": "manual",
+      "kind": "leaf",
+      "id": "01M7JGESHRC4ZBZK82F584K3S9",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+        "01M7JGEQJNSRJRQ408GAS5YK3S"
+      ],
+      "artifact_export": "tasks/H1.md"
+    },
+    {
+      "key": "H2",
+      "group": "H",
+      "title": "Bổ sung smoke mic thật và ca phục hồi trên chapter",
+      "deps": [
+        "E9",
+        "G2"
+      ],
+      "legacy_ac": [
+        5
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/runs/H2/**"
+      ],
+      "verify": "",
+      "action": "Dùng mic thật trên chapter: thu tối đa 20s, nghe lại,ASR local,sửa/thu lại,gửi; thêm ca từ chối/rút mic hoặc thu hỏng theo protocol. Ghi raw transcript/source labels và cleanup track, không nhận typed thành luyện nói.",
+      "criteria": [
+        "Có một vòng mic thật và một ca recovery cùng source/build; recorder/playback/ASR/edit/retake và track cleanup có capture, report theo schema gate; chưa thực hiện không tự ghi đạt.",
+        "Có bàn giao riêng H2 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP AC5; device evidence hiện có cần gắn gate",
+      "mode": "manual",
+      "kind": "leaf",
+      "id": "01M7JGESRGVCKQN0M7G9TM2AZD",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+        "01M7JGEREDT3WRNV6FDBCDYV64"
+      ],
+      "artifact_export": "tasks/H2.md"
+    },
+    {
+      "key": "H3",
+      "group": "H",
+      "title": "Kiểm HTTPS privacy, offline và fault trên bản tích hợp",
+      "deps": [
+        "E9",
+        "F4",
+        "G2"
+      ],
+      "legacy_ac": [
+        9,
+        10,
+        12
+      ],
+      "scope": [
+        "scripts/verify-m4-technical-prep.mjs",
+        "scripts/mvp-evidence.mjs",
+        "tests/m4-technical-prep.test.mjs",
+        "tests/mvp-evidence.test.mjs",
+        "docs/game-dev/hierarchical-plan/runs/H3/**",
+        "scripts/verify-game-release.mjs",
+        "tests/game-release.test.mjs",
+        "scripts/acceptance-evidence.mjs",
+        "scripts/diagnostic-faults.mjs",
+        "scripts/prepare-mvp-review.mjs"
+      ],
+      "verify": "node --test tests/game-release.test.mjs && node scripts/verify-game-release.mjs --output-dir docs/game-dev/hierarchical-plan/runs/H3",
+      "action": "Tạo entrypoint hẹp verify-game-release từ các capture/fault/offline helper đã có; unit fixtures phải bác ca thiếu thực thi từng tuyến và output/provenance sai. scripts/verify-m4-technical-prep.mjs chỉ chạy preflight/contract tests, không phải phép đo này. Entry mới thật sự exercise HTTPS audio/text/strokes/ASR/LLM và fault/offline/save, giữ trace thô và report mới ở --output-dir. Tái dùng capture/fault/offline harness đã xong, đo trên build production mới. Trace raw phủaudio/text/strokes/ASR/LLM, kiểm URL và giá trị header cả Referer/query; offline reload hoàn thành quest và export/import/rollback giữ tiến độ.",
+      "criteria": [
+        "Trace HTTPS phủ đủ 5 tuyến không upload học liệu hoặc gọi hub/CDN/ASR ngoài; mọi leak quan sát được là fail dù thiếu coverage, capture lỗi là pending; fault/offline/save có kết quả theo cùng manifest/build, report cũ giữ byte. Preflight/contract tests đơn thuần không được thay lần capture và exercise thực trên browser.",
+        "Có bàn giao riêng H3 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "M4 technical preparation; MVP AC9/10/12",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGESZ64C9GRGX3132RYA6Q",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+        "01M7JGEQSS9MTD1FPX2N2E1CG8",
+        "01M7JGEREDT3WRNV6FDBCDYV64"
+      ],
+      "artifact_export": "tasks/H3.md"
+    },
+    {
+      "key": "H4",
+      "group": "H",
+      "title": "Đo FPS cùng inference và ngân sách gói thực",
+      "deps": [
+        "E9",
+        "F4",
+        "G5",
+        "G6"
+      ],
+      "legacy_ac": [
+        13
+      ],
+      "scope": [
+        "scripts/bench-chapter.mjs",
+        "scripts/prepare-mvp-review.mjs",
+        "scripts/acceptance-evidence.mjs",
+        "docs/game-dev/hierarchical-plan/runs/H4/**"
+      ],
+      "verify": "node scripts/bench-chapter.mjs --fps",
+      "action": "Tái dùng FPS/budget harness trên bản art/runtime tích hợp, cảnh 10 NPC ít nhất 60s và một phép đo có inference đồng thời. Ghi cấu hình/browser/backend/frame samples, initial package thật và model/runtime bytes.",
+      "criteria": [
+        "Máy chuẩn ghi rõ đạt median ít nhất 50 FPS/60s ở cảnh 10 NPC, báo riêng inference đồng thời và bộ nhớ đỉnh; initial tối đa 30 MiB, AI tối đa 800 MiB theo manifest thực; số đo cũ không đổi revision để đại diện bản mới.",
+        "Có bàn giao riêng H4 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-22/24; M4 measurement harness",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGET6844HC8ECTCA5WZ7CG",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+        "01M7JGEQSS9MTD1FPX2N2E1CG8",
+        "01M7JGES444Q9XVXYMSQQ17Q1X",
+        "01M7JGESAXGHK7KHGZXTYVD938"
+      ],
+      "artifact_export": "tasks/H4.md"
+    },
+    {
+      "key": "H5",
+      "group": "H",
+      "title": "Chạy hồi quy tổng và kiểm provenance của build ứng viên",
+      "deps": [
+        "E9",
+        "F3",
+        "F4",
+        "H3"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "scope": [
+        "scripts/verify-mvp.mjs",
+        "scripts/mvp-evidence.mjs",
+        "tests/mvp-evidence.test.mjs",
+        "tests/chapter-flow.mjs",
+        "tests/world-map-runtime-flow.mjs",
+        "docs/game-dev/hierarchical-plan/runs/H5/**"
+      ],
+      "verify": "npm run verify:mvp",
+      "action": "Giữ verify:mvp đã có, thêm inventory/routes/assets mới đúng scope; chạy trên snapshot ứng viên sau tích hợp. Kiểm revisions lồng nhau và manifest bytes/hash, viết packet mới thay vì sửa report cũ; gate còn deferred phải trình bày thật.",
+      "criteria": [
+        "Verify tổng kiểm type/content/logic/browser trên đúng build mới,6 map/7 ngày/10 bài/20 chữ/save đi được; report phân pass/pending/deferred theo từng gate, không dùng exit0 códeferred để tự đóng14 AC.",
+        "Có bàn giao riêng H5 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-23/30; provenance knowledge",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGETD8H9PZYWQFRT8PDWSS",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+        "01M7JGEQJNSRJRQ408GAS5YK3S",
+        "01M7JGEQSS9MTD1FPX2N2E1CG8",
+        "01M7JGESZ64C9GRGX3132RYA6Q"
+      ],
+      "artifact_export": "tasks/H5.md"
+    },
+    {
+      "key": "H6",
+      "group": "H",
+      "title": "Chuẩn bị packet và playtest riêng campus/art mới",
+      "deps": [
+        "H5"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        8,
+        11,
+        12
+      ],
+      "scope": [
+        "docs/game-dev/hierarchical-plan/runs/H6/**"
+      ],
+      "verify": "",
+      "action": "Bàn giao build/hash,save đầu vào và checklist đọc landmark/tìm đường/cửa/cầu/NPC/thoát UI/reload; người dùng thử phần campus/art đã thay đổi và ghi lỗi có bước tái hiện. Giữ nguyên chấp nhận TSK-29 của MVP, không yêu cầu chơi lại vô cớ.",
+      "criteria": [
+        "Có phản hồi thật từ người dùng cho phần campus/art mới và bảng lỗi có bước tái hiện để xử lý ở H7; thẩm mỹ chưa được user xem giữ pending, không tự coi đã duyệt; nghiệm thu MVP cũ giữ nguyên.",
+        "Có bàn giao riêng H6 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP TSK-29 đã chấp nhận; campus AC10; art mới",
+      "mode": "manual",
+      "kind": "leaf",
+      "id": "01M7JGETM6CNG6ARBYFP7D6RNZ",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGETD8H9PZYWQFRT8PDWSS"
+      ],
+      "artifact_export": "tasks/H6.md"
+    },
+    {
+      "key": "H7",
+      "group": "H",
+      "title": "Sửa lỗi playtest của bản campus/art và chốt ứng viên",
+      "deps": [
+        "H6"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "scope": [
+        "src/chapter/**",
+        "src/style.css",
+        "public/art/**",
+        "tests/campus-network-v1*",
+        "tests/world-map-runtime-flow.mjs",
+        "tests/ui-readability-flow.mjs",
+        "scripts/verify-mvp.mjs",
+        "docs/game-dev/hierarchical-plan/runs/H7/**"
+      ],
+      "verify": "npm run verify:mvp",
+      "action": "Chỉ sửa các lỗi đã có tái hiện ở H6 trong hệ thống campus/art/UI; gắn ID feedback và kiểm hẹp trước hồi quy tổng. Nếu không có lỗi được báo thì xuất biên bản no-change; không tự mở rộng nội dung/tính năng.",
+      "criteria": [
+        "Không còn lỗi cản trở được báo chưa xử lý; mọi sửa có ca kiểm phù hợp và snapshot ứng viên sau sửa, các phép đo H1..H5 bị ảnh hưởng được đánh dấu stale và đo lại đúng phần liên quan trước đóng gate.",
+        "Có bàn giao riêng H7 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "Feedback campus/art mới; không mở lại TSK-29",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGETVHS2XGEA8Z9DK360F6",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGETM6CNG6ARBYFP7D6RNZ"
+      ],
+      "artifact_export": "tasks/H7.md"
+    },
+    {
+      "key": "H8",
+      "group": "H",
+      "title": "Đối chiếu 14 AC và đóng kế hoạch tổng khi đủ bằng chứng",
+      "deps": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H7"
+      ],
+      "legacy_ac": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "scope": [
+        "docs/mvp-completion-status.md",
+        "docs/mvp-gates.json",
+        "docs/game-dev/README.md",
+        "scripts/verify-mvp.mjs",
+        "docs/game-dev/hierarchical-plan/runs/H8/**"
+      ],
+      "verify": "npm run verify:mvp",
+      "action": "Tổng hợp đúng ID+nguyênvănAC, source/build/hash thực và tất cả task con; phân kết quả kế thừa/lần đo mới/deferred, không tự hạ ngưỡng hoặc sửa evidence lịch sử. H7 thay đổi sản phẩm phải tái kiểm gate liên quan trên snapshot cuối; hoàn tất đầy đủ chờ corpus/người rà/thiết bị thật.",
+      "criteria": [
+        "Mọi14 AC và campus/art mới có bằng chứng hợp lệ đúng phạm vi/snapshot, tất cả phiếu con hoàn tất và gate không bị che bằng deferred; nếu vẫn hoãn chỉ bàn giao ứng viên và ghi rõ chưa hoàn tất đầy đủ, không force done.",
+        "Có bàn giao riêng H8 ghi source/build hoặc hash đầu vào thực, kết quả kiểm chứng và giới hạn; chỉ đối chiếu AC trong phạm vi, giữ nguyên báo cáo lịch sử."
+      ],
+      "source": "MVP 14 AC + backlog hậuMVP + mọi task con",
+      "mode": "automated",
+      "kind": "leaf",
+      "id": "01M7JGEV2F0FH7F9H54810WDAS",
+      "parent_id": "01M7JGEF8Y9M6M2FQN9MW59X1E",
+      "depends_on": [
+        "01M7JGEDRBMFT0FV3YJPNC85MV",
+        "01M7JGEDZ4BW4S4D20X09NF483",
+        "01M7JGEE67FZHK5A1W7E6TSJ6J",
+        "01M7JGEECZDCXCNSJ2VJXFHJ7T",
+        "01M7JGEEKZ2K6QGTG2NP555EFR",
+        "01M7JGEEV1G7GFSKSCFM1TT8KB",
+        "01M7JGEF24Y6W9R7M982M8PVTC",
+        "01M7JGESHRC4ZBZK82F584K3S9",
+        "01M7JGESRGVCKQN0M7G9TM2AZD",
+        "01M7JGESZ64C9GRGX3132RYA6Q",
+        "01M7JGET6844HC8ECTCA5WZ7CG",
+        "01M7JGETD8H9PZYWQFRT8PDWSS",
+        "01M7JGETVHS2XGEA8Z9DK360F6"
+      ],
+      "artifact_export": "tasks/H8.md"
+    }
+  ]
+}

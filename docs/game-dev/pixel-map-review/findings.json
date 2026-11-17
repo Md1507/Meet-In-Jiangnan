@@ -1,0 +1,109 @@
+{
+  "schema": "pixel-map-review/findings@1",
+  "sourceInventory": "source-input-hash.json",
+  "status": "review-only",
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "Critical",
+      "classification": "fact",
+      "title": "Pipeline output is SVG primitives and SVG links, not PNG pixel assets",
+      "evidence": [
+        "scripts/street-asset-kit/assemble.mjs:9-20",
+        "scripts/street-asset-kit/assemble.mjs:22-29",
+        "public/art/street-kit/terrain/street-ground.svg:1",
+        "public/art/street-kit/buildings/bun-goods-shop.svg:1",
+        "public/art/street-kit/buildings/parcel-pickup.svg:1",
+        "public/art/street-kit/props/wall-notice-board.svg:1",
+        "public/art/street-kit/props/bike-rack.svg:1"
+      ],
+      "statement": "The assembler creates one rect per map cell, then emits SVG image elements pointing at five SVG files. The referenced files contain rect/path primitives and no PNG file exists under public/art/street-kit. shape-rendering=crispEdges preserves hard edges but does not establish a native PNG tileset or sprite blit pipeline."
+    },
+    {
+      "id": "F-02",
+      "severity": "Critical",
+      "classification": "fact",
+      "title": "Footprint-sized image placement permits anisotropic stretch",
+      "evidence": [
+        "scripts/street-asset-kit/assemble.mjs:25-29",
+        "docs/game-dev/street-asset-kit/assembled-preview.svg:1"
+      ],
+      "statement": "The assembler sets image width and height to footprint cells times 16 and preserveAspectRatio=none. This can anisotropically stretch a source sprite and does not preserve native pixel dimensions or a transparent-sprite sampling contract. Current five intrinsic sizes match the corresponding footprint times 16; actual anisotropic stretch is not demonstrated for this snapshot."
+    },
+    {
+      "id": "F-03",
+      "severity": "Major",
+      "classification": "fact",
+      "title": "Tile IDs are palette lookup, not adjacency autotiling",
+      "evidence": [
+        "scripts/street-asset-kit/assemble.mjs:9",
+        "scripts/street-asset-kit/assemble.mjs:20",
+        "docs/game-dev/street-asset-kit/street-map.json:1"
+      ],
+      "statement": "The renderer maps tile values 0, 1, 2, 3 and 9 to five flat fills. No neighbor mask, corner case, material pair, bridge/bank rule or atlas frame selection is computed."
+    },
+    {
+      "id": "F-04",
+      "severity": "Major",
+      "classification": "fact",
+      "title": "Debug overlays are part of the canonical preview output",
+      "evidence": [
+        "scripts/street-asset-kit/assemble.mjs:31-47",
+        "docs/game-dev/street-asset-kit/assembled-preview.report.json:1"
+      ],
+      "statement": "The canonical report records overlay=true and the assembled SVG includes grid paths, footprint rectangles, entrance circles, warp boxes and actor bounds. A clean output is only available by invoking the assembler with overlay=false; the checked-in preview is therefore a debug/structural preview rather than a clean visual production preview."
+    },
+    {
+      "id": "F-05",
+      "severity": "Major",
+      "classification": "fact",
+      "title": "Validator checks metadata and connectivity but not pixel or visual contracts",
+      "evidence": [
+        "scripts/street-asset-kit/validate.mjs:59-81",
+        "scripts/street-asset-kit/validate.mjs:106-177",
+        "tests/street-asset-kit.test.mjs:1"
+      ],
+      "statement": "Validation covers IDs, paths, bytes, SHA-256, SVG dimensions, footprints, anchors, walkability, source-map parity, entrances and connectivity. It does not reject SVG-only production assets, inspect PNG bit depth/native sampling, test nearest-neighbor rendering, detect preserveAspectRatio=none, or prove autotile coverage."
+    },
+    {
+      "id": "F-06",
+      "severity": "Major",
+      "classification": "fact with pending conversion",
+      "title": "Donor point-cell connectivity misses full collider clearance",
+      "evidence": [
+        "scripts/street-asset-kit/validate.mjs:160-176",
+        "docs/game-dev/street-asset-kit/street-placement.json:20-27",
+        "docs/game-dev/street-asset-kit/asset-manifest.json:11",
+        "src/chapter/app.ts:185",
+        "donor review.md:98-104"
+      ],
+      "statement": "Donor mapping: west/east opening 32 high; collider y-22..y+16 height 38 cannot fit (anchor >=134 and <=128). Center anchors for F/P/s row 6 overlap blocked row 5. BFS and 10/10 tests do not establish full bounds. Runtime 48-world mapping and approval remain pending; no current runtime failure inferred."
+    },
+    {
+      "id": "F-07",
+      "severity": "Major",
+      "classification": "inference",
+      "title": "Visual QA shows readable blockout composition but insufficient pixel production detail",
+      "evidence": [
+        "evidence/verified-clean-1x.png",
+        "evidence/verified-clean-4x.png",
+        "evidence/verified-overlay-1x.png",
+        "evidence/verified-overlay-4x.png",
+        "evidence/verified-render.json"
+      ],
+      "statement": "Four verified raster images were viewed at 320x240 and 4x integer enlargement; verified-render.json records the independent render and resolved linked asset hashes. They show a clear central cross-shaped route, two readable service buildings, one notice board and one bike rack. Grass, path and edge-stone materials are flat repeated clusters; water is absent in the street view and its visual QA remains pending for garden. Buildings are simple vector blockouts with broad facades and no demonstrated tall-sprite occlusion. Production PNG art and human art/camera approval remain pending; this raster is structural QA, not final pixel art."
+    },
+    {
+      "id": "F-08",
+      "severity": "Minor",
+      "classification": "pending",
+      "title": "Six-map PNG coverage and runtime renderer remain unproven",
+      "evidence": [
+        "source-input-hash.json",
+        "docs/game-dev/campus-network-v1/maps.json:1",
+        "docs/game-dev/street-asset-kit/handoff.md:46-50"
+      ],
+      "statement": "The reviewed checkout contains six 20x15 map definitions but the reviewed street kit has no PNG terrain, building or prop library; six-map production PNG coverage and shared renderer are not established. Per-map asset needs, human palette approval and runtime consumption must remain pending until C/D/E execute their scoped work."
+    }
+  ]
+}

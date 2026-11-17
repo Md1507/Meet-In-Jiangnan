@@ -1,0 +1,637 @@
+{
+  "capturedUTC": "2026-11-16T16:42:09.217439+00:00",
+  "originRevision": "d736f538c162e57bdcbc592e98d64c395abad4ba",
+  "originDirty": "docs/game-dev/README.md modified; hierarchical-plan and map guide untracked",
+  "files": [
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\campus-network-v1\\ascii-maps.md",
+      "sha256": "9c20af8c85e1194b6a7783e073edf41e6a415c89a8b42ba78e48c5e32da70a95",
+      "bytes": 5146
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\campus-network-v1\\maps.json",
+      "sha256": "08e23f643b455fc135ef23695bbb3e6aca18ae50bb6b54fc03a7371551818a1d",
+      "bytes": 9277
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\campus-network-v1\\design.md",
+      "sha256": "6be848780cfab2f8527eb11dfdd0a25cdb7b454329bbc02f9337dff17b7f20be",
+      "bytes": 14458
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks.json",
+      "sha256": "4a9bcf61398527b72eb9753416a09951351dbad8b142c734b067e9d0f482a63e",
+      "bytes": 113453
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\README.md",
+      "sha256": "94e20e6290c333c57ef33f273dc7d32753f9cab100af93bcee51c470fe91bb1a",
+      "bytes": 12308
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\execution.md",
+      "sha256": "72ee8be580e153398744ad7109807f4c1bee3aefcc7d1f18d928349cadf10e7e",
+      "bytes": 4813
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\README.md",
+      "sha256": "907c481ddfd786f353dca8f4343c96d850d27aa77d3d70d5e80835faa4f074db",
+      "bytes": 5644
+    },
+    {
+      "path": "D:\\Project\\Game\\hen-o-giang-nam-map-asset-generation-guide-v1.0.md",
+      "sha256": "5a53c91342240a4a475f4559825ce4b6d3b968918e09b77b891a2d6d7da0675a",
+      "bytes": 34910
+    },
+    {
+      "path": "D:\\Project\\Game\\hen-o-giang-nam-art-style-guide-v0.3.md",
+      "sha256": "c405b97a302d949f15ca01756c3b10875aecf8dc5c103ebd84ac13ac8ba432b0",
+      "bytes": 72714
+    },
+    {
+      "path": "D:\\Project\\Game\\src\\chapter\\app.ts",
+      "sha256": "3b6f973bbd5f675945a4768b500bbcb6f7f5226560c4f02ec01350a2ffcc227d",
+      "bytes": 35352
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C1.md",
+      "sha256": "f8b5dbd00efb4a759e710af5f99d4d4c194b457bc5843176713e8cac28035eee",
+      "bytes": 8255
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C2.md",
+      "sha256": "7788815e7f4ae061a5b32a3c2d8bb5348943d7385a4cdcd87757680876af0148",
+      "bytes": 8024
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C3.md",
+      "sha256": "6e96f2f08b45d12adb718f12daa7f5df8c7e03c6cd1f5e3b32ae05323d737a80",
+      "bytes": 8162
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C4.md",
+      "sha256": "304a619e071d64d0959a430e2008639c7635110b37d3e13267a2f3c8527241a3",
+      "bytes": 8199
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C5.md",
+      "sha256": "bdaec30f55b75501b76892c68493daa05ea7043f711dfd2a2615362cf1c5c982",
+      "bytes": 8255
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C6.md",
+      "sha256": "08d88b87a1b35d9006cf2dbd58fa6291db0b4722b9521fbc49f3ee4a4244ba23",
+      "bytes": 9260
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\C7.md",
+      "sha256": "517019eafc095372c680c289453f82b6144299e4155d251c84801c38288310b0",
+      "bytes": 8368
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D1.md",
+      "sha256": "bac78ed580ab3f5b5623752afc6c92bff8b208caa58ff0602c9ebc98cacf4a65",
+      "bytes": 8618
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D2.md",
+      "sha256": "121cf5df99e8ae4ad23e2c3b0b529ceebf8df221a13d0d5805d9d87e2f04f48f",
+      "bytes": 8436
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D3.md",
+      "sha256": "571022d528750e68c0a43ff21798b62539a969317f69845f55657c757f90c8df",
+      "bytes": 8212
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D4.md",
+      "sha256": "56fb8173f54e2181d71cd08c7df3a888e5c59d764455efb3da12dda347346adb",
+      "bytes": 8619
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D5.md",
+      "sha256": "277b89363d68fdd58e807679bf3fc89dbf5dfef6ccc3d297e88c4eb04bc3ed6e",
+      "bytes": 8610
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D6.md",
+      "sha256": "74d64818527c5e659ec6be4bfcdc94df40d7b2f5a0a1f60d4f15c5fa5d2a5ba4",
+      "bytes": 8613
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D7.md",
+      "sha256": "5f5c0c63aa83ccd0d81b7d8d99a9fe191e36a67e54ef5cd2481d3005cfa2681d",
+      "bytes": 8604
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D8.md",
+      "sha256": "2a8280ac93eb676690470bbeca22ff49eb376bc68f3561e90941d8b03fd7055a",
+      "bytes": 8554
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D9.md",
+      "sha256": "2dc16889722f442c8b0a1db1cee7e5cd4f06ec3fa899767d5890e7ea7b24d1e4",
+      "bytes": 8257
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\D10.md",
+      "sha256": "5297f0a9652b3a3e78cc4bb338ec778c72f1eacd1d68479a913d00c6c607cfd7",
+      "bytes": 8164
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E1.md",
+      "sha256": "4302a7df5651b71bf5f9127f4d41ca7f2911aad067c107cd6a99acdff9a8dd03",
+      "bytes": 8155
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E2.md",
+      "sha256": "53cf239e5925db68719f67f9d7ee2923cc50337acddbdd0050e874103fbcff47",
+      "bytes": 8317
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E3.md",
+      "sha256": "e0f08697673e023c586acabfe9fdbacb7a063f5bb97d586b88af915fc7673f4f",
+      "bytes": 8216
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E4.md",
+      "sha256": "35c22938fcb44495f4dfdb05061770667210f2af9b97d5fb0e4dd1177d2f223d",
+      "bytes": 8186
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E5.md",
+      "sha256": "51281586cf7cc5284987074851161f70b009dd2d3cc996f46cc47d1b7f8d5484",
+      "bytes": 8186
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E6.md",
+      "sha256": "8b406a6e3b37bc71638acdee7b43e06e4c8a2e9710e99145edee7d560b897ae3",
+      "bytes": 8231
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E7.md",
+      "sha256": "fcc3de48d32af952a5184d54d6aca01a3682aa0f962fc9ac0b9bdb83ad8fd335",
+      "bytes": 8231
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E8.md",
+      "sha256": "89e8a4d15d4ad9145574f8967e25cf41ea0e51deeaa50a74c6219b29b05e738f",
+      "bytes": 8216
+    },
+    {
+      "path": "D:\\Project\\Game\\docs\\game-dev\\hierarchical-plan\\tasks\\E9.md",
+      "sha256": "710073ea182fb6f98304b4f420ab18cbd2a3800bfa454ea8193b9754c0248098",
+      "bytes": 8983
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7G4A8J4DQ4K797CFQ1MFR3D\\review.md",
+      "sha256": "e0ccefd6cfa5b808b0663bc6c2b8d0ca586ffc04dcd65282a46ea996464be159",
+      "bytes": 20080
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEHEY5Y1MB253HBZSW5NH\\requirement.md",
+      "sha256": "217ef4ba63fddaabd0f098bfb7d5fe8d02ad4914d44ffaf895c54832392fa784",
+      "bytes": 2864
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEHEY5Y1MB253HBZSW5NH\\plan.md",
+      "sha256": "68dbba5c192b8f48afc7e8e123990901bd498120f990d76ea08d5121171ff913",
+      "bytes": 4034
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEHEY5Y1MB253HBZSW5NH\\tasks.md",
+      "sha256": "6f045a4217d7d884a51743b3b1f05e3336ee406b1c9ef43d91eedb461265c5e5",
+      "bytes": 1439
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJHJ3AH22K3384TP7DGW\\requirement.md",
+      "sha256": "d1e2f92cca021290cf9c034a4760c25a1e6ca6f37ead8b1881add8da6f158be1",
+      "bytes": 3518
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJHJ3AH22K3384TP7DGW\\plan.md",
+      "sha256": "281802625fcfe82e9a71fda5824a44de3e8f36557d84a06705e8edd0c31bb03a",
+      "bytes": 5273
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJHJ3AH22K3384TP7DGW\\tasks.md",
+      "sha256": "0b16c8396def5bf399df69347adac1f9ce5113514ed32fefd2724d89b0494a9d",
+      "bytes": 1564
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJRKKR7TMBKF5HN658D0\\requirement.md",
+      "sha256": "b66ac058f4fc1faa4c83d6bbfc1a437872de6743c1bcfac279bd0fead50fca2d",
+      "bytes": 3383
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJRKKR7TMBKF5HN658D0\\plan.md",
+      "sha256": "c645fc3d98e23a9d4dc31a3a3b46466e27804450fc2a63f36c1703d03f4d020e",
+      "bytes": 6462
+    },
+    {
+      "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7JGEJRKKR7TMBKF5HN658D0\\tasks.md",
+      "sha256": "4938fb8ea0ee166425dfe7836f09192b4ace3f1dcfb8543b7a3d0c706713644a",
+      "bytes": 2046
+    }
+  ],
+  "liveTasks": [
+    {
+      "key": "C1",
+      "id": "01M7JGEHEY5Y1MB253HBZSW5NH",
+      "snapshotDeps": [
+        "A1"
+      ],
+      "liveStatus": "interrupted",
+      "liveDependsOn": [],
+      "rawSha256": "572fbcfe7c9e79950223f07ec9379cf22ada64a8ff7328d8a25792ef0716d39c",
+      "exit": 0
+    },
+    {
+      "key": "C2",
+      "id": "01M7JGEHP0ARF9FZM5RJ9KKM82",
+      "snapshotDeps": [
+        "C1"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEHEY5Y1MB253HBZSW5NH"
+      ],
+      "rawSha256": "e3f98d809191b7c7b5162a79e9a5f32220356f3b84d74a3eebcdfceb9697dbf4",
+      "exit": 0
+    },
+    {
+      "key": "C3",
+      "id": "01M7JGEHWWVBN1YHAQ4EA5H92Z",
+      "snapshotDeps": [
+        "C2"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEHP0ARF9FZM5RJ9KKM82"
+      ],
+      "rawSha256": "40c936fb75f346efa67463fcb3485312612e4168f16ea905eee70954255dd0a8",
+      "exit": 0
+    },
+    {
+      "key": "C4",
+      "id": "01M7JGEJ3QZ9KY8998VP1QWE2V",
+      "snapshotDeps": [
+        "C3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEHWWVBN1YHAQ4EA5H92Z"
+      ],
+      "rawSha256": "33f989c3abc29e0fc24272955b3db28926261297f43ee74898bf6df34a3528c8",
+      "exit": 0
+    },
+    {
+      "key": "C5",
+      "id": "01M7JGEJAPKMBMPT65MZD09PKG",
+      "snapshotDeps": [
+        "C4"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJ3QZ9KY8998VP1QWE2V"
+      ],
+      "rawSha256": "6ee96cfa9c1db3c9e3c4797d04f122d2716aaa5f1b8099c73317957336972fb4",
+      "exit": 0
+    },
+    {
+      "key": "C6",
+      "id": "01M7JGEJHJ3AH22K3384TP7DGW",
+      "snapshotDeps": [
+        "B1",
+        "C1",
+        "C5"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEGBN0ZC6PB1C5J21VAT1",
+        "01M7JGEHEY5Y1MB253HBZSW5NH",
+        "01M7JGEJAPKMBMPT65MZD09PKG"
+      ],
+      "rawSha256": "f8d8e08b5668018d1ceefc5ef83d513cdf7df95b2a94b7cb3a118cbc992067d7",
+      "exit": 0
+    },
+    {
+      "key": "C7",
+      "id": "01M7JGEJRKKR7TMBKF5HN658D0",
+      "snapshotDeps": [
+        "C6"
+      ],
+      "liveStatus": "interrupted",
+      "liveDependsOn": [],
+      "rawSha256": "4e2dd565a7b08c7ba76ef078fba8b873e3c677387e5edfa528886655c8bec2d5",
+      "exit": 0
+    },
+    {
+      "key": "D1",
+      "id": "01M7JGEJZE661T4SF5EMD5WYXS",
+      "snapshotDeps": [
+        "C7"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJRKKR7TMBKF5HN658D0"
+      ],
+      "rawSha256": "9755644e621ed68b5f6b1fcbbc5a2bd9579dd5bf74c23d287342e2b896d96c0e",
+      "exit": 0
+    },
+    {
+      "key": "D2",
+      "id": "01M7JGEK6J09C3ST6A55GCQVVH",
+      "snapshotDeps": [
+        "C7",
+        "C3",
+        "C4"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJRKKR7TMBKF5HN658D0",
+        "01M7JGEHWWVBN1YHAQ4EA5H92Z",
+        "01M7JGEJ3QZ9KY8998VP1QWE2V"
+      ],
+      "rawSha256": "bb7c6063795e7b7e13cd0b5450e82b14b03cfa4b842beb604a677d635b9eaa31",
+      "exit": 0
+    },
+    {
+      "key": "D3",
+      "id": "01M7JGEKDQYNJ34915JZQC9NKS",
+      "snapshotDeps": [
+        "C7"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJRKKR7TMBKF5HN658D0"
+      ],
+      "rawSha256": "771ca2bdc9bfc688b01f3f10660bdd92ea9bab5a218e02dc337fa7446a0ec62c",
+      "exit": 0
+    },
+    {
+      "key": "D4",
+      "id": "01M7JGEKMYNVVH3EM7KPEVKK4S",
+      "snapshotDeps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "a25ec75d2784acd3d71f0e686b47e42e90ecc34812a7bf75a388499210652dcf",
+      "exit": 0
+    },
+    {
+      "key": "D5",
+      "id": "01M7JGEKW1CCBB7SYHNM6KCXXZ",
+      "snapshotDeps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "ae33a5773d59ee69b75f0e856f79088a75f3e9c47fcbd7c0d736bdd1d7513174",
+      "exit": 0
+    },
+    {
+      "key": "D6",
+      "id": "01M7JGEM2ZFXYF39R8NG3N8CJG",
+      "snapshotDeps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "26061da7d696596356a3956dcdc2593f3045f2df92b807daee4f611d80ce9566",
+      "exit": 0
+    },
+    {
+      "key": "D7",
+      "id": "01M7JGEM9V3KNNR9X93QJP3TKG",
+      "snapshotDeps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "0ebb0373ed38a0d67d38f6f9e5f023ee2cb8ad8c10a773afa16a919fe4fca2a6",
+      "exit": 0
+    },
+    {
+      "key": "D8",
+      "id": "01M7JGEMH46E3C0EX73140XVQ8",
+      "snapshotDeps": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "a05bf6a254544d14a09765ac519f5c0eaa87ed5fdfe8fdb94f7cddf1c921c177",
+      "exit": 0
+    },
+    {
+      "key": "D9",
+      "id": "01M7JGEMR2W40MBMTP3HJW87DT",
+      "snapshotDeps": [
+        "B5",
+        "C6"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEH7TYRQQE5RYYN99PSZS",
+        "01M7JGEJHJ3AH22K3384TP7DGW"
+      ],
+      "rawSha256": "37e7feffce6eec665fc7cbab89b678b7af502a24ce9f1c8f884a4f77b7dcf638",
+      "exit": 0
+    },
+    {
+      "key": "D10",
+      "id": "01M7JGEMYT5EKFZFNMANFHTXWR",
+      "snapshotDeps": [
+        "B5"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEH7TYRQQE5RYYN99PSZS"
+      ],
+      "rawSha256": "52b9d2171e7610e250c302e1243bbd958e4b725e188a496c4a600980a8b2ccb6",
+      "exit": 0
+    },
+    {
+      "key": "E1",
+      "id": "01M7JGEN60AFS7BX0MGZW6Z46G",
+      "snapshotDeps": [
+        "C7",
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEJRKKR7TMBKF5HN658D0",
+        "01M7JGEJZE661T4SF5EMD5WYXS",
+        "01M7JGEK6J09C3ST6A55GCQVVH",
+        "01M7JGEKDQYNJ34915JZQC9NKS"
+      ],
+      "rawSha256": "0448e3d93d408d9f7767bb3bc5a6074618ddc650982d004927e247b267f468b8",
+      "exit": 0
+    },
+    {
+      "key": "E2",
+      "id": "01M7JGENCSCQPQZFXBG61FT5ER",
+      "snapshotDeps": [
+        "E1"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGEN60AFS7BX0MGZW6Z46G"
+      ],
+      "rawSha256": "3636a4f456b8a35b9af5fd4ad4a2292ca3c23d879b926e56c9957bbb91f79f56",
+      "exit": 0
+    },
+    {
+      "key": "E3",
+      "id": "01M7JGENKNAFEX8T13MDDZNEZK",
+      "snapshotDeps": [
+        "E2",
+        "D1"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEJZE661T4SF5EMD5WYXS"
+      ],
+      "rawSha256": "e6fe99e309b5ab5f74b7579a52fcf3474036417609eb85a89c3ea21349a48d00",
+      "exit": 0
+    },
+    {
+      "key": "E4",
+      "id": "01M7JGENTM7YS6FKJEMRQ711Q1",
+      "snapshotDeps": [
+        "E2",
+        "D4"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEKMYNVVH3EM7KPEVKK4S"
+      ],
+      "rawSha256": "8518db4393d45eb961beee04233c3ccd3f8101acae21d8a0db755d477ca2bf01",
+      "exit": 0
+    },
+    {
+      "key": "E5",
+      "id": "01M7JGEP1DYX2ZAE9JJRDZDXA8",
+      "snapshotDeps": [
+        "E2",
+        "D5"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEKW1CCBB7SYHNM6KCXXZ"
+      ],
+      "rawSha256": "bcb2a4a14b5dce1cebfb83dca52c1b48236e5bd172048b6c683bc6170821028a",
+      "exit": 0
+    },
+    {
+      "key": "E6",
+      "id": "01M7JGEP8DBGXME0Y2NA2C6CKA",
+      "snapshotDeps": [
+        "E2",
+        "D6"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEM2ZFXYF39R8NG3N8CJG"
+      ],
+      "rawSha256": "4beb34e9909218daf159a435bd18dec366e304497c1c079fb63679f312db5f65",
+      "exit": 0
+    },
+    {
+      "key": "E7",
+      "id": "01M7JGEPFDN5M065BK9ECQVX1R",
+      "snapshotDeps": [
+        "E2",
+        "D7"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEM9V3KNNR9X93QJP3TKG"
+      ],
+      "rawSha256": "a570545fa598f66c35f4440c7dd02799788b798d8b3fc8d8db49e44a0f005f4a",
+      "exit": 0
+    },
+    {
+      "key": "E8",
+      "id": "01M7JGEPPTS7EFJ4HXFSCSWW4P",
+      "snapshotDeps": [
+        "E2",
+        "D8"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENCSCQPQZFXBG61FT5ER",
+        "01M7JGEMH46E3C0EX73140XVQ8"
+      ],
+      "rawSha256": "b608f6acfdb5e20ade8d7ade095e48b31c1448c2c79046879d4b0ca7d284569a",
+      "exit": 0
+    },
+    {
+      "key": "E9",
+      "id": "01M7JGEPXW0BTSNBZ5QZB7TCRF",
+      "snapshotDeps": [
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "B5",
+        "D9",
+        "D10"
+      ],
+      "liveStatus": "planned",
+      "liveDependsOn": [
+        "01M7JGENKNAFEX8T13MDDZNEZK",
+        "01M7JGENTM7YS6FKJEMRQ711Q1",
+        "01M7JGEP1DYX2ZAE9JJRDZDXA8",
+        "01M7JGEP8DBGXME0Y2NA2C6CKA",
+        "01M7JGEPFDN5M065BK9ECQVX1R",
+        "01M7JGEPPTS7EFJ4HXFSCSWW4P",
+        "01M7JGEH7TYRQQE5RYYN99PSZS",
+        "01M7JGEMR2W40MBMTP3HJW87DT",
+        "01M7JGEMYT5EKFZFNMANFHTXWR"
+      ],
+      "rawSha256": "d252f7cd49d5b8a84fcf7a6fb0c0ab6c2b705c16ee7b954ffb0feda76f8dae48",
+      "exit": 0
+    }
+  ]
+}

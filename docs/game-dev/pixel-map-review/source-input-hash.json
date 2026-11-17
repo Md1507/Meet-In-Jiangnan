@@ -1,0 +1,90 @@
+{
+  "schema": "pixel-map-review/source-input-hash@1",
+  "donorCheckout": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D",
+  "gitRevision": "446a24f803bfc685346ef9cdbfd906223283a5d8",
+  "gitStatus": [
+    "?? docs/game-dev/street-asset-kit/",
+    "?? public/art/street-kit/",
+    "?? public/licenses/street-asset-kit.txt",
+    "?? scripts/street-asset-kit/",
+    "?? tests/street-asset-kit.test.mjs"
+  ],
+  "capturedAt": "2026-11-16T16:04:54.8313376Z",
+  "files": [
+    {
+      "path": "docs/game-dev/street-asset-kit/assembled-preview.svg",
+      "sha256": "7a6620c1744b47b7075ac02f5b8dac197f654a79998028560f11da0eba880a2c",
+      "bytes": 22274
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/assembled-preview.report.json",
+      "sha256": "b421fcc7fdcb054b2206a49f90ea9de8adaa6ec6ee9dfe65330f6ab38511789f",
+      "bytes": 1496
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/street-map.json",
+      "sha256": "b1e07f66a2770a41bf36400721ff0fc04666931b7bf985d6b7b3e66df07074ed",
+      "bytes": 4665
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/asset-manifest.json",
+      "sha256": "b6dde97fb14c09ab977aa9ff0f5e82db2dd43ead9dbc279f4588beb71b612bad",
+      "bytes": 6583
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/street-placement.json",
+      "sha256": "e0b0c96d85bc8ceb294314f80e4033bb662ae03ead8c687ff2c0bdd30af85686",
+      "bytes": 4911
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/layout-camera-packet.md",
+      "sha256": "cf48b28e3f01e06f294c970238812824c37b6c2476226ae17ef894e350cb0d13",
+      "bytes": 5899
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/handoff.md",
+      "sha256": "171ca3c5363ed630d5005a28e2dfcb80c928f11ade3019e78b064d9f074f5f34",
+      "bytes": 6602
+    },
+    {
+      "path": "public/art/street-kit/terrain/street-ground.svg",
+      "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06",
+      "bytes": 34826
+    },
+    {
+      "path": "public/art/street-kit/buildings/bun-goods-shop.svg",
+      "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b",
+      "bytes": 696
+    },
+    {
+      "path": "public/art/street-kit/buildings/parcel-pickup.svg",
+      "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624",
+      "bytes": 644
+    },
+    {
+      "path": "public/art/street-kit/props/wall-notice-board.svg",
+      "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0",
+      "bytes": 360
+    },
+    {
+      "path": "public/art/street-kit/props/bike-rack.svg",
+      "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484",
+      "bytes": 284
+    },
+    {
+      "path": "scripts/street-asset-kit/assemble.mjs",
+      "sha256": "528681b27b9fef6b3a7ca3dad5e066593ddc679878c3dff8ffae0f87921fb3a4",
+      "bytes": 5551
+    },
+    {
+      "path": "scripts/street-asset-kit/validate.mjs",
+      "sha256": "71923ae5739d50e94a32416e3d37b22223f0c090671c1c663a45645756c6ed92",
+      "bytes": 14861
+    },
+    {
+      "path": "tests/street-asset-kit.test.mjs",
+      "sha256": "76284844e7836a409cfe9d1d4f643d3cdd025c6b20df0aa75c1f4ab27600ac2a",
+      "bytes": 10202
+    }
+  ]
+}

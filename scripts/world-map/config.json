@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "grid": {
+    "width": 20,
+    "height": 15,
+    "tileSizePx": 16,
+    "macroExpansion": 2,
+    "macroExpansionCandidates": [2]
+  },
+  "tiles": {
+    "grass": 0,
+    "road": 1,
+    "blocked": 2,
+    "water": 3,
+    "warp": 9
+  },
+  "walkableTileIds": [0, 1, 9],
+  "blockedTileIds": [2, 3],
+  "terrainMaterials": {
+    "0": "grass",
+    "1": "road",
+    "2": "obstacle",
+    "3": "water",
+    "9": "warp"
+  },
+  "assetMetadata": {
+    "status": "pending",
+    "id": null,
+    "reason": "Production sprites, atlas and renderer are outside C1."
+  }
+}

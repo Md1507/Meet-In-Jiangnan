@@ -1,0 +1,53 @@
+{
+  "schema": "street-asset-kit/preview-report@0.2",
+  "mode": "production-assets",
+  "inputDigest": "4a98fe05abf9d87a8dafb9ecb5934b5ece25d009fd93a4ec4a3bffc3651b99b8",
+  "output": "C:/Users/LENOVO/AppData/Local/bint/state/Game-fd2129962cbf/worktrees/01M7JH7Q2H07TPK3BNB1JEGDCT/docs/game-dev/pixel-map-review/evidence/street-clean.svg",
+  "width": 320,
+  "height": 240,
+  "overlay": false,
+  "camera": "top-down orthographic, shallow 3/4 flattened, non-isometric",
+  "actorBounds": {
+    "visual": {
+      "width": 16,
+      "height": 45,
+      "anchor": {
+        "x": 8,
+        "y": 28
+      },
+      "unit": "world-px"
+    },
+    "collider": {
+      "width": 16,
+      "height": 38,
+      "anchor": {
+        "x": 8,
+        "y": 22
+      },
+      "unit": "world-px"
+    },
+    "reviewAnchor": {
+      "x": 9,
+      "y": 7,
+      "unit": "macro-tile"
+    },
+    "source": {
+      "visual": "src/chapter/app.ts:37",
+      "collider": "src/chapter/app.ts:185"
+    },
+    "mapping": "runtime world position is the sprite bottom-center; one macro tile expands to 16 world pixels"
+  },
+  "warnings": [],
+  "sourceFiles": [
+    "docs/game-dev/street-asset-kit/street-map.json",
+    "docs/game-dev/street-asset-kit/asset-manifest.json",
+    "docs/game-dev/street-asset-kit/street-placement.json"
+  ],
+  "assetFiles": [
+    "public/art/street-kit/terrain/street-ground.svg",
+    "public/art/street-kit/buildings/bun-goods-shop.svg",
+    "public/art/street-kit/buildings/parcel-pickup.svg",
+    "public/art/street-kit/props/wall-notice-board.svg",
+    "public/art/street-kit/props/bike-rack.svg"
+  ]
+}

@@ -1,0 +1,1172 @@
+{
+  "schema": 1,
+  "sourceInputs": {
+    "maps.json": "08e23f643b455fc135ef23695bbb3e6aca18ae50bb6b54fc03a7371551818a1d",
+    "ascii-maps.md": "9c20af8c85e1194b6a7783e073edf41e6a415c89a8b42ba78e48c5e32da70a95"
+  },
+  "terrainPairs": {
+    "dorm": [
+      "0-1",
+      "0-2",
+      "1-2"
+    ],
+    "gate": [
+      "0-1",
+      "0-2",
+      "1-2"
+    ],
+    "library": [
+      "0-1",
+      "0-2",
+      "0-3",
+      "1-2"
+    ],
+    "canteen": [
+      "0-1",
+      "0-2",
+      "1-2"
+    ],
+    "street": [
+      "0-1",
+      "0-2",
+      "1-2"
+    ],
+    "garden": [
+      "0-1",
+      "0-2",
+      "0-3",
+      "1-2",
+      "1-3",
+      "2-3"
+    ]
+  },
+  "c6": null,
+  "assets": [
+    {
+      "id": "terrain_path_01",
+      "category": "terrain",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "placement": "Adjacent macro classes; exact masks and variants pending C1/C2.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "terrain_path_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json"
+      ]
+    },
+    {
+      "id": "terrain_grass_01",
+      "category": "terrain",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "placement": "Adjacent macro classes; exact masks and variants pending C1/C2.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "terrain_grass_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_dorm_01",
+      "category": "architecture",
+      "maps": [
+        "dorm"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_dorm_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_common_01",
+      "category": "architecture",
+      "maps": [
+        "dorm"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_common_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "sign_wall_01",
+      "category": "props",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "placement": "ASCII s annotation on blocked cell; interaction and footprint pending.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "sign_wall_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "building_reception_01",
+      "category": "architecture",
+      "maps": [
+        "gate"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_reception_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_information_01",
+      "category": "architecture",
+      "maps": [
+        "gate"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_information_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "gate_pillar_01",
+      "category": "architecture",
+      "maps": [
+        "gate"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "gate_pillar_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "terrain_water_01",
+      "category": "terrain",
+      "maps": [
+        "library",
+        "garden"
+      ],
+      "placement": "Adjacent macro classes; exact masks and variants pending C1/C2.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "terrain_water_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_library_01",
+      "category": "architecture",
+      "maps": [
+        "library"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_library_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_study_01",
+      "category": "architecture",
+      "maps": [
+        "library"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_study_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_serving_01",
+      "category": "architecture",
+      "maps": [
+        "canteen"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_serving_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "building_canteen_01",
+      "category": "architecture",
+      "maps": [
+        "canteen"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building_canteen_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "stall_baozi_01",
+      "category": "architecture",
+      "maps": [
+        "street"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "stall_baozi_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "parcel_point_01",
+      "category": "architecture",
+      "maps": [
+        "street"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "parcel_point_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "terrain_bridge_01",
+      "category": "terrain",
+      "maps": [
+        "garden"
+      ],
+      "placement": "Adjacent macro classes; exact masks and variants pending C1/C2.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "terrain_bridge_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json"
+      ]
+    },
+    {
+      "id": "pavilion_reading_01",
+      "category": "architecture",
+      "maps": [
+        "garden"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "pavilion_reading_01"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ]
+    },
+    {
+      "id": "terrain.street-ground",
+      "category": "terrain",
+      "maps": [
+        "street"
+      ],
+      "placement": "Street donor placement; exact footprint and placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "terrain.street-ground"
+      ],
+      "sourceManifests": [
+        "public/art/street-kit/manifests/street-asset-manifest.json"
+      ]
+    },
+    {
+      "id": "building.bun-goods-shop",
+      "category": "architecture",
+      "maps": [
+        "street"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building.bun-goods-shop"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "building.parcel-pickup",
+      "category": "architecture",
+      "maps": [
+        "street"
+      ],
+      "placement": "ASCII landmark; footprint and exact placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "building.parcel-pickup"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "prop.wall-notice-board",
+      "category": "props",
+      "maps": [
+        "street"
+      ],
+      "placement": "ASCII s annotation on blocked cell; interaction and footprint pending.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "prop.wall-notice-board"
+      ],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+        "public/art/street-kit/manifests/street-asset-manifest.json",
+        "docs/game-dev/street-asset-kit/asset-manifest.json",
+        "docs/game-dev/street-asset-kit/street-placement.json"
+      ]
+    },
+    {
+      "id": "prop.bike-rack",
+      "category": "props",
+      "maps": [
+        "street"
+      ],
+      "placement": "Street donor placement; exact footprint and placement pending C6.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [
+        "prop.bike-rack"
+      ],
+      "sourceManifests": [
+        "public/art/street-kit/manifests/street-asset-manifest.json"
+      ]
+    },
+    {
+      "id": "vegetation-campus",
+      "category": "vegetation",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "placement": "Candidate shared vegetation; locations and footprint pending layout review.",
+      "status": "pending",
+      "path": null,
+      "sha256": null,
+      "nativeDimensions": null,
+      "gridFootprint": null,
+      "anchor": null,
+      "collision": null,
+      "layer": null,
+      "renderOrder": null,
+      "interaction": null,
+      "variants": null,
+      "source": null,
+      "license": null,
+      "bytes": null,
+      "sourceStatus": "pending",
+      "runtimeStatus": "pending",
+      "previewStatus": "pending",
+      "sourceIds": [],
+      "sourceManifests": [
+        "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json"
+      ],
+      "sourceNote": "No vegetation ID is declared in the supplied pipeline or street manifests; keep this shared need pending."
+    }
+  ],
+  "sourceWhereUsed": {
+    "terrain_path_01": [
+      "dorm",
+      "gate",
+      "library",
+      "canteen",
+      "street",
+      "garden"
+    ],
+    "terrain_grass_01": [
+      "dorm",
+      "gate",
+      "library",
+      "canteen",
+      "street",
+      "garden"
+    ],
+    "building_dorm_01": [
+      "dorm"
+    ],
+    "building_common_01": [
+      "dorm"
+    ],
+    "sign_wall_01": [
+      "dorm",
+      "gate",
+      "library",
+      "canteen",
+      "street",
+      "garden"
+    ],
+    "building_reception_01": [
+      "gate"
+    ],
+    "building_information_01": [
+      "gate"
+    ],
+    "gate_pillar_01": [
+      "gate"
+    ],
+    "terrain_water_01": [
+      "library",
+      "garden"
+    ],
+    "building_library_01": [
+      "library"
+    ],
+    "building_study_01": [
+      "library"
+    ],
+    "building_serving_01": [
+      "canteen"
+    ],
+    "building_canteen_01": [
+      "canteen"
+    ],
+    "stall_baozi_01": [
+      "street"
+    ],
+    "parcel_point_01": [
+      "street"
+    ],
+    "terrain_bridge_01": [
+      "garden"
+    ],
+    "pavilion_reading_01": [
+      "garden"
+    ],
+    "terrain.street-ground": [
+      "street"
+    ],
+    "building.bun-goods-shop": [
+      "street"
+    ],
+    "building.parcel-pickup": [
+      "street"
+    ],
+    "prop.wall-notice-board": [
+      "street"
+    ],
+    "prop.bike-rack": [
+      "street"
+    ]
+  },
+  "sourceArtifacts": [
+    {
+      "path": "docs/game-dev/world-map-pipeline/generated/shared_asset_manifest.json",
+      "sha256": "c11c66be849e1843997b57e325acf3862041f2bfe46271ff9a1f1b965fb3b359"
+    },
+    {
+      "path": "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json",
+      "sha256": "9f43d743954f87052a757e1c1fce30df0dfe422c905bc8af2164e82348d06a7d"
+    },
+    {
+      "path": "docs/game-dev/world-map-pipeline/generated/world_manifest.json",
+      "sha256": "fb3fbc143e095d715f17796a46850de3e6137d86a0ec5aefd7a5b93cc1191e65"
+    },
+    {
+      "path": "public/art/street-kit/manifests/street-asset-manifest.json",
+      "sha256": "b6dde97fb14c09ab977aa9ff0f5e82db2dd43ead9dbc279f4588beb71b612bad"
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/street-placement.json",
+      "sha256": "e0b0c96d85bc8ceb294314f80e4033bb662ae03ead8c687ff2c0bdd30af85686"
+    },
+    {
+      "path": "dual-grid-task/requirement.md",
+      "sha256": "93343239560f96c778a9bedce6429948d4e8f6e41468f8772abb6fe4c76ef9f0"
+    },
+    {
+      "path": "docs/game-dev/street-asset-kit/asset-manifest.json",
+      "sha256": "b6dde97fb14c09ab977aa9ff0f5e82db2dd43ead9dbc279f4588beb71b612bad"
+    },
+    {
+      "path": "dual-grid-task/plan.md",
+      "sha256": "838f9dc71bc0475c74595120efceb95acea25fafbb24ef025cdcccea1ae35a68"
+    },
+    {
+      "path": "dual-grid-task/tasks.md",
+      "sha256": "c8cc1adad4d8462dca5eee0e4b792261f87eb62d7222fba44c8298dcd651b833"
+    }
+  ],
+  "variantContract": {
+    "status": "pending",
+    "source": "docs/game-dev/world-map-pipeline/generated/terrain_tileset_manifest.json",
+    "assetKeyFormat": "material:cardinal:diagonal",
+    "rule": "C1/Dual-Grid must resolve material, mask and variant IDs before production."
+  },
+  "sourceInventory": [
+    {
+      "id": "terrain_path_01",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "category": "terrain",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "terrain_grass_01",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "category": "terrain",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_dorm_01",
+      "maps": [
+        "dorm"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_common_01",
+      "maps": [
+        "dorm"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "sign_wall_01",
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "category": "prop",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_reception_01",
+      "maps": [
+        "gate"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_information_01",
+      "maps": [
+        "gate"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "gate_pillar_01",
+      "maps": [
+        "gate"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "terrain_water_01",
+      "maps": [
+        "library",
+        "garden"
+      ],
+      "category": "terrain",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_library_01",
+      "maps": [
+        "library"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_study_01",
+      "maps": [
+        "library"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_serving_01",
+      "maps": [
+        "canteen"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "building_canteen_01",
+      "maps": [
+        "canteen"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "stall_baozi_01",
+      "maps": [
+        "street"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "parcel_point_01",
+      "maps": [
+        "street"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "terrain_bridge_01",
+      "maps": [
+        "garden"
+      ],
+      "category": "terrain",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "pavilion_reading_01",
+      "maps": [
+        "garden"
+      ],
+      "category": "architecture",
+      "variantOf": null,
+      "status": "required_not_produced",
+      "png": null
+    },
+    {
+      "id": "terrain.street-ground",
+      "maps": [
+        "street"
+      ],
+      "category": "terrain",
+      "variantOf": null,
+      "status": "donor_svg_only",
+      "png": null,
+      "sourcePath": "public/art/street-kit/terrain/street-ground.svg"
+    },
+    {
+      "id": "building.bun-goods-shop",
+      "maps": [
+        "street"
+      ],
+      "category": "building",
+      "variantOf": null,
+      "status": "donor_svg_only",
+      "png": null,
+      "sourcePath": "public/art/street-kit/buildings/bun-goods-shop.svg"
+    },
+    {
+      "id": "building.parcel-pickup",
+      "maps": [
+        "street"
+      ],
+      "category": "building",
+      "variantOf": null,
+      "status": "donor_svg_only",
+      "png": null,
+      "sourcePath": "public/art/street-kit/buildings/parcel-pickup.svg"
+    },
+    {
+      "id": "prop.wall-notice-board",
+      "maps": [
+        "street"
+      ],
+      "category": "prop",
+      "variantOf": null,
+      "status": "donor_svg_only",
+      "png": null,
+      "sourcePath": "public/art/street-kit/props/wall-notice-board.svg"
+    },
+    {
+      "id": "prop.bike-rack",
+      "maps": [
+        "street"
+      ],
+      "category": "prop",
+      "variantOf": null,
+      "status": "donor_svg_only",
+      "png": null,
+      "sourcePath": "public/art/street-kit/props/bike-rack.svg"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "tileSizePx": 16,
+  "cornerBits": {
+    "NW": 1,
+    "NE": 2,
+    "SE": 4,
+    "SW": 8
+  },
+  "atlas": [
+    {
+      "mask": 0,
+      "tile": 0,
+      "components": null
+    },
+    {
+      "mask": 1,
+      "tile": 1,
+      "components": null
+    },
+    {
+      "mask": 2,
+      "tile": 2,
+      "components": null
+    },
+    {
+      "mask": 3,
+      "tile": 3,
+      "components": null
+    },
+    {
+      "mask": 4,
+      "tile": 4,
+      "components": null
+    },
+    {
+      "mask": 5,
+      "tile": 5,
+      "components": [
+        [
+          "NW"
+        ],
+        [
+          "SE"
+        ]
+      ]
+    },
+    {
+      "mask": 6,
+      "tile": 6,
+      "components": null
+    },
+    {
+      "mask": 7,
+      "tile": 7,
+      "components": null
+    },
+    {
+      "mask": 8,
+      "tile": 8,
+      "components": null
+    },
+    {
+      "mask": 9,
+      "tile": 9,
+      "components": null
+    },
+    {
+      "mask": 10,
+      "tile": 10,
+      "components": [
+        [
+          "NE"
+        ],
+        [
+          "SW"
+        ]
+      ]
+    },
+    {
+      "mask": 11,
+      "tile": 11,
+      "components": null
+    },
+    {
+      "mask": 12,
+      "tile": 12,
+      "components": null
+    },
+    {
+      "mask": 13,
+      "tile": 13,
+      "components": null
+    },
+    {
+      "mask": 14,
+      "tile": 14,
+      "components": null
+    },
+    {
+      "mask": 15,
+      "tile": 15,
+      "components": null
+    }
+  ],
+  "materials": {
+    "underlay": "grass",
+    "layers": [
+      "grass",
+      "road",
+      "water",
+      "obstacle_macro"
+    ],
+    "pairs": [
+      [
+        "grass",
+        "road"
+      ],
+      [
+        "grass",
+        "water"
+      ],
+      [
+        "road",
+        "water"
+      ]
+    ],
+    "junction": "per-corner",
+    "bridge": {
+      "underlay": "water",
+      "overlay": "bridge",
+      "bank": "road"
+    },
+    "assets": "pending"
+  }
+}

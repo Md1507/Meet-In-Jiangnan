@@ -1,5 +1,10 @@
 # Kế hoạch game và workflow game-dev
 
+Kế hoạch điều phối hiện hành từ 16/11/2026: [cây task cha–con toàn game](hierarchical-plan/README.md),
+gồm một phiếu tổng, tám nhóm và 54 task lá đã có yêu cầu, kế hoạch, tiêu chí và dependency.
+Thực hiện từng task lá theo [thứ tự triển khai](hierarchical-plan/execution.md).
+Các kế hoạch và ghi nhận bên dưới giữ làm nguồn lịch sử; trạng thái hiện tại đọc từ Bint.
+
 Đồng bộ ngày 13/11/2026. Phiếu tổng: `01M78EYZ58EHGP3R83ZKVZ0AVH`.
 
 - [Yêu cầu](requirement.md): mục tiêu, chức năng, 14 AC giữ nguyên và trách nhiệm playtest.

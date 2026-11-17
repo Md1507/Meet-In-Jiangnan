@@ -1,0 +1,276 @@
+{
+  "method": "sharp/libvips SVG rasterizer; resolve each relative href to exact local bytes then embed losslessly as data URI in memory before rendering; no artwork changes",
+  "versions": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "records": [
+    {
+      "name": "overlay",
+      "scale": 1,
+      "input": "C:/Users/LENOVO/AppData/Local/bint/state/Game-fd2129962cbf/worktrees/01M7G4A8J4DQ4K797CFQ1MFR3D/docs/game-dev/street-asset-kit/assembled-preview.svg",
+      "inputSha256": "7a6620c1744b47b7075ac02f5b8dac197f654a79998028560f11da0eba880a2c",
+      "refs": [
+        {
+          "href": "../../../public/art/street-kit/terrain/street-ground.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\terrain\\street-ground.svg",
+          "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06",
+          "bytes": 34826
+        },
+        {
+          "href": "../../../public/art/street-kit/buildings/bun-goods-shop.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\bun-goods-shop.svg",
+          "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b",
+          "bytes": 696
+        },
+        {
+          "href": "../../../public/art/street-kit/buildings/parcel-pickup.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\parcel-pickup.svg",
+          "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624",
+          "bytes": 644
+        },
+        {
+          "href": "../../../public/art/street-kit/props/wall-notice-board.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\wall-notice-board.svg",
+          "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0",
+          "bytes": 360
+        },
+        {
+          "href": "../../../public/art/street-kit/props/bike-rack.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\bike-rack.svg",
+          "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484",
+          "bytes": 284
+        }
+      ],
+      "output": "docs/game-dev/pixel-map-review/evidence/verified-overlay-1x.png",
+      "outputSha256": "0af6e2c6c4d5eb39dd6101e46b95c044b82e4d28246d319db9758268eb4c0904",
+      "dimensions": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 5717,
+        "width": 320,
+        "height": 240,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 320,
+          "height": 240
+        }
+      }
+    },
+    {
+      "name": "overlay",
+      "scale": 4,
+      "input": "C:/Users/LENOVO/AppData/Local/bint/state/Game-fd2129962cbf/worktrees/01M7G4A8J4DQ4K797CFQ1MFR3D/docs/game-dev/street-asset-kit/assembled-preview.svg",
+      "inputSha256": "7a6620c1744b47b7075ac02f5b8dac197f654a79998028560f11da0eba880a2c",
+      "refs": [
+        {
+          "href": "../../../public/art/street-kit/terrain/street-ground.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\terrain\\street-ground.svg",
+          "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06",
+          "bytes": 34826
+        },
+        {
+          "href": "../../../public/art/street-kit/buildings/bun-goods-shop.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\bun-goods-shop.svg",
+          "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b",
+          "bytes": 696
+        },
+        {
+          "href": "../../../public/art/street-kit/buildings/parcel-pickup.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\parcel-pickup.svg",
+          "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624",
+          "bytes": 644
+        },
+        {
+          "href": "../../../public/art/street-kit/props/wall-notice-board.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\wall-notice-board.svg",
+          "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0",
+          "bytes": 360
+        },
+        {
+          "href": "../../../public/art/street-kit/props/bike-rack.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\bike-rack.svg",
+          "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484",
+          "bytes": 284
+        }
+      ],
+      "output": "docs/game-dev/pixel-map-review/evidence/verified-overlay-4x.png",
+      "outputSha256": "7d11f3a7619c1b389d3bc92f74047d49fba3cf4b25c8421d758d2c35335f3b86",
+      "dimensions": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 49441,
+        "width": 1280,
+        "height": 960,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 288,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 1280,
+          "height": 960
+        }
+      }
+    },
+    {
+      "name": "clean",
+      "scale": 1,
+      "input": "docs/game-dev/pixel-map-review/evidence/street-clean.svg",
+      "inputSha256": "7584aaf95523e2bd4dcc9abb545867d8e17cfd75ea314b23e20bb8c50e540ffc",
+      "refs": [
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/terrain/street-ground.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\terrain\\street-ground.svg",
+          "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06",
+          "bytes": 34826
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/buildings/bun-goods-shop.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\bun-goods-shop.svg",
+          "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b",
+          "bytes": 696
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/buildings/parcel-pickup.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\parcel-pickup.svg",
+          "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624",
+          "bytes": 644
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/props/wall-notice-board.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\wall-notice-board.svg",
+          "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0",
+          "bytes": 360
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/props/bike-rack.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\bike-rack.svg",
+          "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484",
+          "bytes": 284
+        }
+      ],
+      "output": "docs/game-dev/pixel-map-review/evidence/verified-clean-1x.png",
+      "outputSha256": "ccdfaea80fa1d93ecfd081e0112f89ff1d96a5d0859adb6faa1b36dd0338e1c0",
+      "dimensions": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 3988,
+        "width": 320,
+        "height": 240,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 320,
+          "height": 240
+        }
+      }
+    },
+    {
+      "name": "clean",
+      "scale": 4,
+      "input": "docs/game-dev/pixel-map-review/evidence/street-clean.svg",
+      "inputSha256": "7584aaf95523e2bd4dcc9abb545867d8e17cfd75ea314b23e20bb8c50e540ffc",
+      "refs": [
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/terrain/street-ground.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\terrain\\street-ground.svg",
+          "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06",
+          "bytes": 34826
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/buildings/bun-goods-shop.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\bun-goods-shop.svg",
+          "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b",
+          "bytes": 696
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/buildings/parcel-pickup.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\buildings\\parcel-pickup.svg",
+          "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624",
+          "bytes": 644
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/props/wall-notice-board.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\wall-notice-board.svg",
+          "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0",
+          "bytes": 360
+        },
+        {
+          "href": "../../../../../01M7G4A8J4DQ4K797CFQ1MFR3D/public/art/street-kit/props/bike-rack.svg",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D\\public\\art\\street-kit\\props\\bike-rack.svg",
+          "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484",
+          "bytes": 284
+        }
+      ],
+      "output": "docs/game-dev/pixel-map-review/evidence/verified-clean-4x.png",
+      "outputSha256": "b6671e3e24c8213ad7bad0e78572285abc20825cbfcae90e56d6cc413ae832ab",
+      "dimensions": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 40888,
+        "width": 1280,
+        "height": 960,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 288,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 1280,
+          "height": 960
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0-data-first",
+  "status": "requirements_only",
+  "assets": [
+    {
+      "asset_id": "terrain_path_01",
+      "category": "terrain",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "terrain",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "terrain_grass_01",
+      "category": "terrain",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "terrain",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_dorm_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "dorm"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_common_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "dorm"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "sign_wall_01",
+      "category": "prop",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "dorm",
+        "gate",
+        "library",
+        "canteen",
+        "street",
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_reception_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "gate"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_information_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "gate"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "gate_pillar_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "gate"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "terrain_water_01",
+      "category": "terrain",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "terrain",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "library",
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_library_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "library"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_study_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "library"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_serving_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "canteen"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "building_canteen_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "canteen"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "stall_baozi_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "street"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "parcel_point_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "street"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "terrain_bridge_01",
+      "category": "terrain",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "terrain",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    },
+    {
+      "asset_id": "pavilion_reading_01",
+      "category": "architecture",
+      "status": "required_not_produced",
+      "file": null,
+      "sha256": null,
+      "sprite_dimensions_px": null,
+      "grid_footprint": null,
+      "ground_anchor_px": null,
+      "collision_footprint": null,
+      "render_layer": "structure",
+      "palette_version": null,
+      "style_version": "jiangnan-world-v1-draft",
+      "variant_of": null,
+      "maps": [
+        "garden"
+      ],
+      "source": null,
+      "license": null
+    }
+  ]
+}

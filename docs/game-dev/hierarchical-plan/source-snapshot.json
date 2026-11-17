@@ -1,0 +1,514 @@
+{
+  "captured_at": "2026-11-16T15:43:33.702Z",
+  "head": "d736f538c162e57bdcbc592e98d64c395abad4ba",
+  "dirty_at_capture": "?? hen-o-giang-nam-map-asset-generation-guide-v1.0.md",
+  "note": "Read-only inventory at planning time, not a build or verification result.",
+  "tickets": [
+    {
+      "key": "MVP",
+      "id": "01M78EYZ58EHGP3R83ZKVZ0AVH",
+      "goal": "Xây dựng MVP 7 ngày đầu du học: game pixel PixiJS luyện nói, viết câu và viết tay tiếng Trung với AI chạy tại trình duyệt.",
+      "status": "in_review",
+      "criteria": [
+        "Bản desktop chạy trên HTTPS bằng PixiJS, có 6 khu vực liên thông, di chuyển WASD hoặc phím mũi tên, va chạm và tương tác NPC bằng phím E.",
+        "Chơi trọn chương mở đầu 7 ngày trong năm 2026 với 6 nhiệm vụ cốt truyện, 6 NPC gồm mentor, và một kết thúc kiểm tra giao tiếp đã học.",
+        "Có 4 hoạt động hàng ngày và 4 sự kiện bất ngờ có điều kiện; cùng seed cho cùng chuỗi sự kiện, mỗi sự kiện tối đa một lần mỗi ngày và không khóa nhiệm vụ chính.",
+        "Có 12 tình huống giao tiếp đời thường; mỗi tình huống chấp nhận ít nhất 3 cách diễn đạt đúng và từ chối ít nhất 1 câu sai ý trong bộ kiểm thử.",
+        "Luyện nói ghi âm tối đa 20 giây, nghe lại, nhận bản chép tiếng Trung từ model tại máy và sửa hoặc thu lại; nghiệm thu smoke trên chương hiện tại với một mic thật và một ca phục hồi; không hiển thị điểm thanh điệu hay phát âm suy từ bản chép.",
+        "Luyện viết câu có 10 bài qua bộ gõ pinyin của hệ điều hành, hỗ trợ composition tiếng Trung; nghiệm thu smoke một bài bằng IME thật trên chương hiện tại, không gửi câu khi Enter đang chọn chữ và phản hồi theo ý định cùng thành phần câu.",
+        "Luyện viết tay có 20 chữ Hán, chế độ tô nét, gợi nét và tự viết chữ mục tiêu; phản hồi thứ tự nét, cho thử lại và lưu tiến bộ riêng.",
+        "Mentor hỗ trợ 3 mức gợi ý; sổ tay lưu câu, nghĩa, pinyin và lịch ôn sau 1, 3, 7 ngày trong game, với tiến bộ nói, viết câu và viết tay tách biệt.",
+        "Whisper Tiny đa ngôn ngữ và model hội thoại nhỏ được lượng tử hóa chạy trong browser qua worker; có một trace HTTPS trên bản phát hành phủ audio, câu trả lời, nét viết, ASR và LLM; toàn bộ audio, câu trả lời và nét viết không gửi lên mạng.",
+        "Có tiến trình tải, hủy và thử lại model, cache có phiên bản và nút xóa; mất WebGPU thử ASR bằng WASM, lỗi hoặc quá hạn chuyển sang gõ và hội thoại biên soạn mà giữ tiến độ.",
+        "Đồ họa pixel nguyên bản thể hiện cả đại học hiện đại năm 2026 và khu phố Giang Nam; 6 khu vực có nhận diện riêng, chữ Hán cùng dấu pinyin đọc rõ ở 1280x720 và tài sản có nguồn cùng giấy phép.",
+        "Tải lại khôi phục vị trí, ngày, nhiệm vụ, quan hệ và tiến bộ học; lưu có schema version, xuất nhập JSON và phục hồi bản lưu trước khi dữ liệu lỗi.",
+        "Lệnh npm run verify:mvp được định nghĩa để kiểm tra kiểu, nội dung, logic và luồng chơi; đo cảnh 10 NPC đạt trung vị ít nhất 50 FPS trong 60 giây trên máy chuẩn ghi rõ cấu hình, gói chơi đầu không quá 30 MiB và gói AI tải riêng không quá 800 MiB.",
+        "Toàn bộ nội dung học bắt buộc có chữ giản thể, pinyin có dấu, nghĩa tiếng Việt, ngữ cảnh và âm thanh mẫu; bộ kiểm chứng AI gồm 60 câu chưa dùng làm ví dụ và 40 bản ghi có nhãn, đạt ngưỡng smoke tại plan.md trước khi coi MVP hoàn tất."
+      ],
+      "worktree": "D:\\Project\\Game",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78EYZ58EHGP3R83ZKVZ0AVH\\plan.md",
+          "sha256": "2b7a075ba21357f0a1f272642f4e93fdbaefaebbc965a9b2dd5f87340d3327f1"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78EYZ58EHGP3R83ZKVZ0AVH\\requirement.md",
+          "sha256": "171cc197b8a3960c62576bf4bab2ecce08f5182d4afa36389c1b7e50b6bed085"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78EYZ58EHGP3R83ZKVZ0AVH\\tasks.md",
+          "sha256": "0c64e47561361f19ea9c99b76f59350d13dda792c345c6842011b46f9b45903f"
+        }
+      ]
+    },
+    {
+      "key": "SPIKE",
+      "id": "01M78GXHE4NMBKNHHNQ0A8QBN8",
+      "goal": "Hoàn thiện kỹ thuật M0 và vòng chơi nhà ăn M1 từ bản PixiJS hiện tại, giữ riêng nghiệm thu MVP tổng.",
+      "status": "done",
+      "criteria": [
+        "Có ModelManager/worker dùng local-only Transformers.js, Whisper Tiny đa ngôn ngữ và Qwen3 0.6B ONNX; manifest khóa revision/hash/byte/license, tổng gói AI <=800 MiB, hủy/timeout và bỏ kết quả sai phiên; ghi bằng chứng inference thật hoặc đánh dấu phần này chưa đạt, không dùng mock thay chứng cứ.",
+        "UI thu tối đa 20 giây, nghe lại, giải mã/resample, chặn im lặng, chép ASR/sửa/thu lại; từ chối mic hoặc model lỗi có đường gõ giữ tiến độ, thu gõ và transcript sửa được ghi riêng.",
+        "Có spike nhập Hán bằng IME không submit Enter khi đang composition, khóa điều khiển thế giới khi focus UI; Hanzi Writer chữ 我 với tô nét, gợi nét, tự viết, dữ liệu và giấy phép bundle local.",
+        "Chơi được vòng M1 tại nhà ăn có va chạm vật cản, NPC bán món/mentor, dùng E tương tác, HTML hội thoại rõ và khóa di chuyển khi thao tác UI.",
+        "IntentEvaluator cảnh gọi nước nhận tối thiểu 3 diễn đạt đúng, từ chối phủ định/sai slot; output AI qua schema và điều kiện cảnh, model không trực tiếp thay quest/reward.",
+        "Hoàn thành quest gọi nước theo luồng đi-tương tác-nói hoặc gõ-phản ứng-thưởng-sổ tay; thưởng tối đa một lần, lưu/khôi phục tiến độ bằng storage local và model lỗi không khóa quest; có 3 mức gợi ý mentor.",
+        "npm run verify:m0-m1 được định nghĩa bằng các kiểm tra thật: typecheck/build, unit/content và browser flow adapter cố định, kiểm model stale/error/cancel và save/reward; báo rõ adapter không phải chứng cứ model thật, không có placeholder fail/pass cố định.",
+        "Có tài liệu chạy và bằng chứng đối chiếu từng tiêu chí, rõ ràng trạng thái M0/M1 và các gate cũ chưa nghiệm thu gồm 60 câu/40 audio, máy chuẩn, IME/mic thật và người rà; chưa được coi là toàn bộ MVP đã đạt."
+      ],
+      "worktree": "D:\\Project\\Game",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78GXHE4NMBKNHHNQ0A8QBN8\\plan.md",
+          "sha256": "4b1362d21e56ccf849826bc3634b27d57903da28f6cebfe6ad15bd2516c4de45"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78GXHE4NMBKNHHNQ0A8QBN8\\requirement.md",
+          "sha256": "344b0d3774315d7ded56ffe6c3e745b5928993e1e91cfeb880e83ec79553e2b2"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M78GXHE4NMBKNHHNQ0A8QBN8\\tasks.md",
+          "sha256": "3c18d16b0e111383f68db6b7d0dd6dd76bc3ed50030d4203d9729d16b4f81e3c"
+        }
+      ]
+    },
+    {
+      "key": "SPAWN",
+      "id": "01M7A2RHN2ETT46JFJ8JGVJ8NZ",
+      "goal": "Khắc phục spawn EPERM của agent Codex chạy Bint trên Windows cho dự án Game. Đã tái hiện unelevated Node spawn con EPERM; sandbox elevated cùng workspace profile chạy Node child và Chromium Playwrigh…",
+      "status": "done",
+      "criteria": [
+        "Agent Codex do Bint khởi chạy vẫn workspace-write và approval never, dùng Windows elevated sandbox theo override local của dự án, không đổi global/model hoặc bypass quyền.",
+        "Playwright Chromium launch và Node child-process chạy thật thành công trong agent Codex mới sau cấu hình; ghi rõ kết quả và rollback."
+      ],
+      "worktree": "D:\\Project\\Game",
+      "last_findings": [],
+      "artifact_hashes": []
+    },
+    {
+      "key": "TECH",
+      "id": "01M7A5E5VAK7KM5VWYPMF6T3GC",
+      "goal": "Review và khắc phục các phần kỹ thuật còn thiếu để chuẩn bị nghiệm thu MVP theo docs/mvp-acceptance-blockers.md, liên quan phiếu tổng 01M78EYZ58EHGP3R83ZKVZ0AVH review10. Người dùng đã giao lỗi mediu…",
+      "status": "done",
+      "criteria": [
+        "Runner thiết bị hỗ trợ chapter đang phát hành và giữ provenance/build chính xác; kiểm tự động không được gắn nhãn IME/mic thật.",
+        "Trace HTTPS giữ URL/header/body đầy đủ, có regression phát hiện payload ngoài ý muốn và đầu vào xấu; không nới hợp đồng privacy.",
+        "Benchmark và fault runner ghi thời gian/backend/phương pháp memory, 3 warmup+20 mẫu khi khả thi; mọi ca không chạy hoặc mô phỏng có nhãn rõ.",
+        "Có kết quả kiểm kỹ thuật thật và gói hướng dẫn nghiệm thu còn lại cho người dùng, không tự công nhận corpus/audio/người rà; review độc lập không còn lỗi high/medium trong phạm vi."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7A5E5VAK7KM5VWYPMF6T3GC",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7A5E5VAK7KM5VWYPMF6T3GC\\plan.md",
+          "sha256": "c486e0b3ded349f91ebc7e7fceb5bc1d2bd7319ef293fdabe9783912705c0ed5"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7A5E5VAK7KM5VWYPMF6T3GC\\requirement.md",
+          "sha256": "e0de81a1aa31e199632b55a2dc2ce6f2918d72021290fa7c3ce0f3386ccdf3c2"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7A5E5VAK7KM5VWYPMF6T3GC\\tasks.md",
+          "sha256": "1cb02e5b3025b85fa581f6940dd17bdbb403b2324034139973b4eb5f55de1071"
+        }
+      ]
+    },
+    {
+      "key": "GAME",
+      "id": "01M7AWMZ6C065JP5EHAZABVRFS",
+      "goal": "$game-dev 01M78EYZ58EHGP3R83ZKVZ0AVH thực hiện tiếp plan này đi",
+      "status": "done",
+      "criteria": [
+        "Lát cắt tiếp nối có đối chiếu hiện trạng, ánh xạ AC/TSK nguồn và phân công sáu bước; chỉ nhận TSK-25 đến TSK-28 cùng phần bàn giao playtest của TSK-29, giữ riêng dependency kỹ thuật và nghiệm thu MVP.",
+        "Sáu vùng có chỉ dẫn mục tiêu và tương tác theo NPC/lịch hiện hành; WASD hoặc mũi tên, E, Escape, focus và chuyển cảnh nhất quán, không di chuyển khi nhập liệu và không sinh trong vật cản.",
+        "Vòng chơi nhà ăn thể hiện rõ nhánh chưa mở, đang làm, sai ý, thành công, hủy và đã xong; thử lại hoặc tải lại giữ tiến độ, không thưởng nhiệm vụ lặp và không ghi câu gõ thành luyện nói.",
+        "Art sáu vùng, sáu NPC và UI có kiểm kê ID/path/kích thước/frame/pivot/hitbox/nguồn/license/nơi dùng; chỉ bổ sung phần thiếu, asset được nạp thật và chữ Hán/pinyin không bị cắt ở 1280x720 và 1920x1080.",
+        "Sáu quest có nhánh vào, chưa đủ điều kiện, sai, hủy và đã xong; bảy ngày có mục tiêu và đường tiếp tục, ngày 6 dẫn tới chuẩn bị lời mời, bài câu/nét được nối với việc đời sống và giữ đủ nội dung cùng luật tiến trình hiện có.",
+        "Nội dung dùng ID/schema hiện hành, giữ tối thiểu 12 tình huống, 10 bài câu và 20 chữ; dữ liệu học bắt buộc có Hán/pinyin dấu/nghĩa/ngữ cảnh/audio cùng nguồn/license và trạng thái rà trung thực, không tự nhận đã được người duyệt.",
+        "Có bộ bàn giao playtest riêng gồm build/revision/hash, hướng dẫn chạy, save test hợp lệ và checklist làm quen/nhà ăn/chương/kỹ năng/phục hồi; kết quả người dùng chưa cung cấp ghi pending và phản hồi đã nhận có bước tái hiện cùng mức cản trở.",
+        "Lệnh kiểm chứng hẹp của lát cắt được triển khai và ghi kết quả theo đúng build khi Bint được phép chạy; báo rõ giới hạn kiểm tự động, không sửa runner/gate phiếu kỹ thuật, không dùng kết quả lát cắt thay AC5/6/9/14 hoặc M4 của phiếu nguồn."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7AWMZ6C065JP5EHAZABVRFS",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7AWMZ6C065JP5EHAZABVRFS\\plan.md",
+          "sha256": "4e340a013d54cfb17bfcba95c09c34620f6a41e102753c0bede5b9ed716c3877"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7AWMZ6C065JP5EHAZABVRFS\\requirement.md",
+          "sha256": "36b66036f16f748f0da1ad7fd9e7ed67c882ddb519a1255ca00bbe4149797ae9"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7AWMZ6C065JP5EHAZABVRFS\\tasks.md",
+          "sha256": "28a38b2578033b2ccefd38f1956287e46e3586a4f9848dabf7346d46f3b1df32"
+        }
+      ]
+    },
+    {
+      "key": "M4",
+      "id": "01M7C38XW37C4G9BP5073EG01M",
+      "goal": "M4: tích hợp công cụ và chuẩn bị bằng chứng nghiệm thu trên chapter cuối",
+      "status": "done",
+      "criteria": [
+        "Entry point technical-prep sau dependency land kiểm tra được snapshot/revision, conflict marker và tính tương thích của các runner hiện có, đồng thời báo rõ kết quả chỉ là technical preparation chứ không phải verify:mvp.",
+        "Runner HTTPS trên bản tích hợp ghi raw URL, header và body cho audio, text, strokes, ASR và LLM; validator từ chối upload hoặc request ngoài origin/hub/CDN/ASR và đánh dấu thiếu coverage là pending.",
+        "Fault matrix có ca GPU device lost, WASM thiếu, mất mạng giữa tải và sai hash; mỗi ca ghi injection, lỗi quan sát, fallback/khôi phục và giữ tiến độ, không biến ca chưa chạy thành passed.",
+        "Luồng offline quest cùng save/export/import/rollback được runner kiểm trên snapshot tương ứng; save lỗi bị từ chối và bản hợp lệ trước đó được phục hồi mà không mất tiến độ.",
+        "Benchmark harness tạo báo cáo provenance cho cảnh 10 NPC trong 60 giây, FPS, gói chơi <=30 MiB, AI <=800 MiB, cold/warm 2+12, p95 và peak memory; thiếu tài nguyên hoặc snapshot chưa đổi thì ghi pending và không lặp benchmark nặng.",
+        "Evidence inventory mới liên kết hash, build, source revision, manifest và provenance của từng artifact, giữ nguyên byte các báo cáo lịch sử và phát hiện artifact stale hoặc khác revision.",
+        "Bàn giao thủ công có collector/checklist cụ thể cho OS Pinyin IME, microphone thật, ca phục hồi, rà ngôn ngữ và corpus 60 câu/40 audio; dữ liệu thiếu quyền/nhãn/phân bố hoặc người thao tác thiếu làm readiness fail/pending, không dùng TTS/FLEURS thay thế và không lưu/upload audio riêng tư.",
+        "Tài liệu M4 phân biệt technical preparation với nghiệm thu MVP tổng, ánh xạ AC/TSK nguồn sang gate pending/đã có bằng chứng, giữ nguyên ngưỡng smoke và không tự approve, verify hoặc đóng gate thay người dùng."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7C38XW37C4G9BP5073EG01M",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7C38XW37C4G9BP5073EG01M\\plan.md",
+          "sha256": "d0081d08c827fa9dd90b8cb4f024946efafb1d4abeb3c9218fdaa27b04c5fdb3"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7C38XW37C4G9BP5073EG01M\\requirement.md",
+          "sha256": "a3643d2d9297037d0bd75809dfa2b06a01f3cd9bddbeaaaebc0330735177c77e"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7C38XW37C4G9BP5073EG01M\\tasks.md",
+          "sha256": "b27f5a163fdbb27930a761b61688c3459e4db7a7d91a6e7c3a0614fb6cdca4a1"
+        }
+      ]
+    },
+    {
+      "key": "ART_OLD",
+      "id": "01M7CF7RN745T2FTG6AXP6RM58",
+      "goal": "Hậu MVP: hoàn thiện mỹ thuật cảnh nhà ăn và UI/NPC liên quan",
+      "status": "blocked",
+      "criteria": [
+        "Cảnh nhà ăn có art tích hợp thực theo brief pixel/top-down Giang Nam hiện đại2026, landmark và tỷ lệ NPC/UI nhất quán; bàn giao phạm vi còn lại của năm cảnh khác.",
+        "Asset có path/hash/kích thước/anchor và provenance/license trung thực; ID, quest, hitbox, save và nội dung học không bị thay đổi ngoài tích hợp art.",
+        "Chữ Hán/pinyin và UI tương tác đọc rõ ở1280x720; E/focus/exit/hint/dialog còn dùng được, có bằng chứng kiểm UI và ghi rõ phần chờ người dùng xem.",
+        "Typecheck/build/content checks đạt bằng lệnh được người dùng xác nhận riêng; ngân sách30/800MiB giữ nguyên và không chạy benchmark/model không cần thiết.",
+        "Handoff/review phân biệt art hậu MVP với MVP đã được người dùng chấp nhận và backlog hoãn; không tự ghi nhận người dùng duyệt art mới hoặc đóng gate nguồn."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7CF7RN745T2FTG6AXP6RM58",
+      "last_findings": [
+        {
+          "id": "01M7CF7RN745T2FTG6AXP6RM58.6",
+          "severity": "medium",
+          "title": "AC-3 chưa có bằng chứng UI và packet gắn bản art mới"
+        }
+      ],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7CF7RN745T2FTG6AXP6RM58\\plan.md",
+          "sha256": "52bb59ab28801b11680602430817153d629eb18938c3c0c954a2ae313be6861d"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7CF7RN745T2FTG6AXP6RM58\\requirement.md",
+          "sha256": "0a127af1b039984a775d317c54bad283b8d8496e44fb61788b1c3d999b868213"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7CF7RN745T2FTG6AXP6RM58\\tasks.md",
+          "sha256": "ddcab49b753730e82bb3ea9491dd13b1e920a35ea3b8a0b26dcec53b56f0d7e1"
+        }
+      ]
+    },
+    {
+      "key": "PIPELINE",
+      "id": "01M7DE19CK6RBTTHB1TWVQY2ZS",
+      "goal": "Xây pipeline thống nhất sáu map Giang Nam: triển khai dữ liệu và terrain trước, shared asset library và renderer sau; study chỉ tham khảo",
+      "status": "blocked",
+      "criteria": [
+        "Có hồ sơ nguồn và lịch sử: ASCII/guide/maps.json được định danh, PDF art và bối-cảnh-game.txt thiếu được ghi pending, xung đột canteen/graph/runtime được báo; art study chỉ tham khảo và AC mới không kế thừa PASS lịch sử.",
+        "Parser đọc đủ sáu ASCII map 20×15 bằng layout[y][x], bảo toàn mọi ô, landmark, s và cầu =, đối chiếu toàn bộ macro với maps.json; dữ liệu thiếu không được tự suy diễn.",
+        "Connectivity graph có đủ warp/arrival đối ứng và đường tiếp cận, kiểm liên thông sáu map, landmark đúng annotation, garden có hai cầu nối bờ vuông góc kênh; test âm phát hiện graph/port/bank sai.",
+        "Cả sáu map có detailed logical terrain và macro/detail walkability/blocked masks dùng chung tile 16px cùng expansion config ứng viên, adjacency cardinal/diagonal; phân biệt dữ liệu autotile với sprite autotiling và collider runtime chưa kiểm.",
+        "Xuất đủ năm world-level JSON và sáu bộ map JSON/asset requirement manifest cùng validation report; ID dùng chung ổn định, metadata chưa biết để null, sprite/preview thiếu được liệt kê pending, không tuyên bố library hoặc map thành phẩm.",
+        "Giữ nguyên src, gameplay route, spawn/NPC, collider, warp runtime, quest, save, UI, font/audio và nguồn ASCII/maps.json; chỉ tạo dữ liệu offline ứng viên, không sửa gameplay để hợp art.",
+        "Generator tái lập được và kiểm output theo hash ASCII/maps/guide/config/generator hiện tại; kiểm thử dữ liệu thật và ca sai qua trên snapshot bàn giao, evidence phân biệt offline candidate với build/runtime và không sửa báo cáo cũ.",
+        "Guide và kế hoạch phân biệt Image Generation, Map Generator, Map Renderer; workflow đề xuất dữ liệu/terrain cả sáu map trước gate rồi shared assets, six-map generation, assembly và export; bước/role phải được người dùng chốt trước xuất bản flow mới, không đổi flow/hash phiếu cũ thủ công.",
+        "Sau gate nguồn/layout/camera/actor bounds được duyệt, có shared terrain/autotile, architecture, vegetation và props sprite thật theo nhu cầu sáu map, metadata đầy đủ và provenance/license; tái sử dụng asset, variant có quan hệ rõ và kiểm mọi map khi footprint đổi.",
+        "Renderer lắp ghép đủ sáu preview PNG từ map JSON, manifest và sprite thật; validation cấu trúc/terrain/collision/assets/visual cùng provenance đầu vào/đầu ra; thiếu sprite/renderer/kiểm gameplay hoặc playtest phải ghi pending, không thay bằng concept art."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7DE19CK6RBTTHB1TWVQY2ZS",
+      "last_findings": [
+        {
+          "id": "01M7DE19CK6RBTTHB1TWVQY2ZS.7",
+          "severity": "medium",
+          "title": "AC-9 chưa có shared asset library hoặc sprite thật sau gate"
+        },
+        {
+          "id": "01M7DE19CK6RBTTHB1TWVQY2ZS.8",
+          "severity": "medium",
+          "title": "AC-10 chưa có renderer và sáu assembled preview từ asset thật"
+        },
+        {
+          "id": "01M7DE19CK6RBTTHB1TWVQY2ZS.9",
+          "severity": "medium",
+          "title": "Handoff chứa kết quả check-content và hash license đã lỗi thời"
+        }
+      ],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DE19CK6RBTTHB1TWVQY2ZS\\plan.md",
+          "sha256": "3acd8948d0d71f5479b7e641d340491c378577bc59a06735b60382b4587cdae5"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DE19CK6RBTTHB1TWVQY2ZS\\requirement.md",
+          "sha256": "37b8cd46857d83c0f943b0c698ffb7f9ce4642b06fef40422ff325125b870029"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DE19CK6RBTTHB1TWVQY2ZS\\tasks.md",
+          "sha256": "334922a0380d6bc0ca38f62ee40920613cf23f84302f2f259c70add178e85635"
+        }
+      ]
+    },
+    {
+      "key": "CAMPUS",
+      "id": "01M7DFRHC8PKN728NQKSS64J82",
+      "goal": "Triển khai runtime campus-network-v1 để asset v1 có thể được tích hợp an toàn. Đọc docs/game-dev/campus-network-v1/design.md, maps.json, ascii-maps.md, docs/game-dev/art-studies/environment-layout-co…",
+      "status": "blocked",
+      "criteria": [
+        "Dữ liệu runtime campus-network-v1 được validate từ maps.json cho đúng sáu scene ID, layout semantic 20×15 với tile 0/1/2/3/9, 3–4 cổng mỗi map, hai hub library/street bốn cổng, 10 cặp tuyến và đủ 40 bản ghi warp đối ứng; từ chối dữ liệu sai schema, cạnh, đích, arrival hoặc facing.",
+        "Một hợp đồng SceneDefinition và tile↔world dùng chung xác định tile vuông 48 world units, world 960×720, viewport 960×540 cuộn dọc và scale đồng đều; renderer, camera, input, collision và save thống nhất tọa độ, giữ bounds sprite/collider hiện có và không cắt actor tại cổng.",
+        "Đi được cả 40 warp bằng input tại đúng ô cổng, đến arrival inset đúng làn và facing_direction của maps v1; không bật ngược tự động, không chuyển ở cạnh kín/góc, không nhận warp ngoài scene hiện tại và không xử lý chồng lần chuyển cảnh.",
+        "Tile 2/3 cản đầy đủ actor bounds, tile 0/1/9 đi được và cả hai cầu garden nối được hai bờ; spawn, arrival, NPC theo ba buổi cùng vùng tương tác đều hợp lệ và reachable trong cả sáu cảnh, không xuyên nước/tường hoặc kẹt do bước chéo/delta lớn.",
+        "Save mới, reload, xuất/nhập, backup và xung đột revision hoạt động với layout v1; save schema 2 cũ và save legacy đang được hỗ trợ được kiểm hợp lệ trước khi chuyển vị trí an toàn, giữ scene ID và toàn bộ tiến độ học/quest/nguồn nhập, không biến save hỏng thành save mới hoặc cấp lại thưởng.",
+        "WASD/mũi tên, E, Escape, focus/blur và khóa input khi mở panel hoặc chuyển cảnh vẫn đúng với cổng bốn hướng; giữ phím không gây chạy khi nhập liệu hoặc warp lặp, tải chậm/lỗi có thông báo và đường tiếp tục bằng semantic runtime, không để cảnh hoặc callback cũ ghi đè cảnh mới.",
+        "Bảo toàn sáu scene ID, NPC và lịch, quest graph, ngày mở, luật thưởng, dữ liệu học cùng asset path/hash/license hiện có; bản đồ, nhắc hướng và chỉ dẫn NPC phản ánh mạng v1, hồi quy nhà ăn và chương bảy ngày không mất tiến độ hoặc tính câu gõ thành luyện nói.",
+        "Có hợp đồng runtime và bàn giao art v1 ghi tile/camera, anchor/hitbox, mask/cầu/cổng, nguồn/license và giới hạn tích hợp; hiển thị semantic placeholder có định danh để chơi thử, không tạo/thay asset art hoặc kéo giãn nền v0.3 thành layout v1.",
+        "Có kiểm tự động cho schema/topology, đủ 40 warp, reachability theo actor, collision nước/cầu, spawn/NPC/bounds/camera, save/reload và hồi quy sáu cảnh; runner hẹp trả nonzero khi kiểm bắt buộc hoặc hạ tầng lỗi và ghi bằng chứng đúng source/build/fixture/run, không thay gate MVP/AI/hiệu năng.",
+        "Có packet playtest riêng với build/source/fixture hash thực khi được tạo, hướng dẫn chạy và checklist điểm vào–thao tác–mong đợi–ca lỗi cho mạng v1, save và hồi quy học; playtest người dùng chưa thực hiện được ghi rõ, không tự ghi nghiệm thu hoặc sửa bằng chứng lịch sử."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7DFRHC8PKN728NQKSS64J82",
+      "last_findings": [
+        {
+          "id": "01M7DFRHC8PKN728NQKSS64J82.22",
+          "severity": "high",
+          "title": "Khép dependency của diff campus trước khi land riêng phiếu"
+        },
+        {
+          "id": "01M7DFRHC8PKN728NQKSS64J82.23",
+          "severity": "medium",
+          "title": "Bổ sung kiểm giữ phím qua warp và blur vào runner production"
+        },
+        {
+          "id": "01M7DFRHC8PKN728NQKSS64J82.24",
+          "severity": "low",
+          "title": "Cho packet trỏ trạng thái verify hiện hành thay bản chuẩn bị"
+        }
+      ],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DFRHC8PKN728NQKSS64J82\\plan.md",
+          "sha256": "49d2ab3636a57f8105707a5edcf1528933f780f8d52045e1928cc17e4f087845"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DFRHC8PKN728NQKSS64J82\\requirement.md",
+          "sha256": "656137fbf57221926ce82d91363990b864a67c03386c6021e14b8bd9be516124"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7DFRHC8PKN728NQKSS64J82\\tasks.md",
+          "sha256": "a82700f6fc717b531e42c681666593f8ae56741a02cfc4e9ed6643c2207bdaf9"
+        }
+      ]
+    },
+    {
+      "key": "OLD_PINYIN",
+      "id": "01M7ENBWCPTCW9G8VJXNCFNDV8",
+      "goal": "Sửa lỗi chấm Pinyin, biến thể đáp án và hướng dẫn viết tay theo phản hồi playtest",
+      "status": "done",
+      "criteria": [
+        "Pinyin hợp lệ của mọi utterance tích cực và các biến thể được biên soạn được chấm như Hán tự tương ứng trong chapter và ambient; chuẩn hóa không làm mất phân loại nguồn/raw transcript hoặc canonical journal.",
+        "Các scenario có nhiều cách trả lời theo ngữ cảnh (ít nhất directions nhận 我想去图书馆。 và schedule nhận xác nhận 对/是的/好的 khi đúng câu hỏi) được chấm đúng; input sai ý, phủ định hoặc mâu thuẫn vẫn bị từ chối.",
+        "Lần đầu bấm Tự viết / Thử lại cho một chữ hiển thị hướng dẫn nét trong suốt phiên; sau khi đã bắt đầu lần đầu, các lần thử lại và mở lại chữ không tự hiện hướng dẫn, callback cũ không khôi phục guide.",
+        "Có kiểm thử hồi quy cho Pinyin, biến thể ngữ nghĩa, phủ định/mâu thuẫn, ambient và chu kỳ hướng dẫn viết tay; các kiểm thử hiện có về tiến bộ, nguồn, save và ending vẫn giữ nguyên.",
+        "Không thay audio/art/font hoặc dữ liệu lịch sử; typecheck, unit/content checks phù hợp chạy được và ghi rõ phần chưa có bằng chứng playtest thiết bị thật."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7DFRHC8PKN728NQKSS64J82",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7ENBWCPTCW9G8VJXNCFNDV8\\plan.md",
+          "sha256": "c8e793357f2b818bb9c19883a774320223bfeb49c5113ded5ca085dd74e56c5a"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7ENBWCPTCW9G8VJXNCFNDV8\\requirement.md",
+          "sha256": "c1238d62ec9f2a9aa8f45a703a4e762733522b0d64565d4509e2b6487328d9c5"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7ENBWCPTCW9G8VJXNCFNDV8\\tasks.md",
+          "sha256": "e3eb753fa3436743d45eb72954082654755846f88511b1df78b6078999b0ad2e"
+        }
+      ]
+    },
+    {
+      "key": "FLOW",
+      "id": "01M7FFYG84DFAE9RWB3CHBT59S",
+      "goal": "Xuất bản flow world-map-assets đã được người dùng chốt, phục vụ phiếu B1TWVQY2ZS; chỉ cấu hình Bint, không sản xuất asset hoặc sửa runtime",
+      "status": "done",
+      "criteria": [
+        "Flow world-map-assets đúng năm bước và role người dùng đã chốt, flow lint sạch và sync xuất bản được; game-dev không đổi."
+      ],
+      "worktree": "D:\\Project\\Game",
+      "last_findings": [],
+      "artifact_hashes": []
+    },
+    {
+      "key": "SMOKE",
+      "id": "01M7FG0F046D55TQE8PT556RK8",
+      "goal": "Smoke test world-map-assets: chỉ tạo tài liệu docs/game-dev/world-map-pipeline/flow-smoke.md một câu mô tả thứ tự data terrain trước shared asset rồi renderer; mọi bước art/content không áp dụng, khô…",
+      "status": "blocked",
+      "criteria": [
+        "Có một tài liệu smoke ngắn mô tả thứ tự data terrain trước shared asset rồi renderer; không tạo asset hoặc thay runtime."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7FG0F046D55TQE8PT556RK8",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FG0F046D55TQE8PT556RK8\\plan.md",
+          "sha256": "04ddd31d416ea9a8dbd7f73585f05edda9d7c3946e73dc4330f546bcf5f4b7ab"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FG0F046D55TQE8PT556RK8\\requirement.md",
+          "sha256": "5b86a01d877a7636c718847c5aaf5bdc62b179453ee3dab0125cbe4433890dae"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FG0F046D55TQE8PT556RK8\\tasks.md",
+          "sha256": "844774918caf4871677a68e6a95084670400eb1b0f7ccad0a40cd86d78491e6b"
+        }
+      ]
+    },
+    {
+      "key": "DUAL",
+      "id": "01M7FYN3NA9M6SGQCXF917ZD10",
+      "goal": "Bổ sung Dual-Grid display terrain và giảm lặp cho sáu map Giang Nam; bảo toàn World Grid 16px và gameplay; b-req chỉ lập kế hoạch",
+      "status": "planned",
+      "criteria": [
+        "Baseline triển khai được đối chiếu với snapshot data/terrain của B1TWVQY2ZS; giữ nguyên sáu macro layout 20×15, 18 landmark, 20 cạnh có hướng, 40 ô warp, hai cầu garden và các masks logic; tile vẫn 16px, expansion ứng viên vẫn 2, không sửa src hoặc gameplay/runtime.",
+        "World Grid và Display Grid có hợp đồng tọa độ rõ: bốn corner samples NW/NE/SE/SW dùng bits 1/2/4/8, offset display -8px tại tile 16px, lookup đầy đủ mask 0–15 gồm empty/full và saddle 5/10; test xác nhận sampling, pixel origin và bốn display cells bị ảnh hưởng khi đổi một world cell.",
+        "Display của grid W×H xử lý biên W+1×H+1, halo và crop không hở mép; biên đóng không wrap, cổng đối ứng dùng port và dải approach đúng graph thay vì arrival như port; thiếu seam contract phải báo pending, không biến mạng warp thành campus seamless.",
+        "Manifest Dual-Grid khai báo occupancy/layer hoặc transition cho từng vật liệu, atlas mapping tường minh và quy tắc alpha/underlay; xử lý junction ba vật liệu, water/bank/bridge và obstacle_macro mà không tự thêm grass, đổi material logic hay sửa collision để hợp hình; không tuyên bố 16 tile bao phủ mọi vật liệu.",
+        "Variant selection dùng hash/seed ổn định theo tọa độ, map và terrain layer, tách khỏi topology; cấu hình trọng số hợp lệ có default 70/20/10, cùng input cho cùng kết quả khi reload hoặc đổi thứ tự duyệt; biến thể chỉ đổi nội thất tile, giữ nguyên seam/alpha silhouette và mọi masks logic.",
+        "Guide được bổ sung có chọn lọc: giữ pixel density/camera/palette project, seams ở trung điểm cạnh có chuyển tiếp, chunky details và tương phản thấp có chủ đích, 3–5 variants là nhu cầu art sau gate; off-grid decoration có anchor/clearance và không tự tạo collider, animation giữ seam qua mọi frame; không coi 24px, bóng hướng cố định hoặc cỡ nhân vật 2–3 tile là lệnh đổi project.",
+        "Offline debug renderer tạo fixture atlas và sáu ảnh terrain debug từ đúng map/display JSON cùng atlas chẩn đoán có hash; dùng pixel nguyên/nearest, có overlay world/display/collision và báo sai lệch nhìn thấy được; output phải mang trạng thái debug, không thay production spritesheet, assembled preview thành phẩm hoặc kiểm actor clearance.",
+        "Kiểm chứng bao phủ toàn bộ 16 masks, saddle, incremental bằng full rebuild, material replacement, boundary/crop/seam, missing atlas/underlay, weighted sampling và snapshot bất biến trên sáu map; báo cáo mới có source/config/code/atlas/output hashes, ghi riêng phần pending visual art/runtime/playtest, không sửa evidence lịch sử.",
+        "Cập nhật tài liệu pipeline theo thứ tự dữ liệu terrain cả sáu map → Dual-Grid display/debug validation → gate layout/camera → shared asset library → Map Renderer production; ghi bảng nhận/chỉnh/hoãn của guide mới và tiêu chí giảm lặp có kiểm tra được, giữ nguyên năm bước/role flow đã chốt và ba thành phần Image Generation, Map Generator, Map Renderer."
+      ],
+      "worktree": "D:\\Project\\Game",
+      "last_findings": [],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FYN3NA9M6SGQCXF917ZD10\\plan.md",
+          "sha256": "838f9dc71bc0475c74595120efceb95acea25fafbb24ef025cdcccea1ae35a68"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FYN3NA9M6SGQCXF917ZD10\\requirement.md",
+          "sha256": "93343239560f96c778a9bedce6429948d4e8f6e41468f8772abb6fe4c76ef9f0"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7FYN3NA9M6SGQCXF917ZD10\\tasks.md",
+          "sha256": "c8cc1adad4d8462dca5eee0e4b792261f87eb62d7222fba44c8298dcd651b833"
+        }
+      ]
+    },
+    {
+      "key": "STREET",
+      "id": "01M7G4A8J4DQ4K797CFQ1MFR3D",
+      "goal": "Làm lại art từ phố: bộ asset tách rời để ghép world map, manifest và preview từ dữ liệu",
+      "status": "blocked",
+      "criteria": [
+        "Có bộ asset phố tách rời thực dùng để ghép world map; không thay bằng tranh art study hoặc placeholder; chỉ sản xuất hoàn chỉnh sau bằng chứng duyệt layout/camera.",
+        "Manifest và placement street đầy đủ, giữ macro20x15, F/P/s, bốn hướng warp và walkability; grid16px/conversion/anchor/footprint/layers/collision rõ, không sửa gameplay.",
+        "Preview được assembler render từ chính JSON/manifest/files đã bàn giao, có overlay grid/footprint/warp và kiểm camera/actor bounds theo contract; không gen preview độc lập.",
+        "Asset có dimensions/alpha khi cần/palette/camera nhất quán và provenance/license/bytes/SHA256 thực, validator phát hiện asset thiếu/hash/placement sai; verify hẹp theo cổng Bint.",
+        "Handoff nêu cách tích hợp bộ phố, nguồn/phiên bản/baseline, QA đã chạy và phần pending layout/camera/thẩm mỹ/runtime; giữ nguyên lịch sử phiếu nguồn và evidence cũ."
+      ],
+      "worktree": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\worktrees\\01M7G4A8J4DQ4K797CFQ1MFR3D",
+      "last_findings": [
+        {
+          "id": "01M7G4A8J4DQ4K797CFQ1MFR3D.12",
+          "severity": "medium",
+          "title": "Connectivity theo ô vẫn nhận cổng 32px không lọt collider cao 38px"
+        }
+      ],
+      "artifact_hashes": [
+        {
+          "kind": "plan",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7G4A8J4DQ4K797CFQ1MFR3D\\plan.md",
+          "sha256": "74ed612fb82b5cca1b4fb1ac90fa2d9e9a4f04f34576e39cd1989e7c87114759"
+        },
+        {
+          "kind": "requirement",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7G4A8J4DQ4K797CFQ1MFR3D\\requirement.md",
+          "sha256": "fd0cf34d6a35c88f42c8b043ea062de2a46deb1e9fecd5f7c2f6744ea6d5c7af"
+        },
+        {
+          "kind": "tasks",
+          "path": "C:\\Users\\LENOVO\\AppData\\Local\\bint\\state\\Game-fd2129962cbf\\runtime\\tasks\\01M7G4A8J4DQ4K797CFQ1MFR3D\\tasks.md",
+          "sha256": "0f66238971aff975772996ece8223be1e5765fb24ac90f0d15096813340e2626"
+        }
+      ]
+    }
+  ],
+  "preserved_files": [
+    {
+      "path": "docs/game-dev/requirement.md",
+      "sha256": "7bdda9530b15645178b77f92009e4bb8348e062cbb7d29aad925fd6c8c86b28d"
+    },
+    {
+      "path": "docs/game-dev/plan.md",
+      "sha256": "36417c3b2c2b611fe51e9708dc5dda35716f994ca439815d89096c53f2f8a40a"
+    },
+    {
+      "path": "docs/game-dev/tasks.md",
+      "sha256": "0c64e47561361f19ea9c99b76f59350d13dda792c345c6842011b46f9b45903f"
+    },
+    {
+      "path": "docs/game-dev/tsk-30-closeout.md",
+      "sha256": "8bb66661deeb0a2c9a27e114d56e0a4eb6a9dae647d9f4ee4cc96256c70de272"
+    },
+    {
+      "path": "docs/evidence/tsk29-user-playtest.md",
+      "sha256": "3523993b15f255a78e23714df159a4598cf0cd80e2b621dc76e2f4a9b48496c9"
+    },
+    {
+      "path": "hen-o-giang-nam-map-asset-generation-guide-v1.0.md",
+      "sha256": "5a53c91342240a4a475f4559825ce4b6d3b968918e09b77b891a2d6d7da0675a"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "street-asset-kit/manifest@0.2",
+  "status": "ready",
+  "map": "street",
+  "coordinateSystem": {
+    "macro": "maps.json layout[y][x], x east 0..19, y south 0..14",
+    "terrainGridPx": 16,
+    "camera": "top-down orthographic, shallow 3/4 flattened, non-isometric",
+    "conversion": {
+      "baseline": "campus-network-v1 maps.json tile semantics",
+      "expansion": "1 macro tile = 16x16 world pixels; actor bounds map from runtime world units without rescaling",
+      "legacyViewport": "existing SVG scene is 960x540 with a 240x135 viewBox; it is provenance only and is not used to infer a 4x runtime grid",
+      "integration": "future renderer should preserve square 16px cells and choose letterbox/camera scaling explicitly",
+      "actorSource": "src/chapter/app.ts:37,185"
+    },
+    "footprintSemantics": "asset footprint x/y are local to top-left sprite origin; placement footprint x/y and anchor are macro map coordinates"
+  },
+  "provenance": {
+    "sourceRevision": "checkout-2026-11-16",
+    "sourceFiles": [
+      "docs/game-dev/campus-network-v1/maps.json",
+      "docs/game-dev/campus-network-v1/ascii-maps.md",
+      "docs/game-dev/campus-network-v1/design.md",
+      "docs/game-dev/art-studies/environment-layout-contract-v0.3.md",
+      "docs/game-dev/art-studies/street/README.md"
+    ],
+    "licenseFile": "public/licenses/street-asset-kit.txt"
+  },
+  "assets": [
+    {
+      "id": "terrain.street-ground",
+      "path": "public/art/street-kit/terrain/street-ground.svg",
+      "kind": "terrain",
+      "status": "ready",
+      "dimensions": {
+        "width": 320,
+        "height": 240,
+        "unit": "world-px"
+      },
+      "alpha": "opaque base tile layer",
+      "palette": "campus grass, path stone, blue-green edge stone",
+      "camera": "top-down orthographic, shallow 3/4 flattened",
+      "anchor": {
+        "x": 0,
+        "y": 0,
+        "space": "top-left"
+      },
+      "footprint": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 15,
+        "unit": "macro-tile"
+      },
+      "layer": "terrain",
+      "collision": "from map tile semantics; no baked actor",
+      "provenance": "derived from street-map.json and v1 terrain semantics",
+      "license": "SEE public/licenses/street-asset-kit.txt",
+      "bytes": 34826,
+      "sha256": "e8817aba5fc9b9330a431888d8b0a1c3510c9e7c52f32ef319afa24a4acc5b06"
+    },
+    {
+      "id": "building.bun-goods-shop",
+      "path": "public/art/street-kit/buildings/bun-goods-shop.svg",
+      "kind": "building",
+      "status": "ready",
+      "dimensions": {
+        "width": 80,
+        "height": 64,
+        "unit": "world-px"
+      },
+      "alpha": "transparent outside footprint",
+      "palette": "warm ivory, blue-green roof, walnut trim",
+      "camera": "top-down orthographic, shallow 3/4 flattened",
+      "anchor": {
+        "x": 0,
+        "y": 0,
+        "space": "top-left-footprint"
+      },
+      "footprint": {
+        "x": 0,
+        "y": 0,
+        "w": 5,
+        "h": 4,
+        "unit": "macro-tile"
+      },
+      "layer": "architecture",
+      "collision": "footprint only; entrance remains walkable",
+      "provenance": "F(4,3) from campus-network-v1 street map; art guide v0.3 palette reference",
+      "license": "SEE public/licenses/street-asset-kit.txt",
+      "bytes": 696,
+      "sha256": "ec110307b4de0dd495a824acac23d09f2196341a2917b30cfd0f5e3a5d9b881b"
+    },
+    {
+      "id": "building.parcel-pickup",
+      "path": "public/art/street-kit/buildings/parcel-pickup.svg",
+      "kind": "building",
+      "status": "ready",
+      "dimensions": {
+        "width": 80,
+        "height": 64,
+        "unit": "world-px"
+      },
+      "alpha": "transparent outside footprint",
+      "palette": "warm ivory, blue-green roof, walnut trim",
+      "camera": "top-down orthographic, shallow 3/4 flattened",
+      "anchor": {
+        "x": 0,
+        "y": 0,
+        "space": "top-left-footprint"
+      },
+      "footprint": {
+        "x": 0,
+        "y": 0,
+        "w": 5,
+        "h": 4,
+        "unit": "macro-tile"
+      },
+      "layer": "architecture",
+      "collision": "footprint only; entrance remains walkable",
+      "provenance": "P(15,3) from campus-network-v1 street map; art guide v0.3 palette reference",
+      "license": "SEE public/licenses/street-asset-kit.txt",
+      "bytes": 644,
+      "sha256": "859d323bdacbb2249b0e7063401aa6f4ecb02b3042a7e1d3bfb80d47921d5624"
+    },
+    {
+      "id": "prop.wall-notice-board",
+      "path": "public/art/street-kit/props/wall-notice-board.svg",
+      "kind": "prop",
+      "status": "ready",
+      "dimensions": {
+        "width": 16,
+        "height": 16,
+        "unit": "world-px"
+      },
+      "alpha": "transparent outside prop",
+      "palette": "walnut, muted campus green",
+      "camera": "top-down orthographic, shallow 3/4 flattened",
+      "anchor": {
+        "x": 0,
+        "y": 0,
+        "space": "top-left-tile"
+      },
+      "footprint": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1,
+        "unit": "macro-tile"
+      },
+      "layer": "architecture-detail",
+      "collision": "wall-mounted; no floor collision",
+      "provenance": "s(7,5) from campus-network-v1 street map; pictogram only, no baked text",
+      "license": "SEE public/licenses/street-asset-kit.txt",
+      "bytes": 360,
+      "sha256": "28427d99eda0dbe6c1bba82d5b9d0a3d442e8a5282dfda144b27dcbdee8b65c0"
+    },
+    {
+      "id": "prop.bike-rack",
+      "path": "public/art/street-kit/props/bike-rack.svg",
+      "kind": "prop",
+      "status": "ready",
+      "dimensions": {
+        "width": 16,
+        "height": 16,
+        "unit": "world-px"
+      },
+      "alpha": "transparent outside prop",
+      "palette": "dark blue-green metal, brass accent",
+      "camera": "top-down orthographic, shallow 3/4 flattened",
+      "anchor": {
+        "x": 0,
+        "y": 0,
+        "space": "top-left-tile"
+      },
+      "footprint": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1,
+        "unit": "macro-tile"
+      },
+      "layer": "prop",
+      "collision": "reserved blocked apron",
+      "provenance": "street study v0.3 functional brief; placement is street v1 placement; production export",
+      "license": "SEE public/licenses/street-asset-kit.txt",
+      "bytes": 284,
+      "sha256": "930d24b139323ce830b85e42f2d5d64c62ee7446da6b5f53e2eefb9d4e0d3484"
+    }
+  ],
+  "runtimeReady": true,
+  "rawSource": "public/art/street-kit/source (none; SVG source is the delivered runtime asset)",
+  "preview": "docs/game-dev/street-asset-kit/assembled-preview.svg"
+}
