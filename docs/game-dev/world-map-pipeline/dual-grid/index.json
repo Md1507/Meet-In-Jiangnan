@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEBUG diagnostic fixture; not production or clearance",
+  "serialization": "JSON two-space LF; PNG RGBA8 filter 0 zlib",
+  "settings": {
+    "tilePx": 16,
+    "zoom": 1,
+    "seed": "C5-debug-v1",
+    "variantHash": "dual-grid-variant-v1",
+    "node": "22.17.1",
+    "zlib": "1.3.0.1-motley-780819f"
+  },
+  "inputs": {
+    "docs/game-dev/campus-network-v1/maps.json": "08e23f643b455fc135ef23695bbb3e6aca18ae50bb6b54fc03a7371551818a1d",
+    "docs/game-dev/campus-network-v1/ascii-maps.md": "9c20af8c85e1194b6a7783e073edf41e6a415c89a8b42ba78e48c5e32da70a95",
+    "scripts/world-map/config.json": "ba98c229e11f741eb35b14dc3c5ae1f156302472dc95f0e218da4a0dc31e0c67",
+    "scripts/world-map/pipeline.mjs": "5fd8372b00a5554976c915e1bd5f61527750772c6b421199eb8b8cbc140297a2",
+    "scripts/world-map/dual-grid-config.json": "356f35f1a4ec7e1540d908b0aa9a216315e784a04d84fb6aac66de8ac90391c4",
+    "scripts/world-map/dual-grid.mjs": "74d8e01700f7c995dbe14171a2d7f74978cdab5d921be40e18da87644c34c901",
+    "scripts/world-map/dual-grid-build.mjs": "8bc0b782aba8d5dec23a2695030e18918c0bcc1ad4334ad186646ecfc81981b1",
+    "scripts/world-map/dual-grid-debug-render.mjs": "7c074e08145ba6ced407c92eab33a2ad56a6466507baeafef9b8d63cde9c9ff1"
+  },
+  "counts": {
+    "maps": 6,
+    "cells": 1800,
+    "landmarks": 18,
+    "directedEdges": 20,
+    "warps": 40,
+    "bridges": 2
+  },
+  "atlas": {
+    "path": "fixture-atlas.debug.png",
+    "sha256": "1c88b24d4ff7f53a590a7c0ea33b33011e40741161130fdf2869f3e3d107583d",
+    "mapping": {
+      "path": "fixture-atlas.mapping.json",
+      "sha256": "58d85d7468e4653e5ec8ff8ba3f3bdb03ca50690b02d35946b6d61e9a3a45230"
+    }
+  },
+  "maps": [
+    {
+      "map": "dorm",
+      "display": {
+        "path": "dorm.display.json",
+        "sha256": "c80d2c767d76de975bf67190e6a9de58458f8a2e2bb259251d0ade99f468d890"
+      },
+      "png": {
+        "path": "dorm.debug.png",
+        "sha256": "5b309c2a952339c6e3216f99d6363ab26c461220003bd95554b7a229c9cc6693"
+      }
+    },
+    {
+      "map": "gate",
+      "display": {
+        "path": "gate.display.json",
+        "sha256": "6078466a6023381910f09b04d97f346cdecb6003683fac55f4128d7c19a62405"
+      },
+      "png": {
+        "path": "gate.debug.png",
+        "sha256": "e0efceaae626e684d505861ef504715cf185ed92f19eabfba24cc6bbb3367c44"
+      }
+    },
+    {
+      "map": "library",
+      "display": {
+        "path": "library.display.json",
+        "sha256": "37886d3dbdc9bb011f2b4505b4975aa8253dc33569d51c3a526100a1fa968129"
+      },
+      "png": {
+        "path": "library.debug.png",
+        "sha256": "86b8e811d665bdb23e78f2151957a4e9647b8be6b297c99f04fbb63e293d9e86"
+      }
+    },
+    {
+      "map": "canteen",
+      "display": {
+        "path": "canteen.display.json",
+        "sha256": "52de5072c16cb9b4f5302b5f7d64ae39c6ad7f77341fbb75abf96192f75acf0f"
+      },
+      "png": {
+        "path": "canteen.debug.png",
+        "sha256": "b4e7611726da87b7eeed7ccea433397fa0569a837e755166aa28a02ce9d90740"
+      }
+    },
+    {
+      "map": "street",
+      "display": {
+        "path": "street.display.json",
+        "sha256": "fa3b143ea679508e1ac0fd98c188bc63aa867a3ef52a55418f4bff0a8b13710a"
+      },
+      "png": {
+        "path": "street.debug.png",
+        "sha256": "1f57b111955fd8eb60ff9107f6c10abe4c9c3d26933a4c926341b09c6c65f1f7"
+      }
+    },
+    {
+      "map": "garden",
+      "display": {
+        "path": "garden.display.json",
+        "sha256": "8c9d17d050d844d2bdc6ff704ed716b53785beb8924ad9bf6cc88a3fcd3f1464"
+      },
+      "png": {
+        "path": "garden.debug.png",
+        "sha256": "5371797d3843def26a3d7e0fc2a160ac33de48eb65691c95db3735e00f6558d3"
+      }
+    }
+  ]
+}

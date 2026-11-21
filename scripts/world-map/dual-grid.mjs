@@ -1,6 +1,59 @@
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 
 export const dualGridConfig = JSON.parse(fs.readFileSync(new URL('./dual-grid-config.json', import.meta.url), 'utf8'));
+
+// v1 hashes UTF-8 JSON array fields in this exact order. Coordinates are safe integers.
+export function variantHash({ seed, map, layer, x, y, mask, variantSet }, config = dualGridConfig) {
+  const version = config.variants?.hashVersion;
+  if (version !== 'dual-grid-variant-v1') throw new Error('unsupported variant hash version');
+  if (![seed,map,layer,variantSet].every(value => typeof value === 'string' && value.length > 0) ||
+      ![x,y].every(Number.isSafeInteger) || !Number.isInteger(mask) || mask < 0 || mask > 15) throw new Error('invalid variant key');
+  return createHash('sha256').update(JSON.stringify([version,seed,map,layer,x,y,mask,variantSet]), 'utf8').digest('hex');
+}
+
+const denseArray = (values, valid) => Array.isArray(values) &&
+  Array.from({length: values.length}, (_, index) => Object.hasOwn(values, index) && valid(values[index])).every(Boolean);
+
+export function selectVariant(key, weights = dualGridConfig.variants.weights, config = dualGridConfig) {
+  if (!Array.isArray(weights) || !weights.length || !denseArray(weights, weight => Number.isSafeInteger(weight) && weight >= 0) ||
+      !Number.isSafeInteger(weights.reduce((sum, weight) => sum + weight, 0)) || weights.reduce((sum, weight) => sum + weight, 0) === 0) throw new Error('invalid variant weights');
+  const total = weights.reduce((sum, weight) => sum + weight, 0);
+  const sample = parseInt(variantHash(key, config).slice(0, 8), 16) / 0x100000000 * total;
+  let limit = 0;
+  return weights.findIndex(weight => sample < (limit += weight));
+}
+
+// Frames carry literal alpha bytes, not asserted metadata. Every frame keeps the same
+// border alpha and logical mask; interior pixels may differ. Returns the seam signature.
+export function validateVariantFrames(frames) {
+  if (!Array.isArray(frames) || !frames.length) throw new Error('missing variant frames');
+  let signature;
+  for (const frame of frames) {
+    const { width, height, alpha, mask } = frame;
+    if (!Number.isSafeInteger(width) || width < 2 || !Number.isSafeInteger(height) || height < 2 ||
+        !Array.isArray(alpha) || alpha.length !== width * height || !denseArray(alpha, a => Number.isInteger(a) && a >= 0 && a <= 255) ||
+        !Number.isInteger(mask) || mask < 0 || mask > 15) throw new Error('invalid variant frame');
+    const edges = [alpha.slice(0,width), Array.from({length:height}, (_, y) => alpha[y*width+width-1]),
+      alpha.slice((height-1)*width), Array.from({length:height}, (_, y) => alpha[y*width])];
+    const current = JSON.stringify({width,height,mask,edges});
+    if (signature !== undefined && current !== signature) throw new Error('variant seam or logical mask mismatch');
+    signature = current;
+  }
+  return createHash('sha256').update(signature).digest('hex');
+}
+
+// Rectangles and anchor use the same world coordinates; touching edges is allowed.
+export function validateDecoration({ anchor, bounds, forbidden, seamSignature, frames }) {
+  const point = p => p && Number.isFinite(p.x) && Number.isFinite(p.y);
+  const rect = r => point(r) && Number.isFinite(r.width) && r.width > 0 && Number.isFinite(r.height) && r.height > 0;
+  if (!point(anchor) || !rect(bounds) || !Array.isArray(forbidden) || !forbidden.every(rect) ||
+      typeof seamSignature !== 'string' || !/^[a-f0-9]{64}$/.test(seamSignature) ||
+      anchor.x < bounds.x || anchor.x > bounds.x + bounds.width || anchor.y < bounds.y || anchor.y > bounds.y + bounds.height) throw new Error('invalid decoration contract');
+  if (validateVariantFrames(frames) !== seamSignature) throw new Error('decoration seam signature mismatch');
+  if (forbidden.some(r => bounds.x < r.x+r.width && bounds.x+bounds.width > r.x && bounds.y < r.y+r.height && bounds.y+bounds.height > r.y)) throw new Error('decoration intersects forbidden zone');
+  return true;
+}
 
 // Display (u,v) samples NW/NE/SE/SW at (u-1,v-1), (u,v-1), (u,v), (u-1,v).
 export function resolveCell(world, material, u, v, config = dualGridConfig, halo = {}) {

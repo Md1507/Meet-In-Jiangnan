@@ -1,0 +1,1 @@
+{"camera":{"x":0,"y":0,"width":1,"height":1},"scale":2,"bindings":{"red":{"sheet":"sheet","crop":{"x":0,"y":0,"width":1,"height":1}},"blue":{"sheet":"sheet","crop":{"x":1,"y":0,"width":1,"height":1}}},"placements":[{"id":"red","layer":"terrain","order":0,"x":0,"y":0,"anchor":{"x":0,"y":0}},{"id":"blue","layer":"props","order":0,"x":1,"y":1,"anchor":{"x":1,"y":1}}]}

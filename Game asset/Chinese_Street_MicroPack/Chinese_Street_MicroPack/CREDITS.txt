@@ -1,0 +1,34 @@
+================================================================
+  CREDITS  /  署名
+  Chinese Street: Micro Pack
+================================================================
+
+If you use these assets, you can paste one of the lines below
+into your game's credits, README or store page.
+
+在你的游戏 Credits、README 或商店页里，复制下面任意一行即可。
+
+
+[EN]
+----------------------------------------------------------------
+Street props: "Chinese Street: Micro Pack" by Haynes_y
+https://haynes-y.itch.io
+
+[EN — short]
+----------------------------------------------------------------
+Props by Haynes_y (haynes-y.itch.io)
+
+[CN]
+----------------------------------------------------------------
+街景素材：「Chinese Street: Micro Pack」by Haynes_y
+https://haynes-y.itch.io
+
+[CN — 短版]
+----------------------------------------------------------------
+素材：Haynes_y（haynes-y.itch.io）
+
+
+----------------------------------------------------------------
+Credit is not required — this file is here in case you want to.
+署名非必需，这个文件只是方便你引用。
+----------------------------------------------------------------

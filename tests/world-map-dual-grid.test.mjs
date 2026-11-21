@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import { resolveCell, buildLayer, updateCell } from '../scripts/world-map/dual-grid.mjs';
+import { resolveCell, buildLayer, updateCell, variantHash, selectVariant, validateVariantFrames, validateDecoration } from '../scripts/world-map/dual-grid.mjs';
 import { buildSnapshot } from '../scripts/world-map/pipeline.mjs';
 
 // Literal NW NE / SW SE samples and expected atlas index, independent of resolver config.
@@ -11,6 +11,55 @@ const cases = [
   ['..X.',8], ['X.X.',9], ['.XX.',10], ['XXX.',11], ['..XX',12], ['X.XX',13], ['.XXX',14], ['XXXX',15]
 ];
 const hash = value => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
+
+test('versioned variant vectors and validation', () => {
+  const key = {seed:'seed', map:'map', layer:'grass', x:0, y:0, mask:15, variantSet:'terrain'};
+  assert.equal(variantHash(key), '83d2e65bf9fbb41aa34ab07274bf8d4b46862befa2f8ebca720d1279a63ccf2f');
+  assert.equal(selectVariant(key), 0);
+  const second = {...key,layer:'water',x:-7,y:42,mask:5};
+  assert.equal(variantHash(second), 'c46c8261a81a317b8cb67a8dba852b1ee367e84207d58aa65e917799ec94cf5b');
+  assert.equal(selectVariant(second), 1);
+  for (const [field, value] of Object.entries({seed:'other', map:'other', layer:'other', x:1, y:1, mask:14, variantSet:'other'})) assert.notEqual(variantHash({...key,[field]:value}), variantHash(key));
+  for (const weights of [[],[0,0],[-1,2],[1,0.5],[Infinity], [Number.MAX_SAFE_INTEGER,1]]) assert.throws(() => selectVariant(key,weights));
+  assert.throws(() => selectVariant(key, [,1]), /invalid variant weights/);
+  const inheritedWeights = [,1]; Object.setPrototypeOf(inheritedWeights, Object.assign(Object.create(Array.prototype), {0: 1}));
+  assert.throws(() => selectVariant(key, inheritedWeights), /invalid variant weights/);
+  assert.throws(() => variantHash({...key,x:0.5}));
+  assert.throws(() => variantHash(key,{variants:{hashVersion:'v2'}}));
+  assert.equal(selectVariant(key,[0,1,0]),1);
+});
+
+test('10000 coordinates have stable weighted variants across traversal and reload', async () => {
+  const keys = Array.from({length:10000}, (_,i) => ({seed:'campus',map:'street',layer:'grass',x:i%100,y:Math.floor(i/100),mask:15,variantSet:'terrain'}));
+  const forward = keys.map(key => selectVariant(key));
+  const counts = [0,0,0]; for (const value of forward) counts[value]++;
+  counts.forEach((count,index) => assert.ok(Math.abs(count/10000 - [0.7,0.2,0.1][index]) <= 0.03, `${counts}`));
+  assert.deepEqual(keys.slice().reverse().map(key => selectVariant(key)).reverse(),forward);
+  const reloaded = await import('../scripts/world-map/dual-grid.mjs?c4-reload');
+  assert.deepEqual(keys.map(key => reloaded.selectVariant(key)),forward);
+});
+
+test('variant and animation frames preserve literal edge alpha and logical masks; decorations respect zones', () => {
+  const frame = {width:4,height:4,mask:5,alpha:[0,0,255,255,0,4,8,255,255,12,16,0,255,255,0,0]};
+  const alternate = structuredClone(frame); alternate.alpha[5] = 200;
+  const signature = validateVariantFrames([frame,alternate,frame]);
+  assert.match(signature,/^[a-f0-9]{64}$/);
+  const badEdge = structuredClone(alternate); badEdge.alpha[0] = 255;
+  assert.throws(() => validateVariantFrames([frame,badEdge]),/seam/);
+  assert.throws(() => validateVariantFrames([frame,{...alternate,mask:6}]),/mask/);
+  assert.throws(() => validateVariantFrames([{...frame,alpha:frame.alpha.slice(1)}]));
+  const sparseAlpha = frame.alpha.slice(); delete sparseAlpha[5];
+  assert.throws(() => validateVariantFrames([{...frame,alpha:sparseAlpha}]), /invalid variant frame/);
+  const inheritedAlpha = frame.alpha.slice(); delete inheritedAlpha[0];
+  Object.setPrototypeOf(inheritedAlpha, Object.assign(Object.create(Array.prototype), {0: 0}));
+  assert.throws(() => validateVariantFrames([{...frame,alpha:inheritedAlpha}]), /invalid variant frame/);
+  const decoration = {anchor:{x:12,y:14},bounds:{x:10,y:10,width:4,height:4},forbidden:[{x:14,y:10,width:2,height:4}],seamSignature:signature,frames:[frame,alternate]};
+  assert.equal(validateDecoration(decoration),true);
+  assert.throws(() => validateDecoration({...decoration,forbidden:[{x:13,y:10,width:2,height:4}]}),/forbidden/);
+  assert.throws(() => validateDecoration({...decoration,anchor:{x:0,y:0}}),/contract/);
+  assert.throws(() => validateDecoration({...decoration,seamSignature:'pending'}),/contract/);
+  assert.throws(() => validateDecoration({...decoration,seamSignature:'0'.repeat(64)}),/signature/);
+});
 
 test('all independent corner patterns resolve to the declared atlas slots', () => {
   for (const [pattern, expected] of cases) {

@@ -1,0 +1,19 @@
+# Changelog bổ sung art style guide v0.3
+
+- Bổ sung mục 1, 2.2, 3.1 và 4.1: campus được chăm sóc, mở rộng khu vực, tín hiệu công năng, nền lát và tiện ích; giới hạn phê duyệt D1v3 trong mẫu Phố.
+- Bổ sung trực tiếp 6.1–6.6: nhận diện riêng của sáu khu, phân biệt F bánh bao/hàng thiết yếu và P bưu kiện, cầu và mặt đi theo layout; mục 9–10 bảo toàn gameplay và quy định metadata asset độc lập, PNG native/nearest, phân tách dữ liệu. Checklist mục 11 bổ sung các điểm duyệt còn thiếu.
+- Giữ nội dung, thứ tự, palette, camera, landmark, quyết định layout và nguồn tham khảo lịch sử; hai cạnh v0.3 là hợp đồng lịch sử, mạng v1 ba/bốn hướng là thiết kế chưa tích hợp runtime. Hai mục 14 giữ nguyên số. Không xác nhận lại nguồn bên ngoài.
+- Chưa xác định ID, đường dẫn, chữ biển và chi tiết của từng asset chưa chốt; ví dụ mở rộng không phải cam kết. Quy tắc asset là đặc tả, không xác nhận renderer đã thực hiện.
+- Mục 1 cấm hardcode số công trình và props mỗi khu; mục 12 đánh giá chín ảnh `sample_tileset` theo khu, camera/palette và giới hạn quyền dùng. Rà tên guide và tham chiếu trong docs, scripts và phiếu Bint: hai bản v0.3 và guide tạo map đều được tham chiếu; không xác định được guide cũ nào thực sự không dùng để xóa.
+- Snapshot trước sửa có SHA-256 `c405b97a302d949f15ca01756c3b10875aecf8dc5c103ebd84ac13ac8ba432b0`; hai guide ở snapshot lịch sử của phiếu trước có SHA-256 `4a614400531007a410cec66dc0d7d5b50d7a2ecd99829d740fedc35c69868c91`. Vòng 1 là tự kiểm của implementer run `01M7RSXCZFD17S35B920ESSFFF`, không phải review độc lập. Review độc lập vòng 2 run `01M7RT94SEX999W2Q3F927DQ11` trên guide SHA-256 `d4ad13948895222f0aa566656eaca3a4823ff30721df6864f48e96b6e149420a` ghi bốn phát hiện; review độc lập snapshot mới còn chờ. Kiểm cấu trúc chính thức còn chờ lệnh được người dùng xác nhận; không chạy tạo/render asset hoặc kiểm runtime.
+
+## 2026-11-19 — Đính chính nguồn và bố trí tiện ích
+
+- Thay nguồn PDF bằng đường dẫn gốc repository `sundropartguide_compress.pdf`; đối chiếu PDF 698002 byte, SHA-256 `2696656e1b0f030d99da79b87aa6b45c527e4aba2032371db2dda76c7927aa5b`, và nội dung trích bằng pdftotext: tiêu đề và nguồn Sundrop City, palette, shading, perspective, portrait. Không áp chỉ dẫn màu của thành phố du lịch cho campus.
+- Quy nguồn bối cảnh theo quyết định người dùng, mục 1, thiết kế campus v1 và nguồn runtime/nội dung; giữ giới hạn synthetic chưa human review và v1 chưa tích hợp. Làm rõ tiện ích hợp công năng cho cả sáu khu, đối chiếu footprint/collider và yêu cầu duyệt đề xuất layout; giữ hành lang, seller và khả năng đọc nhà ăn.
+- Tự kiểm đọc-only trên snapshot lịch sử trước đính chính tên: hai guide cùng SHA-256 `53e6cfd24b9505c3e4fe3dfc60371231f9b240a451e886de15525abbb0916a1d`; tìm tên PDF và tệp bối cảnh cũ trong hai guide không thấy; đối chiếu nguồn và diff, `git diff --check` không báo lỗi whitespace. Đây là kiểm của người thực hiện, không phải review độc lập; chưa kiểm placement hay runtime, chưa render hoặc tạo asset.
+
+## 2026-11-19 — Quy tắc tên hư cấu
+
+- Theo quyết định mới của người dùng, tên trường, công trình, cửa hàng, dịch vụ và biển hiệu do dự án tự sáng tạo, phù hợp campus Giang Nam 2026; tên tiếng Trung tự nhiên, có nghĩa, đúng công năng và thống nhất khi được chọn. Tên riêng đi cùng tín hiệu công năng dễ đọc, độc lập Asset ID; chưa chốt tên cụ thể và không thêm tương tác gameplay.
+- Review độc lập vòng 1 của phiếu này không có phát hiện đối với nguồn/collision trên snapshot lịch sử SHA-256 `53e6cfd24b9505c3e4fe3dfc60371231f9b240a451e886de15525abbb0916a1d`; review đó không bao phủ thay đổi tên sau đó. Hai guide sau bổ sung tên có SHA-256 `cac5f09e6848347f186d0ffeb51fc9323c2eda7e083b4dd6b5d0dfb9667bc98d`; review độc lập cho snapshot này còn chờ. Tự kiểm: đối chiếu nội dung, hash và diff; không kiểm placement, runtime hoặc tạo asset.

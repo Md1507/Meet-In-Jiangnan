@@ -1,0 +1,24 @@
+// Synthetic inputs for the component fixture; C6 evidence is not a real approval.
+import {mkdirSync, writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {encodePng} from '../../../scripts/world-map/render.mjs';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const write=(name,bytes)=>{const dest=path.join(root,name);mkdirSync(path.dirname(dest),{recursive:true});writeFileSync(dest,bytes,{flag:'wx'});return createHash('sha256').update(bytes).digest('hex');};
+const json=v=>Buffer.from(JSON.stringify(v));
+const png=encodePng({width:2,height:1,pixels:Buffer.from([255,0,0,255,0,0,255,128])});
+const digest=write('public/art/sheet.png',png);
+const inputs={};
+for(const [name,bytes] of [['maps.json',json([{map_name:'street',layout:Array.from({length:10},()=>Array(10).fill(0))}])],['ascii-maps.md',Buffer.from('fixture only')]]) inputs[name]={path:name,sha256:write(name,bytes)};
+const sourceInputs=Object.fromEntries(Object.entries(inputs).map(([k,v])=>[k,v.sha256]));
+const contract={sourceInputs,...Object.fromEntries(['scale','layout','camera','clearance'].map(k=>[k,{status:'approved',evidence:'synthetic fixture only',sourceInputs}]))};
+const c6=write('c6.json',json(contract));
+const a={id:'sheet',path:'public/art/sheet.png',sha256:digest,status:'production',category:'props',maps:['street'],nativeDimensions:{width:2,height:1},gridFootprint:{width:1,height:1},anchor:{x:0,y:1},collision:{kind:'none'},layer:'props',renderOrder:0,interaction:{kind:'none'},variants:[],source:'synthetic fixture',license:'fixture',bytes:png.length,placement:'fixture',sourceStatus:'available',runtimeStatus:'pending',previewStatus:'pending'};
+const manifest={assets:[a],sourceInputs,c6:{path:'c6.json',sha256:c6,expectedSha256:c6}};
+const fields=['path','sha256','nativeDimensions','gridFootprint','anchor','layer','renderOrder','collision','interaction','variants','source','license','maps','placement'];
+const binding=Object.fromEntries(fields.map(k=>[k,a[k]])); binding.alpha='transparent';
+const placement={id:'sheet',map:'street',x:1,y:1,unit:'tile',...Object.fromEntries(['path','anchor','layer','renderOrder','gridFootprint','collision','interaction','variants'].map(k=>[k,a[k]]))};
+const reference={provenance:'synthetic fixture only',inputs,unit:'tile',maps:{street:{width:10,height:10}},assets:{sheet:binding},placements:[placement]};
+const scene={camera:{x:0,y:0,width:1,height:1},scale:2,bindings:{red:{sheet:'sheet',crop:{x:0,y:0,width:1,height:1}},blue:{sheet:'sheet',crop:{x:1,y:0,width:1,height:1}}},placements:[{id:'red',layer:'terrain',order:0,x:0,y:0,anchor:{x:0,y:0}},{id:'blue',layer:'props',order:0,x:1,y:1,anchor:{x:1,y:1}}]};
+for(const [name,value] of Object.entries({manifest,reference,scene})) write(`${name}.json`,json(value));

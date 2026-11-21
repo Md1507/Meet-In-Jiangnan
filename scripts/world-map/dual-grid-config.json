@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
   "tileSizePx": 16,
+  "variants": {
+    "hashVersion": "dual-grid-variant-v1",
+    "weights": [70, 20, 10]
+  },
   "cornerBits": {
     "NW": 1,
     "NE": 2,

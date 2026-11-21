@@ -3,7 +3,7 @@
 **Phiên bản:** 0.3\
 **Phạm vi:** Định hướng hình ảnh tổng thể và sáu khu vực đầu tiên\
 **Thể loại hình ảnh:** 2D pixel art, top-down\
-**Tài liệu tham chiếu:** `bối-cảnh-game.txt` và `233a3c03f5035ffd.pdf`
+**Tài liệu tham chiếu:** `sundropartguide_compress.pdf` (đường dẫn tính từ gốc repository cho cả hai bản guide); nguồn bối cảnh và thiết kế dự án tại mục 12.
 
 ------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Thế giới game là một trường đại học hiện đại ở vùng Giang
 Quốc, vào năm 2026. Người chơi nhập vai một sinh viên quốc tế trong bảy
 ngày đầu làm quen với trường, di chuyển giữa các địa điểm, gặp NPC, nhận
 nhiệm vụ và học tiếng Trung thông qua hội thoại trong bối cảnh đời sống
-thường ngày.
+thường ngày: làm thủ tục, hỏi đường và giờ học, ăn uống, mua bánh bao và đồ dùng, nhận kiện và giao tiếp.
 
 **Phạm vi thế giới được chốt:** toàn bộ sáu địa điểm — ký túc xá, cổng
 trường, thư viện, nhà ăn, phố và vườn — đều thuộc **cùng một khuôn viên
@@ -33,6 +33,11 @@ cảnh quan của trường. Các khu phải nối thành một mạng đi bộ 
 study v0.3. Các mô tả collider và lối trái/phải cũ bên dưới phản ánh runtime
 v0.3; không dùng chúng để loại bỏ các lối mới trong bản thiết kế v1. V1 chưa
 được tích hợp runtime; art mới phải đối chiếu đúng phiên bản layout đang làm.
+
+**Bổ sung phạm vi:** Campus được chăm sóc là một đại học hiện đại Giang Nam, Trung Quốc năm 2026. Sáu khu hiện định nghĩa không phải danh sách cuối hay đóng; landmark đã có không có nghĩa khu đã hoàn tất. Mọi khu có thể bổ sung công trình, tiện ích, landmark, trang trí hoặc tiểu khu độc lập theo nhận diện chung và riêng, trên layout được duyệt. Ví dụ chỉ minh họa: thêm cửa hàng Phố, tiện ích Ký túc/Cổng, chỗ học Thư viện, quầy/chỗ ăn Nhà ăn hoặc chỗ nghỉ/tiện ích kênh Vườn; không cam kết số lượng hay triển khai.
+
+Không hardcode số lượng công trình **hoặc props** cho từng khu; cả sáu khu
+đều có thể mở rộng, và các ví dụ không phải danh sách hạng mục đã chốt.
 
 ### Mục tiêu cảm xúc
 
@@ -107,6 +112,8 @@ phối cảnh đặc trưng đó vào game.
 -   Không thêm chi tiết nhỏ chỉ để lấp khoảng trống nếu chúng không đóng
     góp vào nhận diện hoặc không khí.
 
+**Nhận diện công năng:** Mỗi công trình, cửa hàng, dịch vụ và landmark quan trọng hiện tại hoặc tương lai phải dễ hiểu ở tỷ lệ chơi bằng ít nhất hai tín hiệu độc lập: silhouette/mặt tiền đặc trưng, biển hoặc icon có nghĩa, hình thức cửa/kính, thiết bị hay trưng bày. Màu nhấn hỗ trợ nhưng không đủ nếu chỉ đổi màu, chữ nhỏ hoặc props trên cùng mặt tiền chung. Nhóm đồ ăn có thể dùng kem, vàng, nâu, đỏ trầm, biểu tượng bánh/bánh bao hoặc hơi nóng và cửa kính/quầy thực phẩm; bưu kiện dùng teal, lam, xám lạnh, kim loại, icon kiện hàng và tủ nhiều ngăn/khu nhận rõ ràng. Thư viện gợi sách/học; nhà ăn gợi menu, phục vụ và chỗ ăn. Đây là các họ ví dụ, không đổi ID hay công năng F bánh bao/hàng thiết yếu và P bưu kiện đã duyệt; không thêm tương tác gameplay mới. Tên trường, công trình, cửa hàng, dịch vụ và biển hiệu đều là hư cấu do dự án tự sáng tạo, phù hợp campus Giang Nam đương đại năm 2026 và phong cách game; tên tiếng Trung cần tự nhiên, có nghĩa và thể hiện đúng công năng. Tên riêng đi cùng icon và chữ chỉ công năng dễ đọc, không thay thế các tín hiệu đó; chữ dùng lớp live text dễ đọc hiện có, icon phải phân biệt được ở native và tỷ lệ gameplay. Khi đã chọn tên, dùng thống nhất cách viết trong narrative, trường mô tả manifest, live text, biển hiệu và tham chiếu khu vực; tên hiển thị độc lập với Asset ID kỹ thuật ổn định. Chưa có tên cụ thể nào được chốt.
+
 ### 2.3. Mật độ chi tiết
 
 Chia chi tiết thành ba cấp:
@@ -141,6 +148,8 @@ Không để chi tiết cấp 3 có độ tương phản hoặc màu sắc nổi
 canvas, kích thước tile, kích thước sprite nhân vật, tỷ lệ upscale và
 giới hạn kích thước asset. Chưa tự đặt các con số này khi chưa đối chiếu
 với cấu trúc game hiện có.
+
+**Phạm vi phê duyệt:** D1v3 chỉ duyệt scale/camera của mẫu Phố; không suy ra các quyết định kỹ thuật mở tại 3.1 và 13 đã chốt cho toàn game.
 
 ### 3.2. Đường viền
 
@@ -223,6 +232,8 @@ Quy tắc áp dụng:
 Không bắt buộc mọi khu vực dùng đủ các nhóm màu. Mỗi khu vực nên có một
 màu chủ đạo và một vài màu phụ để tạo nhận diện.
 
+**Nền và tiện ích campus:** Đường bộ hành chính lát đá; cửa công trình, sân và nơi dùng thường xuyên được lát và kết nối có chủ đích. Lối phụ chọn đá, gạch hoặc bê tông theo cách dùng, gỗ ở nơi hợp lý. Cân bằng mặt lát với cỏ, cây và cảnh quan có ranh giới như bồn hoặc viền vườn. Đèn campus là prop chiếu sáng riêng bằng kim loại/kính, đặt cạnh đường lát hoặc khu công cộng phù hợp, không phải vật bằng đá. Ghế nghỉ, thùng rác, tiện ích công cộng, biển hướng dẫn/bảng tin và chỗ xe đạp đặt hợp lý theo layout; không ngụ ý thêm vật cản đặc trên dữ liệu walkable.
+
 ### 4.2. Chất liệu kiến trúc
 
 Kết hợp vật liệu của một khuôn viên đại học hiện đại với một số dấu hiệu
@@ -297,6 +308,8 @@ tiết nhỏ. Có thể dùng các nguyên tắc này nếu game có portrait h�
 Sáu khu vực dưới đây là phạm vi của phiên bản hiện tại. Mỗi khu vực cần
 có bản sắc riêng nhưng dùng chung ngôn ngữ hình ảnh ở các phần trên.
 
+**Nguyên tắc chung cho cả sáu khu:** Tường, bàn ghế, cây, bồn cây, quầy, menu và các tiện ích là thành phần hợp lý hoặc cần thiết theo công năng; không làm campus trống để né collider. Tránh bố trí sai công năng, lấn lối đi, cửa, warp, NPC hay vùng tương tác, hoặc hình ảnh không khớp collision. Vật đặc phải có footprint và collider hợp lệ theo layout; nếu vị trí đề xuất chưa có collider, ghi thành đề xuất layout/gameplay riêng để người dùng duyệt, không xóa đường, tự thêm collider hay dùng visual-only để đi xuyên.
+
 ### 6.1. Ký túc xá
 
 **Vai trò trong thế giới:** không gian sinh hoạt cá nhân và đời sống
@@ -318,6 +331,8 @@ ghế dài, đèn ngoài trời.
 trí che lối đi; thiết kế quá cổ kính khiến ký túc xá không còn cảm giác
 hiện đại.
 
+**Bổ sung nhận diện:** Cửa sổ và biển nhà ở sinh viên, xe đạp, ghế sinh hoạt chung, chi tiết giặt/phơi và cây nhỏ gợi đời sống cư trú khi layout cho phép.
+
 ### 6.2. Cổng trường
 
 **Vai trò trong thế giới:** điểm nhận diện quan trọng, giúp người chơi
@@ -338,6 +353,8 @@ hoặc đường dẫn vào trường cần có hướng đi rõ.
 **Cần tránh:** cổng quá đồ sộ che khuất khu vực chơi; chữ trên biển hiệu
 quá nhỏ; trang trí làm nhầm lẫn ranh giới lối vào.
 
+**Bổ sung nhận diện:** Tên/nhận diện trường, cơ sở bảo vệ, tiếp đón và thông tin, sân vào lát, tiếp cận bộ hành trật tự và cây trồng quy hoạch làm rõ vai trò cổng. Nội dung biển cuối cùng chưa xác định.
+
 ### 6.3. Thư viện
 
 **Vai trò trong thế giới:** không gian học tập, tra cứu và tương tác với
@@ -356,6 +373,8 @@ báo, máy tính.
 
 **Cần tránh:** dày đặc giá sách hoặc bàn ghế làm giảm khả năng đọc lối
 đi; dùng quá nhiều chi tiết chữ nhỏ; tạo cảm giác giống nhà ăn.
+
+**Bổ sung nhận diện:** Biển học thuật/sách, cửa kính lớn, chi tiết đọc và học, khoảng ngoài trời yên tĩnh và chỗ xe đạp phù hợp làm rõ công năng thư viện.
 
 ### 6.4. Nhà ăn
 
@@ -376,8 +395,8 @@ thư viện và phố.
 **Vật thể gợi ý:** quầy phục vụ, bảng menu, khay, cốc, bình nước nóng,
 bàn ghế, biển chỉ dẫn.
 
-**Cần tránh:** - Không thêm tường, bàn, cây hoặc vật thể khiến người
-chơi hiểu nhầm là collider mới. - Không đặt vật thể trang trí vào lối đi
+**Cần tránh:** - Không đặt tường, bàn, cây hoặc vật đặc sai vị trí hay
+không khớp footprint và collision được duyệt. - Không đặt vật thể trang trí vào lối đi
 trung tâm hoặc hai hành lang. - Không thay đổi vị trí seller, bounds
 nhân vật, lối ra hoặc cấu trúc di chuyển. - Không để bảng menu hoặc hiệu
 ứng trang trí cạnh tranh với nội dung hội thoại.
@@ -385,6 +404,8 @@ nhân vật, lối ra hoặc cấu trúc di chuyển. - Không để bảng menu
 **Ngữ cảnh gameplay cần được hỗ trợ:** người chơi đến gần seller, nhấn E
 để mở hội thoại, đọc chữ Hán, pinyin và nghĩa tiếng Việt, sau đó thực
 hành câu gọi nước nóng "我要一杯热水。".
+
+**Bổ sung nhận diện:** Biển đồ ăn, menu, quầy phục vụ, khu ăn và điểm trả khay thể hiện công năng; bố trí không chặn hành lang, đường tiếp cận hoặc seller. Hai lối ra trên là mô tả lát cắt runtime v0.3; layout campus-network-v1 được duyệt có ba hướng cho Nhà ăn, chưa tích hợp runtime.
 
 ### 6.5. Phố
 
@@ -408,6 +429,8 @@ cây, biển chỉ dẫn.
 **Cần tránh:** biển hiệu quá nhiều màu gây rối; chữ trang trí nhỏ không
 đọc được; vật thể đặt sát nhau khiến lối đi không rõ.
 
+**Bổ sung nhận diện:** Đây là dịch vụ sinh viên bên trong campus. Giữ F bánh bao/hàng thiết yếu và P bưu kiện; phân biệt đồ ăn với bưu kiện theo các tín hiệu tại 2.2. Mặt lát, tuyến campus, đèn, biển, ghế, thùng rác và cây trồng chỉ đặt tại vị trí hợp lệ. Không tự thêm đường nhựa, làn ô tô hay bãi đỗ xe không liên quan khi thiết kế đã duyệt không có.
+
 ### 6.6. Vườn
 
 **Vai trò trong thế giới:** khu vực thư giãn, tạo khoảng nghỉ khỏi các
@@ -428,6 +451,9 @@ cầu cảnh quan.
 
 **Cần tránh:** cây cối che khuất NPC hoặc lối ra; quá nhiều họa tiết lá
 nhỏ; dùng mặt nước hoặc bóng cây làm người chơi nhầm đó là đường đi.
+
+**Bổ sung nhận diện:** Nước, bờ đá, liễu, cầu, pavilion/hiên nghỉ, đường dạo và cây xanh diễn đạt cảnh quan khi có trong layout. Cầu theo layout vuông góc kênh, nối hai bờ bằng mặt đi liên tục. Quy tắc này không thêm cầu hay nước, không đổi hình học trong lần sửa tài liệu.
+
 
 ------------------------------------------------------------------------
 
@@ -481,6 +507,9 @@ thay đổi hành vi gameplay hiện có.
 lối đi trung tâm, hai hành lang, seller gần trung tâm và hai lối ra tới
 thư viện/phố.
 
+**Bảo toàn theo phiên bản:** Landmark, tọa độ, ASCII 20×15, kết nối, warp, collider, spawn, NPC, interaction, quest và save đã duyệt chỉ đổi khi được phép rõ ràng. Các mô tả hai cạnh/lối của v0.3 là lịch sử runtime; v1 là thiết kế ba/bốn hướng riêng, không chứng minh runtime đã thay đổi.
+
+
 ------------------------------------------------------------------------
 
 ## 10. Quy trình tạo asset đề xuất
@@ -507,6 +536,11 @@ thư viện/phố.
 
 Không nên sản xuất hàng loạt asset trước khi visual target được duyệt.
 
+**Bổ sung quản lý asset độc lập:** Với mỗi công trình hoặc vật thể công năng tái sử dụng, ghi ID duy nhất, category, kích thước native, đường dẫn sprite, khu dự kiến, nhận diện công năng, ground anchor, footprint, collision, render layer, interaction nếu áp dụng và visual variants. Phân biệt giá trị không có/không áp dụng với chưa xác định; ID, đường dẫn và chi tiết chưa chốt vẫn là unknown; tên và chữ biển hư cấu được tự sáng tạo theo mục 2.2, nhưng chưa chọn thì chưa coi là đã chốt. Tách dữ liệu terrain, decor, structures, props, collision, interaction và warp. Asset pixel production là tile/sprite PNG thật ở native resolution, phóng nearest; SVG debug không phải art production. Có thể thêm công trình độc lập mà không vẽ lại terrain hay thay asset không liên quan. Đây là đặc tả quản lý, không khẳng định renderer đã hỗ trợ.
+
+**Theo phiên bản layout:** Bước 0 ghi mọi cạnh chuyển khu của layout đang áp dụng; hai cạnh là hợp đồng v0.3 lịch sử, không giới hạn thiết kế campus-network-v1 ba/bốn hướng chưa tích hợp runtime.
+
+
 ------------------------------------------------------------------------
 
 ## 11. Checklist duyệt art
@@ -530,24 +564,29 @@ Một asset hoặc khu vực chỉ nên được duyệt khi đáp ứng các ti
 -   [ ] Khi đặt cạnh các khu vực khác, asset vẫn tạo cảm giác thuộc cùng
     một thế giới.
 
+**Kiểm bổ sung cho campus và công năng:**
+
+- [ ] Công năng công trình rõ qua ít nhất hai tín hiệu độc lập; mặt tiền, biển và điểm nhấn phân biệt các cơ sở.
+- [ ] Icon nhận ra ở kích thước native và gameplay; chữ được trình bày dễ đọc.
+- [ ] Nền cửa vào và đường phù hợp cách dùng, các tuyến lát nối các tiện ích.
+- [ ] Mảng xanh có ranh giới cân bằng với mặt lát; đèn và tiện ích đặt tự nhiên, an toàn.
+- [ ] Sáu khu có bản sắc riêng và cùng thuộc campus; có thể bổ sung tiện ích tương lai độc lập.
+- [ ] Giữ landmark, tọa độ, ASCII 20×15, kết nối, warp và gameplay đã duyệt; không tạo collision hay cản navigation ngoài ý muốn.
+
+
 ------------------------------------------------------------------------
 
 ## 12. Tham chiếu và phạm vi áp dụng
 
 ### Nguồn bối cảnh game
 
-`bối-cảnh-game.txt`
+Các quyết định của người dùng và mục 1 xác định **Hẹn ở Giang Nam**: đại học hiện đại tại Giang Nam, Trung Quốc năm 2026; sinh viên quốc tế trong bảy ngày đầu nhập học, học tiếng Trung qua nhiệm vụ và hội thoại đời sống như làm thủ tục, hỏi đường/giờ học, ăn uống, mua bánh bao và đồ dùng, nhận kiện, giao tiếp. Sáu khu hiện tại cùng campus và có thể mở rộng; chưa chốt tên trường, thương hiệu, lore hay mọi chi tiết công trình.
 
-Các thông tin được dùng: - Tên game: **Hẹn ở Giang Nam**. - Bối cảnh:
-trường đại học hiện đại ở Giang Nam, Trung Quốc, năm 2026. - Người chơi
-trải qua bảy ngày đầu nhập học. - Sáu khu vực hiện tại: ký túc xá, cổng
-trường, thư viện, nhà ăn, phố và vườn. - Gameplay và các ràng buộc cụ
-thể của lát cắt ngày 2 tại nhà ăn.
+Các đường dẫn sau tính từ **gốc repository** cho cả hai bản guide: `docs/game-dev/campus-network-v1/design.md`, `docs/game-dev/campus-network-v1/maps.json` và `docs/game-dev/campus-network-v1/ascii-maps.md` mô tả thiết kế campus v1 chưa tích hợp runtime. `src/content/mvp.json` và `src/content/chapter-context.ts` dùng để đối chiếu runtime/nội dung; phần biên tập tiếng Việt trong chapter-context là synthetic, chưa được người rà duyệt, không phải phê duyệt narrative. Các mô tả runtime v0.3 và thiết kế v1 phải được phân biệt theo phiên bản.
 
 ### Tài liệu tham khảo phong cách
 
-`233a3c03f5035ffd.pdf` --- *A Guide To Being Stylish: The Art Style of
-Stardew Valley*.
+`sundropartguide_compress.pdf` (từ gốc repository) — *A Guide To Being Stylish: The Art Style of Stardew Valley*. Đây là tài liệu nhóm Sundrop City giải thích phong cách Stardew Valley cho dự án của họ, không phải guide chính thức của ConcernedApe hay đặc tả layout của game này. Chỉ dẫn màu rực, phô trương dành riêng cho thành phố du lịch của họ không phải định hướng campus.
 
 Các nguyên tắc tham khảo: - Palette giới hạn, thường khoảng 6--8 màu cho
 một sprite. - Tránh đen và trắng tuyệt đối; dùng màu viền tối nhất. - Ưu
@@ -557,10 +596,31 @@ vùng bóng. - Chân dung NPC đơn giản, mắt nhỏ, tương phản rõ và 
 chi tiết. - Phối cảnh Stardew Valley có đặc trưng riêng, không phải
 top-down thuần túy.
 
+### Ảnh tham khảo campus và tileset do người dùng cung cấp
+
+Các đường dẫn sau tính từ **gốc repository** `sample_tileset/`, áp dụng cho
+cả bản guide ở gốc và bản sao trong art-studies. Chỉ tham khảo ý tưởng;
+nguồn và giấy phép tái phân phối chưa xác định, không đưa trực tiếp ảnh vào
+runtime hay xóa watermark. Hai ảnh `sample.png` và `sample1.png` có watermark.
+
+| Tệp (đường dẫn tương đối gốc repository) | Nên học và giới hạn áp dụng |
+| --- | --- |
+| `sample_tileset/campusmap9preview.jpg` | Tham khảo trục đi bộ lát, quảng trường Cổng và cây có ranh giới, ghế/đèn; không sao chép layout. |
+| `sample_tileset/sample.png`, `sample_tileset/sample1.png` | Tham khảo mặt tiền module khác nhau, nền lát, viền cây và giá xe đạp, thùng rác, bảng tin, ghế/đèn cho các khu campus; không sao chép ảnh hoặc watermark. |
+| `sample_tileset/map_tiles.jpg` | Tham khảo cạnh, góc, nút giao đường/nước và cây tách lớp cho Vườn và tuyến đi; nét minh họa mượt không phải mẫu pixel đã duyệt. |
+| `sample_tileset/demake_jubilife_city_by_phyromatical_dbkp83k-pre.jpg` | Tham khảo bố cục dễ đọc, mặt tiền khác nhau và lát module cho Phố nội khu; không lấy đường nhựa, làn xe, biểu tượng thương hiệu hay bố cục. |
+| `sample_tileset/pixel-art-illustration-bench-park-pixelated-bench-park-bench-park-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-free-vector.jpg` | Tham khảo silhouette ghế nghỉ campus; không sao chép sprite. |
+| `sample_tileset/pixel-art-park-lamp-post-urban-furniture-icon-for-8bit-game-on-white-background-vector.jpg`, `sample_tileset/pixel-art-illustration-street-light-pixelated-street-lamp-street-light-or-lamp-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-free-vector.jpg` | Tham khảo hai silhouette đèn kim loại/kính cho lối lát; không coi ảnh là prop production. |
+| `sample_tileset/pixel-forest-set-retro-8-bit-video-game-ui-elements-trees-bushes-and-grass-sprite-asset-background-landscape-objects-isolated-collection-vector.jpg` | Tham khảo silhouette cây, bụi và cỏ cho vùng xanh có ranh giới; không chép asset. |
+
+Các icon tách nền có góc nhìn và tỷ lệ khác nhau: khi thiết kế lại phải
+thích ứng camera, palette và mật độ pixel campus đã duyệt, đúng vai trò game
+và layout, không dùng ảnh mẫu làm bằng chứng duyệt đường đi hoặc quyền dùng.
+
 ### Phân biệt giữa nguồn và định hướng thiết kế
 
--   Các chi tiết về game, gameplay, sáu khu vực và ràng buộc kỹ thuật
-    được lấy từ file bối cảnh.
+-   Bối cảnh theo quyết định người dùng và mục 1; thiết kế campus v1 và
+    nguồn runtime/nội dung được phân biệt như trên, không suy thành phê duyệt narrative.
 -   Các nguyên tắc palette, shading, dithering, phối cảnh và portrait
     được rút ra từ PDF tham khảo Stardew Valley.
 -   Việc kết hợp các nguyên tắc này thành một phong cách top-down pixel

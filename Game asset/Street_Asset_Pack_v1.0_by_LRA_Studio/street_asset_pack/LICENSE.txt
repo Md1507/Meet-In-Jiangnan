@@ -1,0 +1,51 @@
+========================================================================
+STREET ASSET PACK - LICENSE AGREEMENT
+Creator: LRA Studio
+Itch.io: https://lra-games-studio.itch.io/
+========================================================================
+
+Thank you for downloading this asset pack!
+
+By downloading and using this asset pack, you are granted a
+non-exclusive, worldwide, perpetual license to use these assets under 
+the following terms:
+
+------------------------------------------------------------------------
+1. YOU ARE ALLOWED TO:
+------------------------------------------------------------------------
+- Use these assets in commercial and non-commercial projects (video games, 
+  apps, videos, animations, and multimedia).
+- Modify, edit, resize, and recolor the assets to fit your project.
+- Release your completed project on any platform (Steam, itch.io, 
+  Google Play, App Store, consoles, web, etc.).
+
+------------------------------------------------------------------------
+2. MANDATORY ATTRIBUTION (CREDITS REQUIRED):
+------------------------------------------------------------------------
+You MUST provide appropriate credit to the creator in your project 
+(e.g., in the game credits, game description, or accompanying documentation).
+
+Preferred credit format:
+"Art / Assets by LRA Studio (https://lra-games-studio.itch.io/)"
+
+------------------------------------------------------------------------
+3. YOU ARE NOT ALLOWED TO:
+------------------------------------------------------------------------
+- Resell, redistribute, sub-license, share, or repackage these assets 
+  (in original or modified form) as standalone files, spritesheets, 
+  or part of another asset pack.
+- Claim ownership or original authorship of the art assets.
+- Use these assets for NFTs, blockchain-related projects, or for training 
+  generative AI models without explicit written permission.
+
+------------------------------------------------------------------------
+4. DISCLAIMER:
+------------------------------------------------------------------------
+These assets are provided "as is", without warranty of any kind. 
+In no event shall the author (LRA Studio) be liable for any claim, 
+damages, or other liability arising from the use of these assets.
+
+========================================================================
+Copyright (c) LRA Studio. All rights reserved.
+https://lra-games-studio.itch.io/
+========================================================================
